@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src='./index.js'></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Benton-Franklin Food Access</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Benton-Franklin Health District Food Access</h1>
+        <div>
+            <div>
+                <h3>Home</h3>
+            </div>
+            <div>
+                <h3>Data</h3>
+            </div>
+            <div>
+                <h3>About</h3>
+            </div>
+        </div>
+    </nav>
+
+    <div id="pop-ups">
+        <div id='intro' class="intro">
+            <div>
+                <div class="intro-title">
+                    <h2>Food Access 2023</h2>
+                    <p class="close" onclick="closeModal()">x</p>
+                </div>
+                <p class="description">
+                    This interactive webmap is intended to highlight the relative accessibility of grocery stores,
+                    convenience stores, and convenience stores that sell produce within the borders of the individual
+                    Benton and Franklin counties for different distances and means of transportation.
+                </p>
+                <p>Source: Benton-Franklin Health District, US Census</p>
+            </div>
+            <div id="open" onclick="openModal()"></div>
+        </div>
+        <div id="filters" class="intro">
+            <div>
+                <h3>Stores</h3>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

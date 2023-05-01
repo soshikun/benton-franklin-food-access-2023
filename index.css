@@ -1,0 +1,101 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    background-color: #152E53;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+nav h1 {
+    font-size: 24px;
+    padding: 19px;
+    font-weight: 700;
+}
+
+nav h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+nav div div {
+    padding: 24px;
+}
+
+.intro {
+    width: 25%;
+    background: #FFFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 42px;
+    padding: 16px;
+    padding-right: 0;
+    transition: all .75s ease;
+    display: flex;
+    flex-direction: row;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.intro .intro-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.intro div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.intro div p {
+    margin-bottom: 0;
+}
+
+.intro div p:first-of-type {
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-weight: 600;
+}
+
+.close {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hidden {
+    margin-left: -470px;
+}
+
+#open {
+    width: 77.1px;
+}
+
+#pop-ups {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
