@@ -4,5 +4,4 @@ function closeModal() {
 
 function openModal() {
     document.getElementById('intro').classList.remove('hidden');
-    console.log('opening');
 }

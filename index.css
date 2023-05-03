@@ -33,8 +33,14 @@ nav div {
     gap: 48px;
 }
 
-nav div div {
+nav div a {
     padding: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+nav div a:active {
+    border-bottom: 2px solid white;
 }
 
 .intro {
@@ -98,4 +104,8 @@ nav div div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.nav-item {
+    cursor: pointer;
 }
