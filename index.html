@@ -13,17 +13,17 @@
     <title>Benton-Franklin Food Access</title>
 </head>
 
-<body>
+<body class="map">
     <nav>
-        <h1>Benton-Franklin Health District Food Access</h1>
+        <a class="nav-item" href="index.html"><h1>Benton-Franklin Health District Food Access</h1></a>
         <div>
-            <a class="nav-item" href="index.html">
+            <a class="nav-item home-tab" href="index.html">
                 <h3>Home</h3>
             </a>
-            <a class="nav-item" href="pages/data.html">
+            <a class="nav-item data-tab" href="pages/data.html">
                 <h3>Data</h3>
             </a>
-            <a class="nav-item" href="pages/about.html">
+            <a class="nav-item about-tab" href="pages/about.html">
                 <h3>About</h3>
             </a>
         </div>
@@ -34,7 +34,7 @@
             <div>
                 <div class="intro-title">
                     <h2>Food Access 2023</h2>
-                    <p class="close" onclick="closeModal()">x</p>
+                    <p class="close" onclick="closeModal('intro')">x</p>
                 </div>
                 <p class="description">
                     This interactive webmap is intended to highlight the relative accessibility of grocery stores,
@@ -43,12 +43,15 @@
                 </p>
                 <p>Source: Benton-Franklin Health District, US Census</p>
             </div>
-            <div id="open" onclick="openModal()"></div>
+            <div id="open" onclick="openModal('intro')"></div>
         </div>
         <div id="filters" class="intro">
             <div>
-                <h3>Stores</h3>
-                <div></div>
+                <p id='filters-close' class="close" onclick="closeModal('filters')">x</p>
+                <div>
+                    <h3>Stores</h3>
+                    <div></div>
+                </div>
             </div>
         </div>
     </div>

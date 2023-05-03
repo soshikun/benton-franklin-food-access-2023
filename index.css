@@ -4,6 +4,12 @@
     margin: 0;
 }
 
+/* Home Page */
+.map {
+    background-image: url('./imgs/map-placeholder.png');
+    background-size: cover;
+}
+
 nav {
     background-color: #152E53;
     display: flex;
@@ -39,7 +45,7 @@ nav div a {
     color: white;
 }
 
-nav div a:active {
+.home-tab:active, .data-tab:active, .about-tab:active {
     border-bottom: 2px solid white;
 }
 
@@ -108,4 +114,94 @@ nav div a:active {
 
 .nav-item {
     cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#filters-close {
+    text-align: right;
+}
+
+/* Data and About Pages */
+.section-title {
+    background-color: #8898B0;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    padding: 30px 24px;
+}
+
+.content {
+    background-color: #EAF2FF;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/* About Page */
+.preface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.preface h3 {
+    margin-top: 56px;
+    font-size: 36px;
+}
+
+.preface p {
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 45px;
+    gap: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 270px;
+    height: 429px;
+}
+
+.card p {
+    text-align: center;;
+}
+
+/* Data Page */
+.data-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.data-text {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-left: 24px;
+    font-size: 20px;
+}
+
+.data-content img {
+    margin: 24px;
 }

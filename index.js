@@ -1,7 +1,13 @@
-function closeModal() {
-    document.getElementById('intro').classList.add('hidden');
+function closeModal(popup) {
+    document.getElementById(popup).classList.add('hidden');
+    document.getElementById(popup).style.backgroundColor = '#152E53';
 }
 
-function openModal() {
-    document.getElementById('intro').classList.remove('hidden');
+function openModal(popup) {
+    document.getElementById(popup).classList.remove('hidden');
+    document.getElementById(popup).style.backgroundColor = '#FFFAFA';
+}
+
+function makeActive() {
+    this.classList.add('active');
 }
