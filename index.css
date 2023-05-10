@@ -102,6 +102,10 @@ nav div a {
     margin-left: -470px;
 }
 
+.hidden-filters {
+    margin-right: -470px;
+}
+
 #open {
     width: 77.1px;
 }
@@ -118,8 +122,20 @@ nav div a {
     color: white;
 }
 
-#filters-close {
-    text-align: right;
+#filters {
+    padding: 0;
+}
+
+#open-filters {
+    width: 16.58px;
+}
+
+#filters .filter-options {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+    padding-left: 0;
 }
 
 /* Data and About Pages */
