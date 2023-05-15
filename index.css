@@ -5,10 +5,6 @@
 }
 
 /* Home Page */
-.map {
-    background-image: url('./imgs/map-placeholder.png');
-    background-size: cover;
-}
 
 nav {
     background-color: #152E53;
@@ -60,6 +56,10 @@ nav div a {
     transition: all .75s ease;
     display: flex;
     flex-direction: row;
+}
+
+.intro:first-of-type {
+    height: 220px;
 }
 
 .description {
@@ -130,12 +130,60 @@ nav div a {
     width: 16.58px;
 }
 
-#filters .filter-options {
+#filters #filter-options {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     padding: 16px;
     padding-left: 0;
+}
+
+#filter-options div {
+    width: 100%;
+}
+
+#filters div {
+    justify-content: flex-start;
+}
+
+.stores {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stores div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.stores input {
+    background: #152E53;
+}
+
+.stores input:active {
+    background: white;
+}
+
+.stores label {
+    font-weight: 600;
+}
+
+.search-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-button {
+    padding: 14px 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: #152E53;
+    color: white;
+    cursor: pointer;
 }
 
 /* Data and About Pages */

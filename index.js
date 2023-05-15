@@ -20,11 +20,15 @@ function makeActive() {
     this.classList.add('active');
 }
 
+function clearFilters() {
+
+}
+
 function createMap() {
     mapboxgl.accessToken = 'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
 
     let map = new mapboxgl.Map({
-        container: 'map-object',
+        container: 'map',
         style: 'mapbox://styles/mapbox/dark-v10',
         minZoom: 1,
         maxZoom: 10,
@@ -36,12 +40,20 @@ function createMap() {
         map.addSource('basemap-tiles', {
             'type': 'raster',
             'tiles': [
-                'tiles/newattempt/{z}/{x}/{y}.png'
+                'tiles/distance/{z}/{x}/{y}.png'
             ],
             'tileSize': 256,
             'attribution': 'Map tiles designed by Ivette Ivanov</a>'
         });
+        map.addLayer({
+            'id': 'distance',
+            'type': 'raster',
+            'layout': {
+                'visibility': 'none'
+            },
+            'source': 'basemap-tiles',
+            'minzoom': 1,
+            'maxzoom': 10
+        });
     });
-
-    let legend = document.getElementById("legend");
 }

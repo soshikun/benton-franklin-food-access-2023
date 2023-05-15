@@ -15,9 +15,11 @@
     <title>Benton-Franklin Food Access</title>
 </head>
 
-<body class="map">
+<body>
     <nav>
-        <a class="nav-item" href="index.html"><h1>Benton-Franklin Health District Food Access</h1></a>
+        <a class="nav-item" href="index.html">
+            <h1>Benton-Franklin Health District Food Access</h1>
+        </a>
         <div>
             <a class="nav-item home-tab" href="index.html">
                 <h3>Home</h3>
@@ -31,7 +33,7 @@
         </div>
     </nav>
 
-    <div id="map-object" class="mapboxgl-map"></div>
+    <div id="map" class="mapboxgl-map"></div>
     <div id="pop-ups">
         <div id='intro' class="intro">
             <div>
@@ -50,10 +52,52 @@
         </div>
         <div id="filters" class="intro">
             <div id="open-filters" onclick="openModal('filters')"></div>
-            <div class="filter-options">
+            <div id="filter-options">
                 <div>
                     <h3>Stores</h3>
-                    <div></div>
+                    <form class="stores">
+                        <div>
+                            <input type='radio' id="grocery" name="grocery" value='grocery'>
+                            <label for="grocery">Grocery Stores</label>
+                            <img src="./imgs/grocery.svg" alt="grocery store icon" />
+                        </div>
+                        <div>
+                            <input type='radio' id='convenience' name="convenience" value="convenience">
+                            <label for="convenience">Convenience Stores</label>
+                            <img src="./imgs/convenience.svg" alt="convenience store icon" />
+                        </div>
+                        <div>
+                            <input type="radio" id="produce" name="produce" value="produce">
+                            <label for="covenience-produce">Convenience Stores with Produce</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="service" name="service" value="service">
+                            <label for="service">Food Services</label>
+                        </div>
+                    </form>
+                    <h3>Transportation</h3>
+                    <form class="stores">
+                        <div>
+                            <input type='radio' id="walking" name="walking" value='walking'>
+                            <label for="walking">Walking</label>
+                        </div>
+                        <div>
+                            <input type='radio' id='biking' name="biking" value="biking">
+                            <label for="biking">Biking</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="driving" name="driving" value="driving">
+                            <label for="driving">Driving</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="transit" name="transit" value="transit">
+                            <label for="transit">Public Transit</label>
+                        </div>
+                    </form>
+                    <div class="search-buttons">
+                        <button class="filter-button">Filter</button>
+                        <button class='filter-button' onclick="clearFilters()">Clear Filters</button>        
+                    </div>
                 </div>
                 <p id='filters-close' class="close" onclick="closeModal('filters')">x</p>
             </div>
