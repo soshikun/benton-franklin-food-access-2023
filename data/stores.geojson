@@ -1,0 +1,26 @@
+[
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "Grocery",
+            "name": "'A' Street Station",
+            "icon": "grocery"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.073455, 46.2265574]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "description": "Grocery",
+            "name": "3 Pueblos Meat Market (Store)",
+            "icon": "grocery"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-119.0952986, 46.2386807]
+        }
+    }
+]

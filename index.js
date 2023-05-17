@@ -36,53 +36,35 @@ async function createMap() {
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v10',
         minZoom: 1,
-        maxZoom: 10,
+        maxZoom: 15,
         zoom: 4,
-        center: [-98, 41.8]
+        center: [-119, 46]
     });
 
     let data = await getData();
-    console.log(data);
 
     map.on('load', () => {
-        // map.addSource('basemap-tiles', {
-        //     'type': 'raster',
-        //     'tiles': [
-        //         'tiles/border/{z}/{x}/{y}.png'
-        //     ],
-        //     'tileSize': 256,
-        //     'attribution': 'Map tiles designed by Ivette Ivanov</a>'
-        // });
-        // map.addLayer({
-        //     'id': 'border',
-        //     'type': 'raster',
-        //     'layout': {
-        //         'visibility': 'none'
-        //     },
-        //     'source': 'basemap-tiles',
-        //     'minzoom': 1,
-        //     'maxzoom': 10
-        // });
+        map.addSource('distance-tiles', {
+            'type': 'raster',
+            'tiles': [
+                'tiles/distance/{z}/{x}/{y}.png'
+            ],
+            'tileSize': 256,
+            'attribution': 'Map tiles designed by Ivette Ivanov</a>'
+        });
 
-        // map.addSource('distances', {
-        //     'type': 'raster',
-        //     'tiles': [
-        //         'tiles/distance/{z}/{x}/{y}.png'
-        //     ],
-        //     'tileSize': 256,
-        //     'attribution': 'Map tiles designed by Ivette Ivanov</a>'
-        // });
-        // map.addLayer({
-        //     'id': 'distance',
-        //     'type': 'raster',
-        //     'layout': {
-        //         'visibility': 'none'
-        //     },
-        //     'source': 'distances',
-        //     'minzoom': 1,
-        //     'maxzoom': 10
-        // });
-        map.addSource('driving', {
+        map.addLayer({
+            'id': 'distance',
+            'type': 'raster',
+            'layout': {
+                'visibility': 'none'
+            },
+            'source': 'distance-tiles',
+            'minzoom': 1,
+            'maxzoom': 10
+        });
+
+        map.addSource('stores', {
             'type': 'geojson',
             'data': {
                 'type': 'FeatureCollection',
@@ -91,17 +73,32 @@ async function createMap() {
         });
 
         map.addLayer({
-            'id': 'driving',
+            'id': 'stores',
             'type': 'symbol',
-            'source': 'driving',
+            'source': 'stores',
             'layout': {
                 'icon-image': ['get', 'icon'],
                 'icon-allow-overlap': true
             }
         });
+
+        let filters = document.getElementsByTagName('input');
+        for (let i = 0; i < filters.length; i++) {
+            filters[i].addEventListener('click', () => {
+                if (filters[i].type === 'radio') {
+                    let selection = filters[i].value;
+                    let visible = map.getLayoutProperty(selection, 'visibility');
+                    if (visible === 'visible') {
+                        map.setLayoutProperty(selection, 'visibility', 'none');
+                    } else {
+                        map.setLayoutProperty(selection, 'visibility', 'visible');
+                    }
+                }
+            })
+        }
     });
 
-    map.on('click', 'places', (e) => {
+    map.on('click', 'stores', (e) => {
         // Copy coordinates array.
         const coordinates = e.features[0].geometry.coordinates.slice();
         const description = e.features[0].properties.description;
@@ -120,18 +117,18 @@ async function createMap() {
     });
 
     // Change the cursor to a pointer when the mouse is over the places layer.
-    map.on('mouseenter', 'places', () => {
+    map.on('mouseenter', 'stores', () => {
         map.getCanvas().style.cursor = 'pointer';
     });
 
     // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'places', () => {
+    map.on('mouseleave', 'stores', () => {
         map.getCanvas().style.cursor = '';
     });
 }
 
 async function getData() {
-    const response = await fetch('./data/driving.geojson')
+    const response = await fetch('./data/stores.geojson')
         .then(res => res.json())
         .catch(error => console.log(error));
     return response;
@@ -139,4 +136,5 @@ async function getData() {
 
 function handleClick(selection) {
     let value = selection.value;
+    
 }
