@@ -55,9 +55,9 @@
             <div id="filter-options">
                 <div>
                     <h3>Stores</h3>
-                    <form class="stores">
+                    <form class="stores" id="stores">
                         <div>
-                            <input type='radio' id="grocery" name="grocery" value='grocery'>
+                            <input type='radio' id="grocery" name="grocery" value='gunbase'>
                             <label for="grocery">Grocery Stores</label>
                             <img src="./imgs/grocery.svg" alt="grocery store icon" />
                         </div>
@@ -76,7 +76,7 @@
                         </div>
                     </form>
                     <h3>Transportation</h3>
-                    <form class="stores">
+                    <form class="stores" id="transportation">
                         <div>
                             <input type='radio' id="walking" name="walking" value='walking'>
                             <label for="walking">Walking</label>
@@ -104,5 +104,9 @@
         </div>
     </div>
 </body>
+
+<script type="text/javascript">
+    createMap();
+</script>
 
 </html>

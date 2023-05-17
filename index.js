@@ -21,7 +21,12 @@ function makeActive() {
 }
 
 function clearFilters() {
-
+    let filters = document.getElementsByTagName('input');
+    for (let i = 0; i < filters.length; i++) {
+        if (filters[i].type === 'radio' && filters[i].checked) {
+            filters[i].checked = false;
+        }
+    }
 }
 
 function createMap() {
@@ -29,7 +34,7 @@ function createMap() {
 
     let map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/dark-v10',
+        style: 'mapbox://styles/mapbox/light-v10',
         minZoom: 1,
         maxZoom: 10,
         zoom: 4,
@@ -40,13 +45,13 @@ function createMap() {
         map.addSource('basemap-tiles', {
             'type': 'raster',
             'tiles': [
-                'tiles/distance/{z}/{x}/{y}.png'
+                'tiles/border/{z}/{x}/{y}.png'
             ],
             'tileSize': 256,
             'attribution': 'Map tiles designed by Ivette Ivanov</a>'
         });
         map.addLayer({
-            'id': 'distance',
+            'id': 'border',
             'type': 'raster',
             'layout': {
                 'visibility': 'none'
@@ -56,4 +61,8 @@ function createMap() {
             'maxzoom': 10
         });
     });
+}
+
+function handleClick(selection) {
+    let value = selection.value;
 }
