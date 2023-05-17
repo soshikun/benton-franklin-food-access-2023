@@ -30,15 +30,15 @@ function clearFilters() {
 }
 
 async function createMap() {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic29zaGlrdW4iLCJhIjoiY2wyczRidHBzMGUwejNqcXJqM2JxMTdvdSJ9.PZsigyD7XEJ6qYqUuqUs0g';
 
     let map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/light-v10',
+        style: 'mapbox://styles/soshikun/clgl5ott6000f01r8e9m66l54',
         minZoom: 1,
         maxZoom: 15,
-        zoom: 4,
-        center: [-119, 46]
+        zoom: 8,
+        center: [-119, 46.5]
     });
 
     let data = await getData();
@@ -95,6 +95,14 @@ async function createMap() {
                     }
                 }
             })
+        }
+    });
+
+    document.getElementById('toggle').addEventListener('change', (e) => {
+        if (e.target.checked) {
+            map.setStyle('mapbox://styles/soshikun/clgl5ott6000f01r8e9m66l54');
+        } else {
+            map.setStyle('mapbox://styles/mapbox/light-v10');
         }
     });
 
