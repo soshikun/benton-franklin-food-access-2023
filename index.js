@@ -27,12 +27,12 @@ function createPopup(name, address) {
     `
 }
 
-async function createMap() {
+async function createMap(mode) {
     mapboxgl.accessToken = 'pk.eyJ1Ijoic29zaGlrdW4iLCJhIjoiY2wyczRidHBzMGUwejNqcXJqM2JxMTdvdSJ9.PZsigyD7XEJ6qYqUuqUs0g';
 
     let map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/light-v10',
+        style: `mapbox://styles/mapbox/${mode}-v10`,
         minZoom: 1,
         maxZoom: 15,
         zoom: 9,
@@ -270,13 +270,20 @@ async function createMap() {
         });
     });
 
-    document.getElementById('toggle').addEventListener('change', (e) => {
-        if (e.target.checked) {
-            map.setStyle('mapbox://styles/soshikun/clgl5ott6000f01r8e9m66l54');
-        } else {
-            map.setStyle('mapbox://styles/mapbox/light-v10');
-        }
-    });
+    // document.getElementById('toggle').addEventListener('change', (e) => {
+    //     for (let i = 0; i < filters.length; i++) {
+    //         if (filters[i].type === 'checkbox' && filters[i].checked && filters[i].id !== 'toggle') {
+    //             filters[i].checked = false;
+    //         }
+    //     }
+    //     if (e.target.className === 'light') {
+    //         e.target.classList.remove('light');
+    //         createMap('dark');
+    //     } else {
+    //         e.target.classList.add('light');
+    //         createMap('light');
+    //     }
+    // });
 
     map.on('click', 'stores', (e) => {
         // Copy coordinates array.

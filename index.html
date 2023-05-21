@@ -34,9 +34,6 @@
     </nav>
 
     <div id="map" class="mapboxgl-map"></div>
-    <!-- <div id="basemapslidercontainer">
-        <div id="basemapslider">
-      </div> -->
     <div id="pop-ups">
         <div id='intro' class="intro">
             <div>
@@ -100,15 +97,14 @@
                         </div>
                     </form>
                     <div class="search-buttons">
-                        <button class="filter-button">Filter</button>
                         <button class='filter-button' id="clear">Clear Filters</button>
-                        <div id="toggle-button">
+                        <!-- <div id="toggle-button">
                             <label>Light Mode</label>
                             <label class="switch">
-                                <input type="checkbox" id="toggle" checked>
+                                <input type="checkbox" id="toggle" class="light" checked>
                                 <span class="slider round"></span>
                             </label>
-                        </div>
+                        </div> -->
                     </div>
                     <p class="icons">Icons from: <a href='https://icons8.com/'>ICONS8</a></p>
                 </div>
@@ -119,7 +115,7 @@
 </body>
 
 <script type="text/javascript">
-    createMap();
+    createMap('light');
 </script>
 
 </html>
