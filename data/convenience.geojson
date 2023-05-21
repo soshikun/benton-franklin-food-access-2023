@@ -1,0 +1,1965 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    100.83273,
+                    14.8971921
+                ]
+            },
+            "properties": {
+                "Name": "A & A Mini Mart, LLC (Store)",
+                "InspectionAddress": "919 W Court St  Pasco WA 99301",
+                "Full Address": "A & A Mini Mart,LLC ,919 W Court St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1918897,
+                    46.2233085
+                ]
+            },
+            "properties": {
+                "Name": "Breakplace (Store)",
+                "InspectionAddress": "5304 W Canal Dr  Kennewick WA 99336",
+                "Full Address": "Breakplace ,5304 W Canal Dr  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0821417,
+                    46.26241552
+                ]
+            },
+            "properties": {
+                "Name": "Broadway Flying 'J' Truckstop (Store)",
+                "InspectionAddress": "2216 E Hillsboro Rd  Pasco WA 99301",
+                "Full Address": "Broadway Flying 'J' Truckstop ,2216 E Hillsboro Rd  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.28475,
+                    46.310422
+                ]
+            },
+            "properties": {
+                "Name": "By-Pass Food Mart (Store)",
+                "InspectionAddress": "2201  Stevens Dr  Richland WA 99352",
+                "Full Address": "By-Pass Food Mart ,2201  Stevens Dr  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2210243,
+                    46.27126415
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706025 (Store)",
+                "InspectionAddress": "4823  Broadmoor Blvd  Pasco WA 99301",
+                "Full Address": "Circle K  ,4823  Broadmoor Blvd  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.274425,
+                    46.289962
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706026 (Store)",
+                "InspectionAddress": "1401  George Washington Way  Richland WA 99352",
+                "Full Address": "Circle K  ,1401  George Washington Way  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1170814,
+                    46.20745873
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706027 (Store)",
+                "InspectionAddress": "104 S Washington St  Kennewick WA 99336",
+                "Full Address": "Circle K  ,104 S Washington St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1322155,
+                    46.24213485
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706028 (Store)",
+                "InspectionAddress": "3109 W Court St  Pasco WA 99301",
+                "Full Address": "Circle K  ,3109 W Court St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1171751,
+                    46.19807184
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706029 (Store)",
+                "InspectionAddress": "1002 S Washington St  Kennewick WA 99336",
+                "Full Address": "Circle K  ,1002 S Washington St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.19184,
+                    46.223144
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706030 (Store)",
+                "InspectionAddress": "5301 W Canal Dr  Kennewick WA 99336",
+                "Full Address": "Circle K  ,5301 W Canal Dr  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2647556,
+                    46.1966135
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706031 (Store)",
+                "InspectionAddress": "12231 W Clearwater Ave  Kennewick WA 99338",
+                "Full Address": "Circle K  ,12231 W Clearwater Ave  Kennewick WA 99338",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1769101,
+                    46.18482493
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706033 (Store)",
+                "InspectionAddress": "4201 W 27th Ave  Kennewick WA 99336",
+                "Full Address": "Circle K  ,4201 W 27th Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2249905,
+                    46.21250254
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706034 (Store)",
+                "InspectionAddress": "7707 W Deschutes Ave  Kennewick WA 99336",
+                "Full Address": "Circle K  ,7707 W Deschutes Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1487554,
+                    46.2055643
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706035 (Store)",
+                "InspectionAddress": "2105 W 4th Ave  Kennewick WA 99336",
+                "Full Address": "Circle K  ,2105 W 4th Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1809822,
+                    46.2000718
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706036 (Store)",
+                "InspectionAddress": "4410 W 10th Ave  Kennewick WA 99336",
+                "Full Address": "Circle K  ,4410 W 10th Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3393172,
+                    46.29664144
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706037 (Store)",
+                "InspectionAddress": "3957  Van Giesen St  West Richland WA 99353",
+                "Full Address": "Circle K  ,3957  Van Giesen St  West Richland WA 99353",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1809685,
+                    46.2604515
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706039 (Store)",
+                "InspectionAddress": "4805  Rd 68   Pasco WA 99301",
+                "Full Address": "Circle K  ,4805  Rd 68   Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.8606056,
+                    46.65455575
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706040 (Store)",
+                "InspectionAddress": "660 S Columbia Ave  Connell WA 99326",
+                "Full Address": "Circle K  ,660 S Columbia Ave  Connell WA 99326",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2232339,
+                    46.2346877
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706043 (Store)",
+                "InspectionAddress": "1915 N Columbia Center Blvd  Richland WA 99352",
+                "Full Address": "Circle K  ,1915 N Columbia Center Blvd  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3075679,
+                    46.25806513
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706044 (Store)",
+                "InspectionAddress": "2601  Queensgate Dr  Richland WA 99352",
+                "Full Address": "Circle K  ,2601  Queensgate Dr  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2437873,
+                    46.22868857
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706048 (Store)",
+                "InspectionAddress": "1900 N Steptoe St  Kennewick WA 99336",
+                "Full Address": "Circle K  ,1900 N Steptoe St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2017479,
+                    46.21314485
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706049 (Store)",
+                "InspectionAddress": "6006  Clearwater Ave  Kennewick WA 99336",
+                "Full Address": "Circle K  ,6006  Clearwater Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.132113,
+                    46.25266521
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #2706050 (Store)",
+                "InspectionAddress": "2305 W Argent Rd  Pasco WA 99301",
+                "Full Address": "Circle K  ,2305 W Argent Rd  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1071947,
+                    46.2072633
+                ]
+            },
+            "properties": {
+                "Name": "Circle K #9662 (Store)",
+                "InspectionAddress": "22 S Gum St  Kennewick WA 99336",
+                "Full Address": "Circle K  ,22 S Gum St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1429359,
+                    46.2053744
+                ]
+            },
+            "properties": {
+                "Name": "City Market (Store)",
+                "InspectionAddress": "415 S Rainier St  Kennewick WA 99336",
+                "Full Address": "City Market ,415 S Rainier St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.8617548,
+                    46.6569381
+                ]
+            },
+            "properties": {
+                "Name": "Connell Food & Gas Mart (Store)",
+                "InspectionAddress": "457 S Columbia Ave  Connell WA 99326",
+                "Full Address": "Connell Food & Gas Mart ,457 S Columbia Ave  Connell WA 99326",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3324789,
+                    46.2204772
+                ]
+            },
+            "properties": {
+                "Name": "Dallas Gasoline (Store)",
+                "InspectionAddress": "5151  Trowbridge Blvd  Richland WA 99352",
+                "Full Address": "Dallas Gasoline ,5151  Trowbridge Blvd  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.4744002,
+                    46.2520525
+                ]
+            },
+            "properties": {
+                "Name": "Desert Food Mart, LLC (Store)",
+                "InspectionAddress": "10806  Kennedy Rd  Benton City WA 99320",
+                "Full Address": "Desert Food Mart,LLC ,10806  Kennedy Rd  Benton City WA 99320",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.125412,
+                    46.241587
+                ]
+            },
+            "properties": {
+                "Name": "Devin Oil Co. Inc./ Mobil 1 (Store)",
+                "InspectionAddress": "2601 W Court St  Pasco WA 99301",
+                "Full Address": "Devin Oil Co. Inc./ Mobil 1 ,2601 W Court St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2647032,
+                    46.26401173
+                ]
+            },
+            "properties": {
+                "Name": "Dollar Tree #2566 (Store)",
+                "InspectionAddress": "87  Columbia Point Dr  Richland WA 99352",
+                "Full Address": "Dollar Tree  ,87  Columbia Point Dr  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1607477,
+                    46.20941744
+                ]
+            },
+            "properties": {
+                "Name": "Dollar Tree #2696 (Store)",
+                "InspectionAddress": "3017 W Kennewick Ave  Kennewick WA 99336",
+                "Full Address": "Dollar Tree  ,3017 W Kennewick Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2193857,
+                    46.22529145
+                ]
+            },
+            "properties": {
+                "Name": "Dollar Tree #3450 (Store)",
+                "InspectionAddress": "7411  Canal Dr  Kennewick WA 99336",
+                "Full Address": "Dollar Tree  ,7411  Canal Dr  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1826085,
+                    46.2663536
+                ]
+            },
+            "properties": {
+                "Name": "Dollar Tree #7359 (Store)",
+                "InspectionAddress": "5710 N Road 68   Pasco WA 99301",
+                "Full Address": "Dollar Tree  ,5710 N Road 68   Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0798512,
+                    46.23351349
+                ]
+            },
+            "properties": {
+                "Name": "Eastside Brothers, LLC (Store)",
+                "InspectionAddress": "1303 E Lewis St  Pasco WA 99301",
+                "Full Address": "Eastside Brothers,LLC ,1303 E Lewis St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.7811659,
+                    46.21273369
+                ]
+            },
+            "properties": {
+                "Name": "Eastside Market (Store)",
+                "InspectionAddress": "335  Wine Country Rd  Prosser WA 99350",
+                "Full Address": "Eastside Market ,335  Wine Country Rd  Prosser WA 99350",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0858052,
+                    46.196591
+                ]
+            },
+            "properties": {
+                "Name": "Finley General Store (Store)",
+                "InspectionAddress": "214410 E SR 397   Kennewick WA 99337",
+                "Full Address": "Finley General Store ,214410 E SR 397   Kennewick WA 99337",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.278019,
+                    46.28585
+                ]
+            },
+            "properties": {
+                "Name": "Galaxy Mart II (Store)",
+                "InspectionAddress": "1301  Jadwin Ave  Richland WA 99354",
+                "Full Address": "Galaxy Mart II ,1301  Jadwin Ave  Richland WA 99354",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.127528,
+                    46.20753558
+                ]
+            },
+            "properties": {
+                "Name": "Garfield Mart (Store)",
+                "InspectionAddress": "30 S Garfield St  Kennewick WA 99336",
+                "Full Address": "Garfield Mart ,30 S Garfield St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3144486,
+                    46.3271391
+                ]
+            },
+            "properties": {
+                "Name": "Horn Rapids RV Resort (Store)",
+                "InspectionAddress": "2640  Kingsgate Way  Richland WA 99352",
+                "Full Address": "Horn Rapids RV Resort ,2640  Kingsgate Way  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6586171,
+                    47.3225902
+                ]
+            },
+            "properties": {
+                "Name": "Island View Market & Deli (Store)",
+                "InspectionAddress": "1607  Columbia Park Trail  Richland WA 99352",
+                "Full Address": "Island View Market & Deli ,1607  Columbia Park Trail  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1811425,
+                    46.22095511
+                ]
+            },
+            "properties": {
+                "Name": "Jet Mart Conoco (Store)",
+                "InspectionAddress": "1001 N Volland St  Kennewick WA 99336",
+                "Full Address": "Jet Mart Conoco ,1001 N Volland St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3577796,
+                    46.3035639
+                ]
+            },
+            "properties": {
+                "Name": "Juliana's Meat Market (Store)",
+                "InspectionAddress": "5413 W Van Giesen St  West Richland WA 99353",
+                "Full Address": "Juliana's Meat Market ,5413 W Van Giesen St  West Richland WA 99353",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.4874519,
+                    46.265219
+                ]
+            },
+            "properties": {
+                "Name": "Just A Minit Mart (Store)",
+                "InspectionAddress": "712  9th St  Benton City WA 99320",
+                "Full Address": "Just A Minit Mart ,712  9th St  Benton City WA 99320",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.051012,
+                    46.24103332
+                ]
+            },
+            "properties": {
+                "Name": "Kahlotus Korners, Inc. (Store)",
+                "InspectionAddress": "120  Pasco Kahlotus Rd  Pasco WA 99301",
+                "Full Address": "Kahlotus Korners,Inc. ,120  Pasco Kahlotus Rd  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0844527,
+                    46.26267051
+                ]
+            },
+            "properties": {
+                "Name": "King City Truck Stop (Store)",
+                "InspectionAddress": "2100 E Hillsboro St  Pasco WA 99301",
+                "Full Address": "King City Truck Stop ,2100 E Hillsboro St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.081859,
+                    46.26390431
+                ]
+            },
+            "properties": {
+                "Name": "Love's Travel Stop #811 (Store)",
+                "InspectionAddress": "3602 N Capitol Ave  Pasco WA 99301",
+                "Full Address": "Love's Travel Stop  ,3602 N Capitol Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.7412529,
+                    46.2152153
+                ]
+            },
+            "properties": {
+                "Name": "Love's Travel Stop (Store)",
+                "InspectionAddress": "700  Wine Country Rd  Prosser WA 99350",
+                "Full Address": "Love's Travel Stop ,700  Wine Country Rd  Prosser WA 99350",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2815572,
+                    46.26089903
+                ]
+            },
+            "properties": {
+                "Name": "Lucky Food Mart (Store)",
+                "InspectionAddress": "22  Goethals Dr  Richland WA 99352",
+                "Full Address": "Lucky Food Mart ,22  Goethals Dr  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1785221,
+                    46.21245354
+                ]
+            },
+            "properties": {
+                "Name": "Maverik, Inc. #504 (Store)",
+                "InspectionAddress": "4306 W Clearwater Ave  Kennewick WA 99336",
+                "Full Address": "Maverik,Inc.  ,4306 W Clearwater Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1854517,
+                    46.2774021
+                ]
+            },
+            "properties": {
+                "Name": "Maverik, Inc. (Store)",
+                "InspectionAddress": "5505 N Road 68   Pasco WA 99301",
+                "Full Address": "Maverik,Inc. ,5505 N Road 68   Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.280056,
+                    46.2344297
+                ]
+            },
+            "properties": {
+                "Name": "Maverik, Inc. II (Store)",
+                "InspectionAddress": "3520  Keene Rd  Richland WA 99352",
+                "Full Address": "Maverik,Inc. II ,3520  Keene Rd  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1826085,
+                    46.2663536
+                ]
+            },
+            "properties": {
+                "Name": "Maverik, Inc. III #468 (Store)",
+                "InspectionAddress": "3505 N Road 68   Pasco WA 99301",
+                "Full Address": "Maverik,Inc. III  ,3505 N Road 68   Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1384875,
+                    46.2061085
+                ]
+            },
+            "properties": {
+                "Name": "Max Mart (Store)",
+                "InspectionAddress": "1400 W 4th Ave  Kennewick WA 99336",
+                "Full Address": "Max Mart ,1400 W 4th Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.7058776,
+                    46.23588374
+                ]
+            },
+            "properties": {
+                "Name": "McCorkle's Market (Store)",
+                "InspectionAddress": "14601 N Rothrock Rd  Prosser WA 99350",
+                "Full Address": "McCorkle's Market ,14601 N Rothrock Rd  Prosser WA 99350",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1011975,
+                    46.2289825
+                ]
+            },
+            "properties": {
+                "Name": "Metro Mart (Store)",
+                "InspectionAddress": "1015 W Lewis St  Pasco WA 99301",
+                "Full Address": "Metro Mart ,1015 W Lewis St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.108621,
+                    46.211945
+                ]
+            },
+            "properties": {
+                "Name": "Metro Mart III (Store)",
+                "InspectionAddress": "520 E Columbia Dr  Kennewick WA 99336",
+                "Full Address": "Metro Mart III ,520 E Columbia Dr  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1757856,
+                    46.24174624
+                ]
+            },
+            "properties": {
+                "Name": "Mid Columbia Fuel, Inc. (Store)",
+                "InspectionAddress": "6409 W Court St  Pasco WA 99301",
+                "Full Address": "Mid Columbia Fuel,Inc. ,6409 W Court St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1561436,
+                    46.2097039
+                ]
+            },
+            "properties": {
+                "Name": "MJR Investments DBA Vista Mart (Store)",
+                "InspectionAddress": "2610 W Kennewick Ave  Kennewick WA 99336",
+                "Full Address": "MJR Investments DBA Vista Mart ,2610 W Kennewick Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2817791,
+                    46.27621216
+                ]
+            },
+            "properties": {
+                "Name": "Neighbor's Conoco (Store)",
+                "InspectionAddress": "780  Stevens Dr  Richland WA 99352",
+                "Full Address": "Neighbor's Conoco ,780  Stevens Dr  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0922172,
+                    46.32125237
+                ]
+            },
+            "properties": {
+                "Name": "North Korners, Inc. (Store)",
+                "InspectionAddress": "52 E Vineyard Dr  Pasco WA 99301",
+                "Full Address": "North Korners,Inc. ,52 E Vineyard Dr  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2820736,
+                    46.30065595
+                ]
+            },
+            "properties": {
+                "Name": "One Stop Mart (Store)",
+                "InspectionAddress": "1903  Jadwin Ave  Richland WA 99354",
+                "Full Address": "One Stop Mart ,1903  Jadwin Ave  Richland WA 99354",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0733388,
+                    46.2338081
+                ]
+            },
+            "properties": {
+                "Name": "One Stop Mart 55 (Store)",
+                "InspectionAddress": "2221 E Lewis St  Pasco WA 99301",
+                "Full Address": "One Stop Mart 55 ,2221 E Lewis St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1170816,
+                    46.2082275
+                ]
+            },
+            "properties": {
+                "Name": "Pacific Mini Mart (Store)",
+                "InspectionAddress": "18 S Washington St  Kennewick WA 99336",
+                "Full Address": "Pacific Mini Mart ,18 S Washington St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0944041,
+                    46.2462089
+                ]
+            },
+            "properties": {
+                "Name": "Pik-A-Pop #1 (Store)",
+                "InspectionAddress": "1949 N 4th Ave  Pasco WA 99301",
+                "Full Address": "Pik-A-Pop  ,1949 N 4th Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0955006,
+                    46.2416269
+                ]
+            },
+            "properties": {
+                "Name": "Pik-A-Pop #7 (Store)",
+                "InspectionAddress": "1502 N 4th Ave  Pasco WA 99301",
+                "Full Address": "Pik-A-Pop  ,1502 N 4th Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.125064,
+                    46.216705
+                ]
+            },
+            "properties": {
+                "Name": "Pik-A-Pop #8 (Store)",
+                "InspectionAddress": "526 W Columbia Dr  Kennewick WA 99336",
+                "Full Address": "Pik-A-Pop  ,526 W Columbia Dr  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.4877024,
+                    46.26219599
+                ]
+            },
+            "properties": {
+                "Name": "Pik-A-Pop Conoco Gas Station (Store)",
+                "InspectionAddress": "505  9th St  Benton City WA 99320",
+                "Full Address": "Pik-A-Pop Conoco Gas Station ,505  9th St  Benton City WA 99320",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3437318,
+                    46.2991396
+                ]
+            },
+            "properties": {
+                "Name": "Pit Stop Mini Mart (Store)",
+                "InspectionAddress": "6193 W Van Giesen St  West Richland WA 99353",
+                "Full Address": "Pit Stop Mini Mart ,6193 W Van Giesen St  West Richland WA 99353",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.7722846,
+                    46.20889786
+                ]
+            },
+            "properties": {
+                "Name": "Prosser Food Mart (Store)",
+                "InspectionAddress": "1303  Wine Country Rd  Prosser WA 99350",
+                "Full Address": "Prosser Food Mart ,1303  Wine Country Rd  Prosser WA 99350",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.83714517,
+                    32.83357365
+                ]
+            },
+            "properties": {
+                "Name": "Quiktrip Gas & Food (R) (Store)",
+                "InspectionAddress": "33  Goethals Dr  Richland WA 99352",
+                "Full Address": "Quiktrip Gas & Food ,33  Goethals Dr  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(R) (Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2725199,
+                    46.272809
+                ]
+            },
+            "properties": {
+                "Name": "Richland Food Mart (Store)",
+                "InspectionAddress": "500  George Washington Way  Richland WA 99352",
+                "Full Address": "Richland Food Mart ,500  George Washington Way  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1190917,
+                    46.23947075
+                ]
+            },
+            "properties": {
+                "Name": "Rite Aid #5314 (Store)",
+                "InspectionAddress": "1308 N 20th Ave  Pasco WA 99301",
+                "Full Address": "Rite Aid  ,1308 N 20th Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.244061,
+                    46.227365
+                ]
+            },
+            "properties": {
+                "Name": "Rite Aid #5316 (Store)",
+                "InspectionAddress": "1901 N Steptoe St  Kennewick WA 99336",
+                "Full Address": "Rite Aid  ,1901 N Steptoe St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1606115,
+                    46.2102767
+                ]
+            },
+            "properties": {
+                "Name": "Rite Aid #5317 (Store)",
+                "InspectionAddress": "101 N Ely St  Kennewick WA 99336",
+                "Full Address": "Rite Aid  ,101 N Ely St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2744424,
+                    46.2932848
+                ]
+            },
+            "properties": {
+                "Name": "Rite Aid #5318 (Store)",
+                "InspectionAddress": "1549  George Washington Way  Richland WA 99352",
+                "Full Address": "Rite Aid  ,1549  George Washington Way  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2822234,
+                    46.27476189
+                ]
+            },
+            "properties": {
+                "Name": "Rite Aid #5319 (Store)",
+                "InspectionAddress": "1329  Lee Blvd  Richland WA 99352",
+                "Full Address": "Rite Aid  ,1329  Lee Blvd  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2979244,
+                    46.29298567
+                ]
+            },
+            "properties": {
+                "Name": "Rocket Mart (Store)",
+                "InspectionAddress": "2111  Van Giesen St  Richland WA 99352",
+                "Full Address": "Rocket Mart ,2111  Van Giesen St  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.116454,
+                    46.1911012
+                ]
+            },
+            "properties": {
+                "Name": "Ron's Food Mart (Store)",
+                "InspectionAddress": "1821 S Washington St  Kennewick WA 99336",
+                "Full Address": "Ron's Food Mart ,1821 S Washington St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0464806,
+                    47.7981346
+                ]
+            },
+            "properties": {
+                "Name": "S & S Petroleum (Store)",
+                "InspectionAddress": "1811  Leslie Rd  Richland WA 99352",
+                "Full Address": "S & S Petroleum ,1811  Leslie Rd  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0464806,
+                    47.7981346
+                ]
+            },
+            "properties": {
+                "Name": "S & S Petroleum (Store)",
+                "InspectionAddress": "5208 W Clearwater Ave  Kennewick WA 99336",
+                "Full Address": "S & S Petroleum ,5208 W Clearwater Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0464806,
+                    47.7981346
+                ]
+            },
+            "properties": {
+                "Name": "S & S Petroleum (Store)",
+                "InspectionAddress": "1440 N 20th Ave  Pasco WA 99301",
+                "Full Address": "S & S Petroleum ,1440 N 20th Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0907548,
+                    46.2321247
+                ]
+            },
+            "properties": {
+                "Name": "Sammy's Meat Market (Store)",
+                "InspectionAddress": "201 N 3rd Ave  Pasco WA 99301",
+                "Full Address": "Sammy's Meat Market ,201 N 3rd Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1483475,
+                    46.2419423
+                ]
+            },
+            "properties": {
+                "Name": "Seven Eleven #14423M (Store)",
+                "InspectionAddress": "4313 W Court St  Pasco WA 99301",
+                "Full Address": "Seven Eleven M ,4313 W Court St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2969703,
+                    46.27063624
+                ]
+            },
+            "properties": {
+                "Name": "Seven Eleven #14428G (Store)",
+                "InspectionAddress": "415  Wright Ave  Richland WA 99352",
+                "Full Address": "Seven Eleven G ,415  Wright Ave  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2731517,
+                    46.31865176
+                ]
+            },
+            "properties": {
+                "Name": "Seven Eleven #2362-25412E (Store)",
+                "InspectionAddress": "2411  George Washington Way  Richland WA 99354",
+                "Full Address": "Seven Eleven -25412E ,2411  George Washington Way  Richland WA 99354",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2788838,
+                    46.29306862
+                ]
+            },
+            "properties": {
+                "Name": "Seven Eleven #26088K (Store)",
+                "InspectionAddress": "1540  Jadwin Ave  Richland WA 99352",
+                "Full Address": "Seven Eleven K ,1540  Jadwin Ave  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1166543,
+                    46.23419841
+                ]
+            },
+            "properties": {
+                "Name": "Sky Market #3 (Store)",
+                "InspectionAddress": "1935 W Sylvester St  Pasco WA 99301",
+                "Full Address": "Sky Market  ,1935 W Sylvester St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3380736,
+                    46.25785244
+                ]
+            },
+            "properties": {
+                "Name": "Superior Gasoline (Store)",
+                "InspectionAddress": "4105  Kennedy Rd  West Richland WA 99353",
+                "Full Address": "Superior Gasoline ,4105  Kennedy Rd  West Richland WA 99353",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2979777,
+                    46.279054
+                ]
+            },
+            "properties": {
+                "Name": "Swift Stop (Store)",
+                "InspectionAddress": "2110  Swift Blvd  Richland WA 99352",
+                "Full Address": "Swift Stop ,2110  Swift Blvd  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Pending",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1587035,
+                    46.20447367
+                ]
+            },
+            "properties": {
+                "Name": "Tesoro Truck Stop (Store)",
+                "InspectionAddress": "528 S Ely St  Kennewick WA 99336",
+                "Full Address": "Tesoro Truck Stop ,528 S Ely St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1290617,
+                    46.21675343
+                ]
+            },
+            "properties": {
+                "Name": "Total Stop (Store)",
+                "InspectionAddress": "813 W Columbia Dr  Kennewick WA 99336",
+                "Full Address": "Total Stop ,813 W Columbia Dr  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1176098,
+                    46.24158886
+                ]
+            },
+            "properties": {
+                "Name": "Walgreens #01078 (Store)",
+                "InspectionAddress": "2005 W Court St  Pasco WA 99301",
+                "Full Address": "Walgreens  ,2005 W Court St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1616751,
+                    46.2122688
+                ]
+            },
+            "properties": {
+                "Name": "Walgreens #10195 (Store)",
+                "InspectionAddress": "2800 W Clearwater Ave  Kennewick WA 99336",
+                "Full Address": "Walgreens  ,2800 W Clearwater Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2753967,
+                    46.2948893
+                ]
+            },
+            "properties": {
+                "Name": "Walgreens #10478 (Store)",
+                "InspectionAddress": "1601  George Washington Way  Richland WA 99354",
+                "Full Address": "Walgreens, 1601  George Washington Way  Richland WA 99354",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.174111,
+                    46.184605
+                ]
+            },
+            "properties": {
+                "Name": "Walgreens #9113 (Store)",
+                "InspectionAddress": "4000 W 27th Ave  Kennewick WA 99337",
+                "Full Address": "Walgreens, 4000 W 27th Ave  Kennewick WA 99337",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2655236,
+                    46.22663875
+                ]
+            },
+            "properties": {
+                "Name": "Walgreens #9596 (Store)",
+                "InspectionAddress": "585  Gage Blvd  Richland WA 99352",
+                "Full Address": "Walgreens, 585  Gage Blvd  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.187184,
+                    46.27730755
+                ]
+            },
+            "properties": {
+                "Name": "Walgreens #9765 (Store)",
+                "InspectionAddress": "5506  Rd 68   Pasco WA 99301",
+                "Full Address": "Walgreens, 5506  Rd 68   Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1128387,
+                    46.2283134
+                ]
+            },
+            "properties": {
+                "Name": "Xpress Mart of Pasco (Store)",
+                "InspectionAddress": "1724 W Clark St  Pasco WA 99301",
+                "Full Address": "Xpress Mart of Pasco ,1724 W Clark St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Convenience Store"
+            }
+        }
+    ]
+}

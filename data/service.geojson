@@ -1,0 +1,665 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.161581,
+                    46.19707695
+                ]
+            },
+            "properties": {
+                "Name": "AFC Sushi @ Fred Meyer #163 (HACCP)",
+                "InspectionAddress": "2811 W 10th Ave  Kennewick WA 99336",
+                "Full Address": "Fred Meyer, 2811 W 10th Ave  Kennewick WA 99336",
+                "BillingType": "Map Facilities (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(HACCP)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2852616,
+                    46.2607747
+                ]
+            },
+            "properties": {
+                "Name": "AFC Sushi @ Fred Meyer #286 (HACCP)",
+                "InspectionAddress": "101  Wellsian Way  Richland WA 99352",
+                "Full Address": "Fred Meyer, 101  Wellsian Way  Richland WA 99352",
+                "BillingType": "Map Facilities (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(HACCP)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.27989,
+                    46.22744839
+                ]
+            },
+            "properties": {
+                "Name": "AFC Sushi @ Safeway #0252 (HACCP)",
+                "InspectionAddress": "690  Gage Blvd  Richland WA 99352",
+                "Full Address": "Safeway, 690  Gage Blvd  Richland WA 99352",
+                "BillingType": "Map Facilities (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(HACCP)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.192693,
+                    46.2138661
+                ]
+            },
+            "properties": {
+                "Name": "AFC Sushi @ Safeway #3253 (HACCP)",
+                "InspectionAddress": "5204 W Clearwater Ave  Kennewick WA 99336",
+                "Full Address": "Safeway, 5204 W Clearwater Ave  Kennewick WA 99336",
+                "BillingType": "Map Facilities (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(HACCP)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2758975,
+                    46.2995078
+                ]
+            },
+            "properties": {
+                "Name": "AFC Sushi @ Safeway #333 (HACCP)",
+                "InspectionAddress": "1803  George Washington Way  Richland WA 99354",
+                "Full Address": "Safeway,1803  George Washington Way  Richland WA 99354",
+                "BillingType": "Map Facilities (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(HACCP)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.790938,
+                    46.220016
+                ]
+            },
+            "properties": {
+                "Name": "Ameristar #20 (Store)",
+                "InspectionAddress": "101  Merlot Dr  Prosser WA 99350",
+                "Full Address": "Ameristar  ,101  Merlot Dr  Prosser WA 99350",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1153507,
+                    46.21176338
+                ]
+            },
+            "properties": {
+                "Name": "Antojitos Cuernavaca",
+                "InspectionAddress": "10 E Bruneau   Kennewick WA 99336",
+                "Full Address": "Antojitos Cuernavaca, 10 E Bruneau   Kennewick WA 99336",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1167346,
+                    46.21062083
+                ]
+            },
+            "properties": {
+                "Name": "Antojitos el buen dia",
+                "InspectionAddress": "10 E Bruneau Ave  Kennewick WA 99336",
+                "Full Address": "Antojitos el buen dia,10 E Bruneau Ave  Kennewick WA 99336",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1555763,
+                    46.59151103
+                ]
+            },
+            "properties": {
+                "Name": "Basin City Hot Spot (Food Service)",
+                "InspectionAddress": "7380  Road 170   Mesa WA 99343",
+                "Full Address": "Basin City Hot Spot, 7380  Road 170   Mesa WA 99343",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "(Food Service)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1607627,
+                    46.20941768
+                ]
+            },
+            "properties": {
+                "Name": "Big Lots #4469 (Store)",
+                "InspectionAddress": "3019 W Kennewick Ave  Kennewick WA 99336",
+                "Full Address": "Big Lots  ,3019 W Kennewick Ave  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.275653,
+                    46.2983502
+                ]
+            },
+            "properties": {
+                "Name": "Big Lots #4481 (Store)",
+                "InspectionAddress": "1743  George Washington Way  Richland WA 99354",
+                "Full Address": "Big Lots  ,1743  George Washington Way  Richland WA 99354",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.077697,
+                    46.253554
+                ]
+            },
+            "properties": {
+                "Name": "Bryan's Meat Co. (Store)",
+                "InspectionAddress": "525 N Commercial Ave  Pasco WA 99301",
+                "Full Address": "Bryan's Meat Co. ,525 N Commercial Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.487751,
+                    46.2637017
+                ]
+            },
+            "properties": {
+                "Name": "Carniceria El Sol LLC (Restaurant)",
+                "InspectionAddress": "623  9th St  Benton City WA 99320",
+                "Full Address": "Carniceria El Sol LLC ,623  9th St  Benton City WA 99320",
+                "BillingType": "0 Seats",
+                "Status": "Probation",
+                "Billing Type Specification": "(None",
+                "Store Type": "(Restaurant)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0853893,
+                    46.35652373
+                ]
+            },
+            "properties": {
+                "Name": "Country Mercantile (Store)",
+                "InspectionAddress": "232  Crestloch Rd  Pasco WA 99301",
+                "Full Address": "Country Mercantile ,232  Crestloch Rd  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3425119,
+                    46.2248169
+                ]
+            },
+            "properties": {
+                "Name": "Country Mercantile II (Store)",
+                "InspectionAddress": "5015  Ava Way  Richland WA 99352",
+                "Full Address": "Country Mercantile II ,5015  Ava Way  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1012311,
+                    46.22812629
+                ]
+            },
+            "properties": {
+                "Name": "Fiesta Foods (Kiosk)",
+                "InspectionAddress": "115 S 10th Ave  Pasco WA 99301",
+                "Full Address": "Fiesta Foods ,115 S 10th Ave  Pasco WA 99301",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "(Kiosk)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1167346,
+                    46.21062083
+                ]
+            },
+            "properties": {
+                "Name": "Fruta La Piconsita #63",
+                "InspectionAddress": "10 E Bruneau Ave  Kennewick WA 99336",
+                "Full Address": "Fruta La Piconsita ,10 E Bruneau Ave  Kennewick WA 99336",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2088405,
+                    46.22299928
+                ]
+            },
+            "properties": {
+                "Name": "Golden Roll Sushi #0367 (HACCP)",
+                "InspectionAddress": "TBD W Rio Grande   Kennewick WA 99336",
+                "Full Address": "Golden Roll Sushi  ,TBD W Rio Grande   Kennewick WA 99336",
+                "BillingType": "Map Facilities (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(HACCP)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.120667,
+                    46.2418312
+                ]
+            },
+            "properties": {
+                "Name": "Grand Central Coffee Station (Store)",
+                "InspectionAddress": "2205 W Court St  Pasco WA 99301",
+                "Full Address": "Grand Central Coffee Station ,2205 W Court St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1582877,
+                    46.2150473
+                ]
+            },
+            "properties": {
+                "Name": "Helados La Michoacana LLC (Store)",
+                "InspectionAddress": "402 N Ely St  Kennewick WA 99336",
+                "Full Address": "Helados La Michoacana LLC ,402 N Ely St  Kennewick WA 99336",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Pending",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1099292,
+                    46.22856369
+                ]
+            },
+            "properties": {
+                "Name": "Juanitos Foods, LLC (Store)",
+                "InspectionAddress": "1620 W Clark St  Pasco WA 99301",
+                "Full Address": "Juanitos Foods,LLC ,1620 W Clark St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2277883,
+                    46.3363531
+                ]
+            },
+            "properties": {
+                "Name": "Market North Co.",
+                "InspectionAddress": "270  Helm Dr  Pasco WA 99301",
+                "Full Address": "Market North Co.,270  Helm Dr  Pasco WA 99301",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1777413,
+                    46.21211913
+                ]
+            },
+            "properties": {
+                "Name": "Multiservicios y Mas La Mexicana",
+                "InspectionAddress": "4215 W Clearwater Ste A Ave  Kennewick WA 99336",
+                "Full Address": "Multiservicios y Mas La Mexicana,4215 W Clearwater Ste A Ave  Kennewick WA 99336",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -96.83714517,
+                    32.83357365
+                ]
+            },
+            "properties": {
+                "Name": "Quiktrip Gas & Food",
+                "InspectionAddress": "221 S 10th Ave  Pasco WA 99301",
+                "Full Address": "Quiktrip Gas & Food,221 S 10th Ave  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1028385,
+                    46.22788419
+                ]
+            },
+            "properties": {
+                "Name": "Ramirez Shellfish (Store)",
+                "InspectionAddress": "1202 W Lewis St  Pasco WA 99301",
+                "Full Address": "Ramirez Shellfish ,1202 W Lewis St  Pasco WA 99301",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0922492,
+                    46.23026888
+                ]
+            },
+            "properties": {
+                "Name": "Ramos Food Service",
+                "InspectionAddress": "110 S 4th Ave  Pasco WA 99301",
+                "Full Address": "Ramos Food Service,110 S 4th Ave  Pasco WA 99301",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0464806,
+                    47.7981346
+                ]
+            },
+            "properties": {
+                "Name": "S & S Petroleum (Food Service)",
+                "InspectionAddress": "1811  Leslie Rd  Richland WA 99352",
+                "Full Address": "S & S Petroleum ,1811  Leslie Rd  Richland WA 99352",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "(Food Service)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.0464806,
+                    47.7981346
+                ]
+            },
+            "properties": {
+                "Name": "S & S Petroleum (Food Service)",
+                "InspectionAddress": "1440 N 20th Ave  Pasco WA 99301",
+                "Full Address": "S & S Petroleum ,1440 N 20th Ave  Pasco WA 99301",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "(Food Service)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1153077,
+                    46.21116944
+                ]
+            },
+            "properties": {
+                "Name": "Sam's Funnel Cakes",
+                "InspectionAddress": "10 E Bruneau   Kennewick WA 99336",
+                "Full Address": "Sam's Funnel Cakes,10 E Bruneau   Kennewick WA 99336",
+                "BillingType": "0 Seats",
+                "Status": "Pending",
+                "Billing Type Specification": "(None",
+                "Store Type": "",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2978925,
+                    46.30182479
+                ]
+            },
+            "properties": {
+                "Name": "Schwan's Home Service, Inc. #518097 (C03523M)",
+                "InspectionAddress": "1947  Butler Loop NE Richland WA 99354",
+                "Full Address": "Schwan's Home Service,Inc.  ,1947  Butler Loop NE Richland WA 99354",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(C03523M)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2872423,
+                    46.2500877
+                ]
+            },
+            "properties": {
+                "Name": "Wright's Desert Gold (Store)",
+                "InspectionAddress": "611  Columbia Park Trail  Richland WA 99352",
+                "Full Address": "Wright's Desert Gold ,611  Columbia Park Trail  Richland WA 99352",
+                "BillingType": "1-4 Registers (Grocery)",
+                "Status": "Permitted",
+                "Billing Type Specification": "(Grocery)",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2812851,
+                    46.23751
+                ]
+            },
+            "properties": {
+                "Name": "Yoke's Fresh Market (Store)",
+                "InspectionAddress": "454  Keene Rd  Richland WA 99352",
+                "Full Address": "Yoke's Fresh Market ,454  Keene Rd  Richland WA 99352",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "(Store)",
+                "Sells Produce": "Food Service"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1389596,
+                    46.18554055
+                ]
+            },
+            "properties": {
+                "Name": "Yoke's Fresh Market (Coffee)",
+                "InspectionAddress": "1410 W 27th Ave  Kennewick WA 99337",
+                "Full Address": "Yoke's Fresh Market ,1410 W 27th Ave  Kennewick WA 99337",
+                "BillingType": "0 Seats",
+                "Status": "Permitted",
+                "Billing Type Specification": "(None",
+                "Store Type": "(Coffee)",
+                "Sells Produce": "Food Service"
+            }
+        }
+    ]
+}

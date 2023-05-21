@@ -1,0 +1,1325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1175077,
+          46.24109279
+        ]
+      },
+      "properties": {
+        "Name": "Albertson's #228 (Store)",
+        "InspectionAddress": "1330 N 20th Ave  Pasco WA 99301",
+        "Full Address": "Albertson's  ,1330 N 20th Ave  Pasco WA 99301",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.192693,
+          46.2138661
+        ]
+      },
+      "properties": {
+        "Name": "Albertson's #3253 (Store/Produce)",
+        "InspectionAddress": "5204 W Clearwater Ave  Kennewick WA 99336",
+        "Full Address": "Albertson's  ,5204 W Clearwater Ave  Kennewick WA 99336",
+        "BillingType": "5-9 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store/Produce)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.2354275,
+          46.22704139
+        ]
+      },
+      "properties": {
+        "Name": "Costco Wholesale #486 (Store)",
+        "InspectionAddress": "8505 W Gage Blvd  Kennewick WA 99336",
+        "Full Address": "Costco Wholesale  ,8505 W Gage Blvd  Kennewick WA 99336",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.8609688,
+          46.6540581
+        ]
+      },
+      "properties": {
+        "Name": "El Jazmin (Store)",
+        "InspectionAddress": "704 S Columbia Ave  Connell WA 99326",
+        "Full Address": "El Jazmin ,704 S Columbia Ave  Connell WA 99326",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1012311,
+          46.22812629
+        ]
+      },
+      "properties": {
+        "Name": "Fiesta Foods (Store)",
+        "InspectionAddress": "115 S 10th Ave  Pasco WA 99301",
+        "Full Address": "Fiesta Foods ,115 S 10th Ave  Pasco WA 99301",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.161581,
+          46.19707695
+        ]
+      },
+      "properties": {
+        "Name": "Fred Meyer #163 (Store)",
+        "InspectionAddress": "2811 W 10th Ave  Kennewick WA 99336",
+        "Full Address": "Fred Meyer  ,2811 W 10th Ave  Kennewick WA 99336",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.2852616,
+          46.2607747
+        ]
+      },
+      "properties": {
+        "Name": "Fred Meyer #286 (Store)",
+        "InspectionAddress": "101  Wellsian Way  Richland WA 99352",
+        "Full Address": "Fred Meyer  ,101  Wellsian Way  Richland WA 99352",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1616751,
+          46.2122688
+        ]
+      },
+      "properties": {
+        "Name": "Golden Dragon Asian Grocers (Store)",
+        "InspectionAddress": "4727 W Clearwater Ave  Kennewick WA 99336",
+        "Full Address": "Golden Dragon Asian Grocers ,4727 W Clearwater Ave  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1366058,
+          46.20567464
+        ]
+      },
+      "properties": {
+        "Name": "Grocery Outlet - Kennewick (Store)",
+        "InspectionAddress": "1325 W 4th Ave  Kennewick WA 99336",
+        "Full Address": "Grocery Outlet - Kennewick ,1325 W 4th Ave  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1826085,
+          46.2663536
+        ]
+      },
+      "properties": {
+        "Name": "Grocery Outlet (Store)",
+        "InspectionAddress": "5710 N Road 68   Pasco WA 99301",
+        "Full Address": "Grocery Outlet ,5710 N Road 68   Pasco WA 99301",
+        "BillingType": "5-9 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1573405,
+          46.21055955
+        ]
+      },
+      "properties": {
+        "Name": "Highland Health Foods (Store)",
+        "InspectionAddress": "101  Vista Way  Kennewick WA 99336",
+        "Full Address": "Highland Health Foods ,101  Vista Way  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.4947797,
+          46.2789827
+        ]
+      },
+      "properties": {
+        "Name": "Ki-Be Market Grocery & Feed (Store)",
+        "InspectionAddress": "1215  Horne Rd  Benton City WA 99320",
+        "Full Address": "Ki-Be Market Grocery & Feed ,1215  Horne Rd  Benton City WA 99320",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1151516,
+          46.24156871
+        ]
+      },
+      "properties": {
+        "Name": "Kim's Market (Store)",
+        "InspectionAddress": "1909 W Court St  Pasco WA 99301",
+        "Full Address": "Kim's Market ,1909 W Court St  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Pending",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.0344275,
+          37.9817007
+        ]
+      },
+      "properties": {
+        "Name": "Kitchen & Spice Market (Store)",
+        "InspectionAddress": "1440 W Jadwin Ave  Richland WA 99352",
+        "Full Address": "Kitchen & Spice Market ,1440 W Jadwin Ave  Richland WA 99352",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1081017,
+          46.2417723
+        ]
+      },
+      "properties": {
+        "Name": "La Cabana #2 Meat Market (Store)",
+        "InspectionAddress": "1501 W Court St  Pasco WA 99301",
+        "Full Address": "La Cabana  Meat Market ,1501 W Court St  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.0678066,
+          46.23347755
+        ]
+      },
+      "properties": {
+        "Name": "La Palma Market (Store)",
+        "InspectionAddress": "2120 E Lewis   Pasco WA 99301",
+        "Full Address": "La Palma Market ,2120 E Lewis   Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.0933658,
+          46.2320463
+        ]
+      },
+      "properties": {
+        "Name": "La Villa (Store)",
+        "InspectionAddress": "214 N 4th Ave  Pasco WA 99301",
+        "Full Address": "La Villa ,214 N 4th Ave  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7867099,
+          46.21611876
+        ]
+      },
+      "properties": {
+        "Name": "Lep-re-kon Harvest Foods #7 (Store)",
+        "InspectionAddress": "471  Wine Country Rd  Prosser WA 99350",
+        "Full Address": "Lep-re-kon Harvest Foods  ,471  Wine Country Rd  Prosser WA 99350",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.8612534,
+          46.65561963
+        ]
+      },
+      "properties": {
+        "Name": "Lep-Re-Kon Mart #4 (Store)",
+        "InspectionAddress": "620 S Columbia Ave  Connell WA 99326",
+        "Full Address": "Lep-Re-Kon Mart  ,620 S Columbia Ave  Connell WA 99326",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.117567,
+          46.1990488
+        ]
+      },
+      "properties": {
+        "Name": "Red Apple Market (Store)",
+        "InspectionAddress": "902 S Washington St  Kennewick WA 99336",
+        "Full Address": "Red Apple Market ,902 S Washington St  Kennewick WA 99336",
+        "BillingType": "5-9 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.2756452,
+          46.2991248
+        ]
+      },
+      "properties": {
+        "Name": "Richland Health Foods (Store)",
+        "InspectionAddress": "1769  George Washington Way  Richland WA 99354",
+        "Full Address": "Richland Health Foods ,1769  George Washington Way  Richland WA 99354",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.27989,
+          46.22744839
+        ]
+      },
+      "properties": {
+        "Name": "Safeway #252 (Store)",
+        "InspectionAddress": "690  Gage Blvd  Richland WA 99352",
+        "Full Address": "Safeway  ,690  Gage Blvd  Richland WA 99352",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.2758975,
+          46.2995078
+        ]
+      },
+      "properties": {
+        "Name": "Safeway Store #333 (Store)",
+        "InspectionAddress": "1803  George Washington Way  Richland WA 99352",
+        "Full Address": "Safeway Store  ,1803  George Washington Way  Richland WA 99352",
+        "BillingType": "5-9 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1603073,
+          46.2082703
+        ]
+      },
+      "properties": {
+        "Name": "Safeway Store #335 (Store)",
+        "InspectionAddress": "2825 W Kennewick Ave  Kennewick WA 99336",
+        "Full Address": "Safeway Store  ,2825 W Kennewick Ave  Kennewick WA 99336",
+        "BillingType": "5-9 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1184807,
+          46.235514
+        ]
+      },
+      "properties": {
+        "Name": "Super Mex El Pueblo Market (Store)",
+        "InspectionAddress": "720 N 20th Ave  Pasco WA 99301",
+        "Full Address": "Super Mex El Pueblo Market ,720 N 20th Ave  Pasco WA 99301",
+        "BillingType": "5-9 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.313128,
+          46.25902635
+        ]
+      },
+      "properties": {
+        "Name": "Target #2314 (Store)",
+        "InspectionAddress": "2941  Queensgate Dr  Richland WA 99352",
+        "Full Address": "Target  ,2941  Queensgate Dr  Richland WA 99352",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.2213976,
+          46.22171511
+        ]
+      },
+      "properties": {
+        "Name": "Target #830 (Store)",
+        "InspectionAddress": "1106 N Columbia Center Blvd  Kennewick WA 99336",
+        "Full Address": "Target  ,1106 N Columbia Center Blvd  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1263059,
+          46.21471827
+        ]
+      },
+      "properties": {
+        "Name": "U.R.M. Cash & Carry #3 (Store)",
+        "InspectionAddress": "525 N Fruitland St  Kennewick WA 99336",
+        "Full Address": "U.R.M. Cash & Carry  ,525 N Fruitland St  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1772661,
+          46.18254615
+        ]
+      },
+      "properties": {
+        "Name": "Walmart, Inc. #2101 (Store)",
+        "InspectionAddress": "2720 S Quillan St  Kennewick WA 99337",
+        "Full Address": "Walmart, 2720 S Quillan St  Kennewick WA 99337",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.3080096,
+          46.2559121
+        ]
+      },
+      "properties": {
+        "Name": "Walmart, Inc. #3261 (Store)",
+        "InspectionAddress": "2801  Duportail St  Richland WA 99352",
+        "Full Address": "Walmart, 2801  Duportail St  Richland WA 99352",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1882452,
+          46.2719978
+        ]
+      },
+      "properties": {
+        "Name": "Walmart, Inc. #3380 (Store)",
+        "InspectionAddress": "4820 N Road 68   Pasco WA 99301",
+        "Full Address": "Walmart,Inc.  ,4820 N Road 68   Pasco WA 99301",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1824126,
+          46.21357705
+        ]
+      },
+      "properties": {
+        "Name": "Winco Foods #2 (Store)",
+        "InspectionAddress": "4602 W Clearwater Ave  Kennewick WA 99336",
+        "Full Address": "Winco Foods  ,4602 W Clearwater Ave  Kennewick WA 99336",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.2642995,
+          46.2637953
+        ]
+      },
+      "properties": {
+        "Name": "Winco Foods #45 (Store)",
+        "InspectionAddress": "101  Columbia Point Dr  Richland WA 99352",
+        "Full Address": "Winco Foods  ,101  Columbia Point Dr  Richland WA 99352",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.3521072,
+          46.2873268
+        ]
+      },
+      "properties": {
+        "Name": "Yoke's Fresh Market (Store)",
+        "InspectionAddress": "1401  Bombing Range Rd  West Richland WA 99353",
+        "Full Address": "Yoke's Fresh Market ,1401  Bombing Range Rd  West Richland WA 99353",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1809685,
+          46.2604515
+        ]
+      },
+      "properties": {
+        "Name": "Yoke's Fresh Market (Store)",
+        "InspectionAddress": "4905  Road 68   Pasco WA 99301",
+        "Full Address": "Yoke's Fresh Market ,4905  Road 68   Pasco WA 99301",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1389596,
+          46.18554055
+        ]
+      },
+      "properties": {
+        "Name": "Yoke's Fresh Market (Store)",
+        "InspectionAddress": "1410 W 27th Ave  Kennewick WA 99337",
+        "Full Address": "Yoke's Fresh Market ,1410 W 27th Ave  Kennewick WA 99337",
+        "BillingType": "10+ Registers (Grocery)",
+        "Status": "Permitted",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.8609688,
+          46.6540581
+        ]
+      },
+      "properties": {
+        "Name": "El Jazmin (Store)",
+        "InspectionAddress": "704 S Columbia AveÂ  Connell WA 99326",
+        "Full Address": "El Jazmin, 704 S Columbia AveÂ  Connell WA 99326",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.095244,
+          46.2473597
+        ]
+      },
+      "properties": {
+        "Name": "Castilleja Bakery",
+        "InspectionAddress": "2120 N 4th AveÂ  Pasco WA 99301",
+        "Full Address": "Castilleja Bakery, 2120 N 4th AveÂ  Pasco WA 9",
+        "BillingType": "Bakery",
+        "Status": "",
+        "Billing Type Specification": "Bakery",
+        "Store Type": "",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1099292,
+          46.22856369
+        ]
+      },
+      "properties": {
+        "Name": "Juanitos Foods, LLC (Store)",
+        "InspectionAddress": "1620 W Clark StÂ  Pasco WA 99301",
+        "Full Address": "Juanitos Foods LLC, 1620 W Clark StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1264807,
+          46.21674027
+        ]
+      },
+      "properties": {
+        "Name": "Panaderia Estrella",
+        "InspectionAddress": "615 W Columbia DrÂ  Kennewick WA 99336",
+        "Full Address": "Panaderia Estrella, 615 W Columbia DrÂ  Kennewick WA 99336",
+        "BillingType": "Bakery w/ PHF",
+        "Status": "",
+        "Billing Type Specification": "Bakery w/ PHF",
+        "Store Type": "",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1075733,
+          46.24081135
+        ]
+      },
+      "properties": {
+        "Name": "La Rosa Picosa, LLC",
+        "InspectionAddress": "1412 N 14th AveÂ  Pasco WA 99301",
+        "Full Address": "La Rosa Picosa LLC, 1412 N 14th AveÂ  Pasco WA 99301",
+        "BillingType": "Bakery w/o PHF",
+        "Status": "",
+        "Billing Type Specification": "Bakery w/ PHF",
+        "Store Type": "",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1045538,
+          46.23396115
+        ]
+      },
+      "properties": {
+        "Name": "Tortilleria Las Palmas (Store)",
+        "InspectionAddress": "1108 W Sylvester StÂ  Pasco WA 99301",
+        "Full Address": "Tortilleria Las Palmas, 1108 W Sylvester StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.175227,
+          46.27067371
+        ]
+      },
+      "properties": {
+        "Name": "Rancho Meat Market (Store)",
+        "InspectionAddress": "4903Â  Robert Wayne DrÂ  Pasco WA 99301",
+        "Full Address": "Rancho Meat Market, 4903Â  Robert Wayne DrÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.068484,
+          46.23383402
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria Los Toreros (Store)",
+        "InspectionAddress": "2115 E Lewis StÂ  Pasco WA 99301",
+        "Full Address": "Carniceria Los Toreros, 2115 E Lewis StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.187234,
+          46.2766193
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria La Cabana #4 (Store)",
+        "InspectionAddress": "5426 N Road 68 Â  Pasco WA 99301",
+        "Full Address": "Carniceria La Cabana, 5426 N Road 68   Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.136316,
+          46.205674
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria La Carreta (Store)",
+        "InspectionAddress": "1305 W 4th AveÂ  Kennewick WA 99336",
+        "Full Address": "Carniceria La Carreta, 1305 W 4th AveÂ  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.4877518,
+          46.26368597
+        ]
+      },
+      "properties": {
+        "Name": "Los Toreros Tienda y Carniceria (Store)",
+        "InspectionAddress": "618Â  9th StÂ  Benton City WA 99320",
+        "Full Address": "Los Toreros Tienda y Carniceria, 618Â  9th StÂ  Benton City WA 99320",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1785749,
+          46.21228882
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria La Cabana #3 (Store)",
+        "InspectionAddress": "4311 W Clearwater AveÂ  Kennewick WA 99336",
+        "Full Address": "Carniceria La Cabana, 4311 W Clearwater AveÂ  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1525385,
+          46.20951721
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria 3 Pueblos, LLC (Store)",
+        "InspectionAddress": "2446 W Kennewick AveÂ  Kennewick WA 99336",
+        "Full Address": "Carniceria 3 Pueblos LLC, 2446 W Kennewick AveÂ  Kennewick WA 99336",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7682381,
+          46.20440648
+        ]
+      },
+      "properties": {
+        "Name": "Los Vecinos (Store)",
+        "InspectionAddress": "804Â  6th StÂ  Prosser WA 99350",
+        "Full Address": "Los Vecinos, 804Â  6th StÂ  Prosser WA 99350",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.0983,
+          46.230245
+        ]
+      },
+      "properties": {
+        "Name": "Panaderia Colima",
+        "InspectionAddress": "801 W Clark StÂ  Pasco WA 99301",
+        "Full Address": "Panaderia Colima, 801 W Clark StÂ  Pasco WA 99301",
+        "BillingType": "Bakery w/ PHF",
+        "Status": "",
+        "Billing Type Specification": "Bakery w/ PHF",
+        "Store Type": "",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.0952986,
+          46.2386807
+        ]
+      },
+      "properties": {
+        "Name": "3 Pueblos Meat Market (Store)",
+        "InspectionAddress": "1212 N 4th AveÂ  Pasco WA 99301",
+        "Full Address": "3 Pueblos Meat Market, 1212 N 4th AveÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.069285,
+          46.233674
+        ]
+      },
+      "properties": {
+        "Name": "La Palma Grocery & Deli (Store)",
+        "InspectionAddress": "2020 E Lewis StÂ  Pasco WA 99301",
+        "Full Address": "La Palma Grocery & Deli, 2020 E Lewis StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.3424682,
+          46.29882489
+        ]
+      },
+      "properties": {
+        "Name": "La Hacienda Meat Market (Store)",
+        "InspectionAddress": "4242 W Van Giesen Â  West Richland WA 99353",
+        "Full Address": "La Hacienda Meat Market, 4242 W Van Giesen Â  West Richland WA 99353",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.7869282,
+          46.2181949
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria Los Toreros (Store)",
+        "InspectionAddress": "210Â  Chardonnay AveÂ  Prosser WA 99350",
+        "Full Address": "Carniceria Los Toreros, 210Â  Chardonnay AveÂ  Prosser WA 99350",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.487751,
+          46.2637017
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria El Sol LLC (Store)",
+        "InspectionAddress": "623Â  9th StÂ  Benton City WA 99320",
+        "Full Address": "Carniceria El Sol LLC, 623Â  9th StÂ  Benton City WA 99320",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": {}
+      },
+      "properties": {
+        "Name": "La Palma Market (Store)",
+        "InspectionAddress": "2120 E Lewis Â  Pasco WA 99301",
+        "Full Address": "La Palma Market, 2120 E Lewis Â  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.091251,
+          46.2305483
+        ]
+      },
+      "properties": {
+        "Name": "El Torito MX Market (Store)",
+        "InspectionAddress": "420 W Lewis StÂ  Pasco WA 99301",
+        "Full Address": "El Torito MX Market, 420 W Lewis StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1028385,
+          46.22788419
+        ]
+      },
+      "properties": {
+        "Name": "Ramirez Shellfish (Store)",
+        "InspectionAddress": "1202 W Lewis StÂ  Pasco WA 99301",
+        "Full Address": "Ramirez Shellfish, 1202 W Lewis StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.113887,
+          46.2419069
+        ]
+      },
+      "properties": {
+        "Name": "Amarilis's Meat Market (Store)",
+        "InspectionAddress": "1825 W Court StÂ  Pasco WA 99301",
+        "Full Address": "Amarilis's Meat Market, 1825 W Court StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.1081017,
+          46.2417723
+        ]
+      },
+      "properties": {
+        "Name": "La Cabana #2 Meat Market (Store)",
+        "InspectionAddress": "1501 W Court StÂ  Pasco WA 99301",
+        "Full Address": "La Cabana #2 Meat Market, 1501 W Court StÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.0933658,
+          46.2320463
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria La Mas Barata, Inc (Store)",
+        "InspectionAddress": "214 N 4th AveÂ  Pasco WA 99301",
+        "Full Address": "Carniceria La Mas Barata Inc, 214 N 4th AveÂ  Pasco WA 99301",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Store)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.2778681,
+          46.28639241
+        ]
+      },
+      "properties": {
+        "Name": "Carniceria La Cabana #3 - Richland - (Grocery)",
+        "InspectionAddress": "1305Â  Jadwin AveÂ  Richland WA 99354",
+        "Full Address": "Carniceria La Cabana, 1305Â  Jadwin AveÂ  Richland WA 99354",
+        "BillingType": "1-4 Registers (Grocery)",
+        "Status": "",
+        "Billing Type Specification": "(Grocery)",
+        "Store Type": "(Grocery)",
+        "Sells Produce": "Grocery or other Store that Sells Produce"
+        
+      }
+    }
+  ]
+}

@@ -213,10 +213,15 @@ nav div a {
     width: 100%;
     padding: 16px;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 #filter-options div {
     width: 100%;
+}
+
+#filter-options #filter-content {
+    margin-bottom: 0;
 }
 
 #filters div {
@@ -248,6 +253,10 @@ nav div a {
     font-weight: 600;
 }
 
+.stores img {
+    max-height: 25px;
+}
+
 .search-buttons {
     display: flex;
     flex-direction: column;
@@ -261,6 +270,10 @@ nav div a {
     background-color: #152E53;
     color: white;
     cursor: pointer;
+}
+
+.icons {
+    margin: 0;
 }
 
 /* Data and About Pages */

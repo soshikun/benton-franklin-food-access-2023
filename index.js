@@ -20,13 +20,11 @@ function makeActive() {
     this.classList.add('active');
 }
 
-function clearFilters() {
-    let filters = document.getElementsByTagName('input');
-    for (let i = 0; i < filters.length; i++) {
-        if (filters[i].type === 'radio' && filters[i].checked) {
-            filters[i].checked = false;
-        }
-    }
+function createPopup(name, address) {
+    return `
+        <h2 class='location-name'>${name}</h2>
+        <p class='location-address'>${address}</p>
+    `
 }
 
 async function createMap() {
@@ -34,58 +32,219 @@ async function createMap() {
 
     let map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/soshikun/clgl5ott6000f01r8e9m66l54',
+        style: 'mapbox://styles/mapbox/light-v10',
         minZoom: 1,
         maxZoom: 15,
-        zoom: 8,
+        zoom: 9,
         center: [-119, 46.5]
     });
 
-    let data = await getData();
+    const grocery = await getData('grocery');
+    const convenience = await getData('convenience');
+    const produce = await getData('produce');
+    const service = await getData('service');
 
     map.on('load', () => {
-        map.addSource('distance-tiles', {
-            'type': 'raster',
-            'tiles': [
-                'tiles/distance/{z}/{x}/{y}.png'
-            ],
-            'tileSize': 256,
-            'attribution': 'Map tiles designed by Ivette Ivanov</a>'
-        });
+        map.loadImage(
+            './imgs/grocery.png',
+            (error, image) => {
+                if (error) throw error;
 
-        map.addLayer({
-            'id': 'distance',
-            'type': 'raster',
-            'layout': {
-                'visibility': 'none'
-            },
-            'source': 'distance-tiles',
-            'minzoom': 1,
-            'maxzoom': 10
-        });
+                map.addImage('grocery', image);
 
-        map.addSource('stores', {
-            'type': 'geojson',
-            'data': {
-                'type': 'FeatureCollection',
-                'features': data
+                map.addSource('grocery', {
+                    type: 'geojson',
+                    data: grocery
+                });
+
+                map.addLayer({
+                    'id': 'grocery',
+                    'source': 'grocery',
+                    'type': 'symbol',
+                    'layout': {
+                        'visibility': 'none',
+                        'icon-image': 'grocery',
+                        'icon-allow-overlap': true,
+                        'icon-size': 0.7
+                    },
+                });
             }
+        );
+
+        map.on('click', 'grocery', (e) => {
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const name = e.features[0].properties.Name;
+            const address = e.features[0].properties['Full Address'];
+
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(createPopup(name, address))
+                .addTo(map);
         });
 
-        map.addLayer({
-            'id': 'stores',
-            'type': 'symbol',
-            'source': 'stores',
-            'layout': {
-                'icon-image': ['get', 'icon'],
-                'icon-allow-overlap': true
+        map.on('mouseenter', 'grocery', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        map.on('mouseleave', 'grocery', () => {
+            map.getCanvas().style.cursor = '';
+        });
+
+        map.loadImage(
+            './imgs/convenience.png',
+            (error, image) => {
+                if (error) throw error;
+
+                map.addImage('convenience', image);
+
+                map.addSource('convenience', {
+                    type: 'geojson',
+                    data: convenience
+                });
+
+                map.addLayer({
+                    'id': 'convenience',
+                    'source': 'convenience',
+                    'type': 'symbol',
+                    'layout': {
+                        'visibility': 'none',
+                        'icon-image': 'convenience',
+                        'icon-allow-overlap': true,
+                        'icon-size': 0.7
+                    },
+                });
             }
+        );
+
+        map.on('click', 'convenience', (e) => {
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const name = e.features[0].properties.Name;
+            const address = e.features[0].properties['Full Address'];
+
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(createPopup(name, address))
+                .addTo(map);
+        });
+
+        map.on('mouseenter', 'convenience', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        map.on('mouseleave', 'convenience', () => {
+            map.getCanvas().style.cursor = '';
+        });
+
+        map.loadImage(
+            './imgs/produce.png',
+            (error, image) => {
+                if (error) throw error;
+
+                map.addImage('produce', image);
+
+                map.addSource('produce', {
+                    type: 'geojson',
+                    data: produce
+                });
+
+                map.addLayer({
+                    'id': 'produce',
+                    'source': 'produce',
+                    'type': 'symbol',
+                    'layout': {
+                        'visibility': 'none',
+                        'icon-image': 'produce',
+                        'icon-allow-overlap': true,
+                        'icon-size': 0.5
+                    },
+                });
+            }
+        );
+
+        map.on('click', 'produce', (e) => {
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const name = e.features[0].properties.Name;
+            const address = e.features[0].properties['Full Address'];
+
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(createPopup(name, address))
+                .addTo(map);
+        });
+
+        map.on('mouseenter', 'produce', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        map.on('mouseleave', 'produce', () => {
+            map.getCanvas().style.cursor = '';
+        });
+
+        map.loadImage(
+            './imgs/service.png',
+            (error, image) => {
+                if (error) throw error;
+
+                map.addImage('service', image);
+
+                map.addSource('service', {
+                    type: 'geojson',
+                    data: service
+                });
+
+                map.addLayer({
+                    'id': 'service',
+                    'source': 'service',
+                    'type': 'symbol',
+                    'layout': {
+                        'visibility': 'none',
+                        'icon-image': 'service',
+                        'icon-allow-overlap': true,
+                        'icon-size': 0.7
+                    },
+                });
+            }
+        );
+
+        map.on('click', 'service', (e) => {
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const name = e.features[0].properties.Name;
+            const address = e.features[0].properties['Full Address'];
+
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(createPopup(name, address))
+                .addTo(map);
+        });
+
+        map.on('mouseenter', 'service', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        map.on('mouseleave', 'service', () => {
+            map.getCanvas().style.cursor = '';
         });
 
         let filters = document.getElementsByTagName('input');
         for (let i = 0; i < filters.length; i++) {
             filters[i].addEventListener('click', () => {
-                if (filters[i].type === 'radio') {
+                if (filters[i].type === 'checkbox' && filters[i].id !== 'toggle') {
                     let selection = filters[i].value;
                     let visible = map.getLayoutProperty(selection, 'visibility');
                     if (visible === 'visible') {
@@ -96,6 +255,19 @@ async function createMap() {
                 }
             })
         }
+
+        let clearButton = document.getElementById('clear');
+        clearButton.addEventListener('click', () => {
+            for (let i = 0; i < filters.length; i++) {
+                if (filters[i].type === 'checkbox' && filters[i].checked && filters[i].id !== 'toggle') {
+                    filters[i].checked = false;
+                    map.setLayoutProperty('grocery', 'visibility', 'none');
+                    map.setLayoutProperty('convenience', 'visibility', 'none');
+                    map.setLayoutProperty('produce', 'visibility', 'none');
+                    map.setLayoutProperty('service', 'visibility', 'none');
+                }
+            }
+        });
     });
 
     document.getElementById('toggle').addEventListener('change', (e) => {
@@ -135,8 +307,8 @@ async function createMap() {
     });
 }
 
-async function getData() {
-    const response = await fetch('./data/stores.geojson')
+async function getData(file) {
+    const response = await fetch(`./data/${file}.geojson`)
         .then(res => res.json())
         .catch(error => console.log(error));
     return response;
@@ -144,5 +316,5 @@ async function getData() {
 
 function handleClick(selection) {
     let value = selection.value;
-    
+
 }
