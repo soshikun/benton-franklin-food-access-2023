@@ -186,21 +186,23 @@ nav div a {
     width: 77.1px;
 }
 
-#pop-ups {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: absolute;
-}
-
 .nav-item {
     cursor: pointer;
     text-decoration: none;
     color: white;
 }
 
+#intro {
+    position: absolute;
+    top: 67px;
+    left: 0;
+}
+
 #filters {
     padding: 0;
+    position: absolute;
+    top: 67px;
+    right: 0;
 }
 
 #open-filters {
