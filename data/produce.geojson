@@ -1181,7 +1181,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": {}
+        "coordinates": [
+          -119.06698038223772,
+          46.23351539094936
+        ]
       },
       "properties": {
         "Name": "La Palma Market (Store)",

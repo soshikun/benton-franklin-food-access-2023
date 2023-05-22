@@ -40,9 +40,116 @@ async function createMap(mode) {
     });
 
     const grocery = await getData('grocery');
+
+    const grocery_walking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const grocery_biking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+            }
+        })
+    }
+
     const convenience = await getData('convenience');
+
+    const convenience_walking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const convenience_biking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+            }
+        })
+    }
+
     const produce = await getData('produce');
+
+    const produce_walking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const produce_biking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+            }
+        })
+    }
+
     const service = await getData('service');
+
+    const service_walking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const service_biking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+            }
+        })
+    }
 
     map.on('load', () => {
         map.loadImage(
@@ -70,6 +177,42 @@ async function createMap(mode) {
                 });
             }
         );
+
+        map.addSource('grocery_walking', {
+            type: 'geojson',
+            data: grocery_walking
+        });
+
+        map.addLayer({
+            'id': 'grocery_walking',
+            'source': 'grocery_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.5
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('grocery_biking', {
+            type: 'geojson',
+            data: grocery_biking
+        });
+
+        map.addLayer({
+            'id': 'grocery_biking',
+            'type': 'fill',
+            'source': 'grocery_biking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.6
+            }
+        });
 
         map.on('click', 'grocery', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
@@ -120,6 +263,42 @@ async function createMap(mode) {
             }
         );
 
+        map.addSource('convenience_walking', {
+            type: 'geojson',
+            data: convenience_walking
+        });
+
+        map.addLayer({
+            'id': 'convenience_walking',
+            'source': 'convenience_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.5
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_biking', {
+            type: 'geojson',
+            data: convenience_biking
+        });
+
+        map.addLayer({
+            'id': 'convenience_biking',
+            'source': 'convenience_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.5
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
         map.on('click', 'convenience', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
             const name = e.features[0].properties.Name;
@@ -168,6 +347,42 @@ async function createMap(mode) {
                 });
             }
         );
+
+        map.addSource('produce_walking', {
+            type: 'geojson',
+            data: produce_walking
+        });
+
+        map.addLayer({
+            'id': 'produce_walking',
+            'source': 'produce_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.5
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_biking', {
+            type: 'geojson',
+            data: produce_biking
+        });
+
+        map.addLayer({
+            'id': 'produce_biking',
+            'source': 'produce_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.5
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
 
         map.on('click', 'produce', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
@@ -218,6 +433,42 @@ async function createMap(mode) {
             }
         );
 
+        map.addSource('service_walking', {
+            type: 'geojson',
+            data: service_walking
+        });
+
+        map.addLayer({
+            'id': 'service_walking',
+            'source': 'service_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill 
+                'fill-opacity': 0.5
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_biking', {
+            type: 'geojson',
+            data: service_biking
+        });
+
+        map.addLayer({
+            'id': 'service_biking',
+            'source': 'service_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.5
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
         map.on('click', 'service', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
             const name = e.features[0].properties.Name;
@@ -242,15 +493,78 @@ async function createMap(mode) {
         });
 
         let filters = document.getElementsByTagName('input');
+        let storesTransport = [
+            'grocery_walking',
+            'grocery_biking',
+            'convenience_walking',
+            'convenience_biking',
+            'produce_walking',
+            'produce_biking',
+            'service_walking',
+            'service_biking'
+        ];
+        let current = [];
+        let transportation = [];
         for (let i = 0; i < filters.length; i++) {
             filters[i].addEventListener('click', () => {
                 if (filters[i].type === 'checkbox' && filters[i].id !== 'toggle') {
                     let selection = filters[i].value;
-                    let visible = map.getLayoutProperty(selection, 'visibility');
-                    if (visible === 'visible') {
-                        map.setLayoutProperty(selection, 'visibility', 'none');
+
+                    // Selection is a transportation AND there is a store type
+                    if (
+                        (selection === 'walking' || selection === 'biking' || selection === 'driving' || selection === 'transit')
+                        && (current.includes('grocery') || current.includes('convenience') || current.includes('produce') || current.includes('service'))
+                    ) {
+                        // There is only ONE store selection
+                        if (current.length === 1) {
+                            let visible = map.getLayoutProperty(`${current[0]}_${selection}`, 'visibility');
+                            if (visible === 'visible') {
+                                transportation.splice(transportation.indexOf(selection), 1);
+                                map.setLayoutProperty(`${current[0]}_${selection}`, 'visibility', 'none');
+                            } else {
+                                transportation.push(selection);
+                                map.setLayoutProperty(`${current[0]}_${selection}`, 'visibility', 'visible');
+                            }
+                        } else {
+                            let visible = '';
+                            current.map((store) => {
+                                visible = map.getLayoutProperty(`${store}_${selection}`, 'visibility');
+                                if (visible === 'visible') {
+                                    transportation.splice(transportation.indexOf(selection), 1);
+                                    map.setLayoutProperty(`${store}_${selection}`, 'visibility', 'none');
+                                } else {
+                                    transportation.push(selection);
+                                    map.setLayoutProperty(`${store}_${selection}`, 'visibility', 'visible');
+                                }
+                            });
+
+                            if (visible !== 'visible') {
+                                transportation.pop();
+                            }
+                        }
+                    // Selection is NOT a transportation
                     } else {
-                        map.setLayoutProperty(selection, 'visibility', 'visible');
+                        console.log(transportation);
+                        let visible = map.getLayoutProperty(selection, 'visibility');
+                        if (visible === 'visible') {
+                            map.setLayoutProperty(`${selection}_walking`, 'visibility', 'none');
+                            map.setLayoutProperty(`${selection}_biking`, 'visibility', 'none');
+                            current.splice(current.indexOf(selection), 1);
+                            if (transportation.length > 0) {
+                                transportation.map((mode) => {
+                                    map.setLayoutProperty(`${selection}_${mode}`, 'visibility', 'none');
+                                });
+                            }
+                            map.setLayoutProperty(selection, 'visibility', 'none');
+                        } else {
+                            current.push(selection);
+                            if (transportation.length > 0) {
+                                transportation.map((mode) => {
+                                    map.setLayoutProperty(`${selection}_${mode}`, 'visibility', 'visible');
+                                });
+                            }
+                            map.setLayoutProperty(selection, 'visibility', 'visible');
+                        }
                     }
                 }
             })
@@ -258,6 +572,8 @@ async function createMap(mode) {
 
         let clearButton = document.getElementById('clear');
         clearButton.addEventListener('click', () => {
+            current = [];
+            transportation = [];
             for (let i = 0; i < filters.length; i++) {
                 if (filters[i].type === 'checkbox' && filters[i].checked && filters[i].id !== 'toggle') {
                     filters[i].checked = false;
@@ -265,6 +581,9 @@ async function createMap(mode) {
                     map.setLayoutProperty('convenience', 'visibility', 'none');
                     map.setLayoutProperty('produce', 'visibility', 'none');
                     map.setLayoutProperty('service', 'visibility', 'none');
+                    storesTransport.map((place) => {
+                        map.setLayoutProperty(place, 'visibility', 'none');
+                    });
                 }
             }
         });
@@ -284,34 +603,6 @@ async function createMap(mode) {
     //         createMap('light');
     //     }
     // });
-
-    map.on('click', 'stores', (e) => {
-        // Copy coordinates array.
-        const coordinates = e.features[0].geometry.coordinates.slice();
-        const description = e.features[0].properties.description;
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(description)
-            .addTo(map);
-    });
-
-    // Change the cursor to a pointer when the mouse is over the places layer.
-    map.on('mouseenter', 'stores', () => {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'stores', () => {
-        map.getCanvas().style.cursor = '';
-    });
 }
 
 async function getData(file) {
@@ -325,3 +616,35 @@ function handleClick(selection) {
     let value = selection.value;
 
 }
+
+const createGeoJSONCircle = function (center, radiusInKm, points) {
+    if (!points) points = 64;
+
+    let coords = {
+        latitude: center[1],
+        longitude: center[0]
+    };
+
+    let km = radiusInKm;
+
+    let ret = [];
+    let distanceX = km / (111.320 * Math.cos(coords.latitude * Math.PI / 180));
+    let distanceY = km / 110.574;
+
+    let theta, x, y;
+    for (let i = 0; i < points; i++) {
+        theta = (i / points) * (2 * Math.PI);
+        x = distanceX * Math.cos(theta);
+        y = distanceY * Math.sin(theta);
+
+        ret.push([coords.longitude + x, coords.latitude + y]);
+    }
+    ret.push(ret[0]);
+
+    let circle = {
+        "type": "Polygon",
+        "coordinates": [ret]
+    }
+
+    return circle;
+};

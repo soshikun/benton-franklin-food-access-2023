@@ -1165,7 +1165,10 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": {}
+                "coordinates": [
+                    -119.14561642587361,
+                    46.59152527614004
+                ]
             },
             "properties": {
                 "Name": "Sandoval's Market (Store)",
@@ -1182,7 +1185,10 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": {}
+                "coordinates": [
+                    -119.12814720496613,
+                    46.23089556211156
+                ]
             },
             "properties": {
                 "Name": "Shopping Spot (Store)",
