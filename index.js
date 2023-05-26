@@ -151,6 +151,15 @@ async function createMap(mode) {
         })
     }
 
+    const walking = await getData('walking');
+    const biking = await getData('biking');
+
+    const bus_1_miles = await getData('1milebus');
+    // const bus_2_miles = await getData('2milebus');
+    // const bus_3_miles = await getData('3milebus');
+    // const bus_4_miles = await getData('4milebus');
+    // const bus_5_miles = await getData('5milebus');
+
     map.on('load', () => {
         map.loadImage(
             './imgs/grocery.png',
@@ -189,7 +198,7 @@ async function createMap(mode) {
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill
-                'fill-opacity': 0.5
+                'fill-opacity': 0.3
             },
             'layout': {
                 'visibility': 'none',
@@ -274,7 +283,7 @@ async function createMap(mode) {
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill
-                'fill-opacity': 0.5
+                'fill-opacity': 0.3
             },
             'layout': {
                 'visibility': 'none',
@@ -292,7 +301,7 @@ async function createMap(mode) {
             'type': 'fill',
             'paint': {
                 'fill-color': '#90EE90', // green color fill
-                'fill-opacity': 0.5
+                'fill-opacity': 0.3
             },
             'layout': {
                 'visibility': 'none',
@@ -342,7 +351,7 @@ async function createMap(mode) {
                         'visibility': 'none',
                         'icon-image': 'produce',
                         'icon-allow-overlap': true,
-                        'icon-size': 0.5
+                        'icon-size': 0.3
                     },
                 });
             }
@@ -359,7 +368,7 @@ async function createMap(mode) {
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill
-                'fill-opacity': 0.5
+                'fill-opacity': 0.3
             },
             'layout': {
                 'visibility': 'none',
@@ -377,7 +386,7 @@ async function createMap(mode) {
             'type': 'fill',
             'paint': {
                 'fill-color': '#90EE90', // green color fill
-                'fill-opacity': 0.5
+                'fill-opacity': 0.3
             },
             'layout': {
                 'visibility': 'none',
@@ -444,7 +453,7 @@ async function createMap(mode) {
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill 
-                'fill-opacity': 0.5
+                'fill-opacity': 0.3
             },
             'layout': {
                 'visibility': 'none',
@@ -462,12 +471,138 @@ async function createMap(mode) {
             'type': 'fill',
             'paint': {
                 'fill-color': '#90EE90', // green color fill
-                'fill-opacity': 0.5
+                'fill-opacity': 0.3
             },
             'layout': {
                 'visibility': 'none',
             },
         });
+
+        map.addSource('walking', {
+            type: 'geojson',
+            data: walking
+        });
+
+        map.addLayer({
+            'id': 'walking',
+            'type': 'fill',
+            'source': 'walking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.6
+            }
+        });
+
+        map.addSource('biking', {
+            type: 'geojson',
+            data: biking
+        });
+
+        map.addLayer({
+            'id': 'biking',
+            'type': 'fill',
+            'source': 'biking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.6
+            }
+        });
+
+        map.addSource('bus_1_miles', {
+            type: 'geojson',
+            data: bus_1_miles
+        });
+
+        map.addLayer({
+            'id': 'bus_1_miles',
+            'source': 'bus_1_miles',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#ffbdbd', // pink color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            }
+        });
+
+        // map.addSource('bus_2_miles', {
+        //     type: 'geojson',
+        //     data: bus_2_miles
+        // });
+
+        // map.addLayer({
+        //     'id': 'bus_2_miles',
+        //     'source': 'bus_2_miles',
+        //     'type': 'fill',
+        //     'paint': {
+        //         'fill-color': '#ffbdbd', // pink color fill
+        //         'fill-opacity': 0.3
+        //     },
+        //     'layout': {
+        //         'visibility': 'none',
+        //     }
+        // });
+
+        // map.addSource('bus_3_miles', {
+        //     type: 'geojson',
+        //     data: bus_3_miles
+        // });
+
+        // map.addLayer({
+        //     'id': 'bus_3_miles',
+        //     'source': 'bus_3_miles',
+        //     'type': 'fill',
+        //     'paint': {
+        //         'fill-color': '#ffbdbd', // pink color fill
+        //         'fill-opacity': 0.3
+        //     },
+        //     'layout': {
+        //         'visibility': 'none',
+        //     }
+        // });
+
+        // map.addSource('bus_4_miles', {
+        //     type: 'geojson',
+        //     data: bus_4_miles
+        // });
+
+        // map.addLayer({
+        //     'id': 'bus_4_miles',
+        //     'source': 'bus_4_miles',
+        //     'type': 'fill',
+        //     'paint': {
+        //         'fill-color': '#ffbdbd', // pink color fill
+        //         'fill-opacity': 0.3
+        //     },
+        //     'layout': {
+        //         'visibility': 'none',
+        //     }
+        // });
+
+        // map.addSource('bus_5_miles', {
+        //     type: 'geojson',
+        //     data: bus_5_miles
+        // });
+
+        // map.addLayer({
+        //     'id': 'bus_5_miles',
+        //     'source': 'bus_5_miles',
+        //     'type': 'fill',
+        //     'paint': {
+        //         'fill-color': '#ffbdbd', // pink color fill
+        //         'fill-opacity': 0.3
+        //     },
+        //     'layout': {
+        //         'visibility': 'none',
+        //     }
+        // });
 
         map.on('click', 'service', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
@@ -510,9 +645,33 @@ async function createMap(mode) {
                 if (filters[i].type === 'checkbox' && filters[i].id !== 'toggle') {
                     let selection = filters[i].value;
 
+                    if (selection === 'transit') {
+                        document.getElementById('miles').disabled = false;
+                        let miles = document.getElementById('miles').value;
+                        document.getElementById('value').textContent = miles;
+
+                        document.getElementById('miles').addEventListener('input', (event) => {
+                            value.textContent = event.target.value;
+                            if (event.target.value !== '0') {
+                                map.setLayoutProperty('bus_1_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_2_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_3_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_4_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_5_miles', 'visibility', 'none');
+                                map.setLayoutProperty(`bus_${event.target.value}_miles`, 'visibility', 'visible');
+                            } else {
+                                map.setLayoutProperty('bus_1_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_2_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_3_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_4_miles', 'visibility', 'none');
+                                map.setLayoutProperty('bus_5_miles', 'visibility', 'none');
+                            }
+                        });
+                    }
+
                     // Selection is a transportation AND there is a store type
                     if (
-                        (selection === 'walking' || selection === 'biking' || selection === 'driving' || selection === 'transit')
+                        (selection === 'walking' || selection === 'biking' || selection === 'driving')
                         && (current.includes('grocery') || current.includes('convenience') || current.includes('produce') || current.includes('service'))
                     ) {
                         // There is only ONE store selection
@@ -542,9 +701,8 @@ async function createMap(mode) {
                                 transportation.pop();
                             }
                         }
-                    // Selection is NOT a transportation
-                    } else {
-                        console.log(transportation);
+                        // Selection is NOT a transportation
+                    } else if (selection !== 'transit') {
                         let visible = map.getLayoutProperty(selection, 'visibility');
                         if (visible === 'visible') {
                             map.setLayoutProperty(`${selection}_walking`, 'visibility', 'none');
@@ -581,11 +739,20 @@ async function createMap(mode) {
                     map.setLayoutProperty('convenience', 'visibility', 'none');
                     map.setLayoutProperty('produce', 'visibility', 'none');
                     map.setLayoutProperty('service', 'visibility', 'none');
+                    map.setLayoutProperty('walking', 'visibility', 'none');
+                    map.setLayoutProperty('biking', 'visibility', 'none');
                     storesTransport.map((place) => {
                         map.setLayoutProperty(place, 'visibility', 'none');
                     });
                 }
             }
+            document.getElementById('miles').disabled = true;
+            document.getElementById('value').textContent = '';
+            map.setLayoutProperty('bus_1_miles', 'visibility', 'none');
+            map.setLayoutProperty('bus_2_miles', 'visibility', 'none');
+            map.setLayoutProperty('bus_3_miles', 'visibility', 'none');
+            map.setLayoutProperty('bus_4_miles', 'visibility', 'none');
+            map.setLayoutProperty('bus_5_miles', 'visibility', 'none');
         });
     });
 
@@ -610,11 +777,6 @@ async function getData(file) {
         .then(res => res.json())
         .catch(error => console.log(error));
     return response;
-}
-
-function handleClick(selection) {
-    let value = selection.value;
-
 }
 
 const createGeoJSONCircle = function (center, radiusInKm, points) {

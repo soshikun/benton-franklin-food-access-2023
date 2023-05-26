@@ -97,6 +97,10 @@
                             <input type="checkbox" id="transit" name="transit" value="transit">
                             <label for="transit">Public Transit</label>
                         </div>
+                        <div>
+                            <input type="range" id="miles" name="miles" min="0" max="5" step="1" value="0" id="miles" disabled>
+                            <label for="miles"><output id="value"></output> Mile(s)</label>
+                        </div>
                     </form>
                     <div class="search-buttons">
                         <button class='filter-button' id="clear">Clear Filters</button>
@@ -117,7 +121,7 @@
 </body>
 
 <script type="text/javascript">
-    createMap('light');
+    createMap('streets');
 </script>
 
 </html>
