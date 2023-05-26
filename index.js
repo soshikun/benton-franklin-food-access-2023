@@ -739,8 +739,8 @@ async function createMap(mode) {
                     map.setLayoutProperty('convenience', 'visibility', 'none');
                     map.setLayoutProperty('produce', 'visibility', 'none');
                     map.setLayoutProperty('service', 'visibility', 'none');
-                    map.setLayoutProperty('walking', 'visibility', 'none');
-                    map.setLayoutProperty('biking', 'visibility', 'none');
+                    // map.setLayoutProperty('walking', 'visibility', 'none');
+                    // map.setLayoutProperty('biking', 'visibility', 'none');
                     storesTransport.map((place) => {
                         map.setLayoutProperty(place, 'visibility', 'none');
                     });
