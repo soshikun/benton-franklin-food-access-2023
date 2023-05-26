@@ -154,7 +154,7 @@ async function createMap(mode) {
     const walking = await getData('walking');
     const biking = await getData('biking');
 
-    const bus_1_miles = await getData('1milebus');
+    const bus_1_miles = await getData('transit');
     // const bus_2_miles = await getData('2milebus');
     // const bus_3_miles = await getData('3milebus');
     // const bus_4_miles = await getData('4milebus');
