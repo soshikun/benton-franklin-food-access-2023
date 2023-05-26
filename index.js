@@ -739,15 +739,16 @@ async function createMap(mode) {
                     map.setLayoutProperty('convenience', 'visibility', 'none');
                     map.setLayoutProperty('produce', 'visibility', 'none');
                     map.setLayoutProperty('service', 'visibility', 'none');
-                    // map.setLayoutProperty('walking', 'visibility', 'none');
-                    // map.setLayoutProperty('biking', 'visibility', 'none');
                     storesTransport.map((place) => {
                         map.setLayoutProperty(place, 'visibility', 'none');
                     });
                 }
             }
             document.getElementById('miles').disabled = true;
+            document.getElementById('miles').value = '0';
             document.getElementById('value').textContent = '';
+            map.setLayoutProperty('walking', 'visibility', 'none');
+            map.setLayoutProperty('biking', 'visibility', 'none');
             map.setLayoutProperty('bus_1_miles', 'visibility', 'none');
             map.setLayoutProperty('bus_2_miles', 'visibility', 'none');
             map.setLayoutProperty('bus_3_miles', 'visibility', 'none');
