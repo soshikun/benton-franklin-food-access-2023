@@ -757,6 +757,7 @@ async function createMap(mode) {
     const transit = await getData('transit');
     const transit_routes = await getData('BFTransit_Routes');
     const borders = await getData('borders');
+    const driving = await getData('driving');
 
     map.on('load', () => {
         map.loadImage(
@@ -1779,6 +1780,24 @@ async function createMap(mode) {
             }
         });
 
+        map.addSource('driving', {
+            type: 'geojson',
+            data: driving
+        });
+
+        map.addLayer({
+            'id': 'driving',
+            'source': 'driving',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#fff9a6', // pink color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            }
+        });
+
         map.on('click', 'service', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
             const name = e.features[0].properties.Name;
@@ -1874,6 +1893,7 @@ async function createMap(mode) {
                     map.setLayoutProperty('convenience', 'visibility', 'none');
                     map.setLayoutProperty('produce', 'visibility', 'none');
                     map.setLayoutProperty('service', 'visibility', 'none');
+                    map.setLayoutProperty('driving', 'visibility', 'none');
                     map.setLayoutProperty('transit', 'visibility', 'none');
                     map.setLayoutProperty('transit_routes', 'visibility', 'none');
                 }
