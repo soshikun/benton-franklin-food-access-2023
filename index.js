@@ -122,7 +122,6 @@ function getWalkingList(miles, transport) {
 }
 
 function getSingleTransportation(transport, map) {
-    document.getElementById(`${transport}_miles`).disabled = false;
     document.getElementById(`${transport}_value`).textContent = getDistance(transport);
     if (transport === 'biking') {
         const transportList = getAllBikingList(transport);
@@ -1086,7 +1085,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             },
         });
-        
+
         map.addSource('convenience_three_quarters_mile_walking', {
             type: 'geojson',
             data: convenience_three_quarters_mile_walking
@@ -1810,8 +1809,40 @@ async function createMap(mode) {
                     let selection = filters[i].value;
 
                     if (selection === 'biking') {
+                        let bikingList = getAllBikingList('biking');
+                        bikingList.map((distance) => {
+                            let visible = map.getLayoutProperty(distance, 'visibility');
+                            if (visible === 'visible') {
+                                map.setLayoutProperty(distance, 'visibility', 'none');
+                            }
+                        });
+                        if (filters[i].classList.contains('clicked')) {
+                            document.getElementById('biking_miles').disabled = true;
+                            document.getElementById('biking_miles').value = '0';
+                            filters[i].classList.remove('clicked');
+                        } else {
+                            document.getElementById('biking_miles').disabled = false;
+                            document.getElementById('biking_miles').value = '0';
+                            filters[i].classList.add('clicked');
+                        }
                         getSingleTransportation('biking', map);
                     } else if (selection === 'walking') {
+                        let walkingList = getAllWalkingList('walking');
+                        walkingList.map((distance) => {
+                            let visible = map.getLayoutProperty(distance, 'visibility');
+                            if (visible === 'visible') {
+                                map.setLayoutProperty(distance, 'visibility', 'none');
+                            }
+                        });
+                        if (filters[i].classList.contains('clicked')) {
+                            document.getElementById('walking_miles').disabled = true;
+                            document.getElementById('walking_miles').value = '0';
+                            filters[i].classList.remove('clicked');
+                        } else {
+                            document.getElementById('walking_miles').disabled = false;
+                            document.getElementById('walking_miles').value = '0';
+                            filters[i].classList.add('clicked');
+                        }
                         getSingleTransportation('walking', map);
                     } else if (selection === 'transit') {
                         let visible = map.getLayoutProperty(selection, 'visibility');
