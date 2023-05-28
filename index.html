@@ -81,13 +81,21 @@
                     <form class="stores" id="transportation">
                         <div>
                             <input type='checkbox' id="walking" name="walking" value='walking'>
-                            <label for="walking">1 Mile Walking</label>
-                            <img src="./imgs/blue-circle.png" alt="1 mile walking icon (blue circle)" />
+                            <label for="walking">Walking</label>
+                            <img src="./imgs/blue-circle.png" alt="Walking icon (blue circle)" />
+                        </div>
+                        <div>
+                            <input type="range" id="walking_miles" name="walking_miles" min="0" max="1" step="0.25" value="0" class="miles" disabled>
+                            <label for="walking_miles"><output id="walking_value"></output> Mile(s)</label>
                         </div>
                         <div>
                             <input type='checkbox' id='biking' name="biking" value="biking">
-                            <label for="biking">2 Miles Biking</label>
-                            <img src="./imgs/green-circle.png" alt="2 miles biking icon (green circle)" />
+                            <label for="biking">Biking</label>
+                            <img src="./imgs/green-circle.png" alt="Biking icon (green circle)" />
+                        </div>
+                        <div>
+                            <input type="range" id="biking_miles" name="biking_miles" min="0" max="5" step="1" value="0" class="miles" disabled>
+                            <label for="biking_miles"><output id="biking_value"></output> Mile(s)</label>
                         </div>
                         <div>
                             <input type="checkbox" id="driving" name="driving" value="driving">
@@ -97,10 +105,6 @@
                             <input type="checkbox" id="transit" name="transit" value="transit">
                             <label for="transit">Public Transit</label>
                             <img src="./imgs/red-circle.png" alt="public transit icon (red circle)" />
-                        </div>
-                        <div>
-                            <input type="range" id="miles" name="miles" min="0" max="5" step="1" value="0" id="miles" disabled>
-                            <label for="miles"><output id="value"></output> Mile(s)</label>
                         </div>
                     </form>
                     <div class="search-buttons">

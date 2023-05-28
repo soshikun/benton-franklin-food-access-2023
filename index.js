@@ -27,6 +27,142 @@ function createPopup(name, address) {
     `
 }
 
+function getDistance(transport) {
+    let value = document.getElementById(`${transport}_miles`).value;
+    return value;
+}
+
+function getAllBikingList(transport) {
+    const list = [
+        `grocery_0_miles_${transport}`,
+        `grocery_1_miles_${transport}`,
+        `grocery_2_miles_${transport}`,
+        `grocery_3_miles_${transport}`,
+        `grocery_4_miles_${transport}`,
+        `grocery_5_miles_${transport}`,
+        `convenience_0_miles_${transport}`,
+        `convenience_1_miles_${transport}`,
+        `convenience_2_miles_${transport}`,
+        `convenience_3_miles_${transport}`,
+        `convenience_4_miles_${transport}`,
+        `convenience_5_miles_${transport}`,
+        `produce_0_miles_${transport}`,
+        `produce_1_miles_${transport}`,
+        `produce_2_miles_${transport}`,
+        `produce_3_miles_${transport}`,
+        `produce_4_miles_${transport}`,
+        `produce_5_miles_${transport}`,
+        `service_0_miles_${transport}`,
+        `service_1_miles_${transport}`,
+        `service_2_miles_${transport}`,
+        `service_3_miles_${transport}`,
+        `service_4_miles_${transport}`,
+        `service_5_miles_${transport}`,
+    ];
+    return list;
+}
+
+function getBikingList(miles, transport) {
+    const list = [
+        `grocery_${miles}_miles_${transport}`,
+        `convenience_${miles}_miles_${transport}`,
+        `produce_${miles}_miles_${transport}`,
+        `service_${miles}_miles_${transport}`,
+    ];
+    return list;
+}
+
+function getAllWalkingList(transport) {
+    const list = [
+        `grocery_0_mile_${transport}`,
+        `grocery_quarter_mile_${transport}`,
+        `grocery_half_mile_${transport}`,
+        `grocery_three_quarters_mile_${transport}`,
+        `grocery_1_mile_${transport}`,
+        `convenience_0_mile_${transport}`,
+        `convenience_quarter_mile_${transport}`,
+        `convenience_half_mile_${transport}`,
+        `convenience_three_quarters_mile_${transport}`,
+        `convenience_1_mile_${transport}`,
+        `produce_0_mile_${transport}`,
+        `produce_quarter_mile_${transport}`,
+        `produce_half_mile_${transport}`,
+        `produce_three_quarters_mile_${transport}`,
+        `produce_1_mile_${transport}`,
+        `service_0_mile_${transport}`,
+        `service_quarter_mile_${transport}`,
+        `service_half_mile_${transport}`,
+        `service_three_quarters_mile_${transport}`,
+        `service_1_mile_${transport}`,
+    ];
+    return list;
+}
+
+function getWalkingList(miles, transport) {
+    let number = '';
+    if (miles === '0.25') {
+        number = 'quarter'
+    } else if (miles === '0.5') {
+        number = 'half'
+    } else if (miles === '0.75') {
+        number = 'three_quarters'
+    } else if (miles === '0') {
+        number = '0';
+    } else if (miles === '1') {
+        number = '1';
+    }
+
+    const list = [
+        `grocery_${number}_mile_${transport}`,
+        `convenience_${number}_mile_${transport}`,
+        `produce_${number}_mile_${transport}`,
+        `service_${number}_mile_${transport}`,
+    ];
+    return list;
+}
+
+function getSingleTransportation(transport, map) {
+    document.getElementById(`${transport}_miles`).disabled = false;
+    document.getElementById(`${transport}_value`).textContent = getDistance(transport);
+    if (transport === 'biking') {
+        const transportList = getAllBikingList(transport);
+        document.getElementById(`${transport}_miles`).addEventListener('input', (event) => {
+            document.getElementById(`${transport}_value`).textContent = event.target.value;
+            const list = getBikingList(event.target.value, transport);
+            if (event.target.value !== '0') {
+                transportList.map((distance) => {
+                    map.setLayoutProperty(distance, 'visibility', 'none');
+                });
+                list.map((distance) => {
+                    map.setLayoutProperty(distance, 'visibility', 'visible');
+                })
+            } else {
+                transportList.map((distance) => {
+                    map.setLayoutProperty(distance, 'visibility', 'none');
+                });
+            }
+        });
+    } else if (transport === 'walking') {
+        const walkingList = getAllWalkingList(transport);
+        document.getElementById(`${transport}_miles`).addEventListener('input', (event) => {
+            document.getElementById(`${transport}_value`).textContent = event.target.value;
+            const list = getWalkingList(event.target.value, transport);
+            if (event.target.value !== '0') {
+                walkingList.map((distance) => {
+                    map.setLayoutProperty(distance, 'visibility', 'none');
+                });
+                list.map((distance) => {
+                    map.setLayoutProperty(distance, 'visibility', 'visible');
+                })
+            } else {
+                walkingList.map((distance) => {
+                    map.setLayoutProperty(distance, 'visibility', 'none');
+                });
+            }
+        });
+    }
+}
+
 async function createMap(mode) {
     mapboxgl.accessToken = 'pk.eyJ1Ijoic29zaGlrdW4iLCJhIjoiY2wyczRidHBzMGUwejNqcXJqM2JxMTdvdSJ9.PZsigyD7XEJ6qYqUuqUs0g';
 
@@ -35,13 +171,65 @@ async function createMap(mode) {
         style: `mapbox://styles/mapbox/${mode}-v10`,
         minZoom: 1,
         maxZoom: 15,
-        zoom: 9,
-        center: [-119, 46.5]
+        zoom: 8.5,
+        center: [-119, 46.3]
     });
 
     const grocery = await getData('grocery');
 
-    const grocery_walking = {
+    const grocery_0_mile_walking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const grocery_quarter_mile_walking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+            }
+        })
+    }
+
+    const grocery_half_mile_walking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+            }
+        })
+    }
+
+    const grocery_three_quarters_mile_walking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+            }
+        })
+    }
+
+    const grocery_1_mile_walking = {
         type: 'FeatureCollection',
         features: grocery.features.map((location) => {
             return {
@@ -54,7 +242,33 @@ async function createMap(mode) {
         })
     }
 
-    const grocery_biking = {
+    const grocery_0_miles_biking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const grocery_1_miles_biking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `1 Mile Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const grocery_2_miles_biking = {
         type: 'FeatureCollection',
         features: grocery.features.map((location) => {
             return {
@@ -63,13 +277,104 @@ async function createMap(mode) {
                     "name": `2 Miles Biking Radius of ${location.properties['Name']}`
                 },
                 "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+            }
+        })
+    }
+
+    const grocery_3_miles_biking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+            }
+        })
+    }
+
+    const grocery_4_miles_biking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+            }
+        })
+    }
+
+    const grocery_5_miles_biking = {
+        type: 'FeatureCollection',
+        features: grocery.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
             }
         })
     }
 
     const convenience = await getData('convenience');
 
-    const convenience_walking = {
+    const convenience_0_mile_walking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const convenience_quarter_mile_walking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+            }
+        })
+    }
+
+    const convenience_half_mile_walking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+            }
+        })
+    }
+
+    const convenience_three_quarters_mile_walking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+            }
+        })
+    }
+
+    const convenience_1_mile_walking = {
         type: 'FeatureCollection',
         features: convenience.features.map((location) => {
             return {
@@ -82,7 +387,33 @@ async function createMap(mode) {
         })
     }
 
-    const convenience_biking = {
+    const convenience_0_miles_biking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const convenience_1_miles_biking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const convenience_2_miles_biking = {
         type: 'FeatureCollection',
         features: convenience.features.map((location) => {
             return {
@@ -91,13 +422,104 @@ async function createMap(mode) {
                     "name": `2 Miles Biking Radius of ${location.properties['Name']}`
                 },
                 "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+            }
+        })
+    }
+
+    const convenience_3_miles_biking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+            }
+        })
+    }
+
+    const convenience_4_miles_biking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+            }
+        })
+    }
+
+    const convenience_5_miles_biking = {
+        type: 'FeatureCollection',
+        features: convenience.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
             }
         })
     }
 
     const produce = await getData('produce');
 
-    const produce_walking = {
+    const produce_0_mile_walking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const produce_quarter_mile_walking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+            }
+        })
+    }
+
+    const produce_half_mile_walking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+            }
+        })
+    }
+
+    const produce_three_quarters_mile_walking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+            }
+        })
+    }
+
+    const produce_1_mile_walking = {
         type: 'FeatureCollection',
         features: produce.features.map((location) => {
             return {
@@ -110,7 +532,33 @@ async function createMap(mode) {
         })
     }
 
-    const produce_biking = {
+    const produce_0_miles_biking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const produce_1_miles_biking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const produce_2_miles_biking = {
         type: 'FeatureCollection',
         features: produce.features.map((location) => {
             return {
@@ -119,13 +567,104 @@ async function createMap(mode) {
                     "name": `2 Miles Biking Radius of ${location.properties['Name']}`
                 },
                 "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+            }
+        })
+    }
+
+    const produce_3_miles_biking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+            }
+        })
+    }
+
+    const produce_4_miles_biking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+            }
+        })
+    }
+
+    const produce_5_miles_biking = {
+        type: 'FeatureCollection',
+        features: produce.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
             }
         })
     }
 
     const service = await getData('service');
 
-    const service_walking = {
+    const service_0_mile_walking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const service_quarter_mile_walking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+            }
+        })
+    }
+
+    const service_half_mile_walking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+            }
+        })
+    }
+
+    const service_three_quarters_mile_walking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+            }
+        })
+    }
+
+    const service_1_mile_walking = {
         type: 'FeatureCollection',
         features: service.features.map((location) => {
             return {
@@ -138,7 +677,33 @@ async function createMap(mode) {
         })
     }
 
-    const service_biking = {
+    const service_0_miles_biking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+            }
+        })
+    }
+
+    const service_1_miles_biking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+            }
+        })
+    }
+
+    const service_2_miles_biking = {
         type: 'FeatureCollection',
         features: service.features.map((location) => {
             return {
@@ -151,14 +716,48 @@ async function createMap(mode) {
         })
     }
 
-    const walking = await getData('walking');
-    const biking = await getData('biking');
+    const service_3_miles_biking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+            }
+        })
+    }
 
-    const bus_1_miles = await getData('transit');
-    // const bus_2_miles = await getData('2milebus');
-    // const bus_3_miles = await getData('3milebus');
-    // const bus_4_miles = await getData('4milebus');
-    // const bus_5_miles = await getData('5milebus');
+    const service_4_miles_biking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+            }
+        })
+    }
+
+    const service_5_miles_biking = {
+        type: 'FeatureCollection',
+        features: service.features.map((location) => {
+            return {
+                "type": "Feature",
+                "properties": {
+                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                },
+                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
+            }
+        })
+    }
+
+    const transit = await getData('transit');
+    const transit_routes = await getData('BFTransit_Routes');
+    const borders = await getData('borders');
 
     map.on('load', () => {
         map.loadImage(
@@ -187,14 +786,14 @@ async function createMap(mode) {
             }
         );
 
-        map.addSource('grocery_walking', {
+        map.addSource('grocery_0_mile_walking', {
             type: 'geojson',
-            data: grocery_walking
+            data: grocery_0_mile_walking
         });
 
         map.addLayer({
-            'id': 'grocery_walking',
-            'source': 'grocery_walking',
+            'id': 'grocery_0_mile_walking',
+            'source': 'grocery_0_mile_walking',
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill
@@ -205,15 +804,177 @@ async function createMap(mode) {
             },
         });
 
-        map.addSource('grocery_biking', {
+        map.addSource('grocery_quarter_mile_walking', {
             type: 'geojson',
-            data: grocery_biking
+            data: grocery_quarter_mile_walking
         });
 
         map.addLayer({
-            'id': 'grocery_biking',
+            'id': 'grocery_quarter_mile_walking',
+            'source': 'grocery_quarter_mile_walking',
             'type': 'fill',
-            'source': 'grocery_biking',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('grocery_half_mile_walking', {
+            type: 'geojson',
+            data: grocery_half_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'grocery_half_mile_walking',
+            'source': 'grocery_half_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('grocery_three_quarters_mile_walking', {
+            type: 'geojson',
+            data: grocery_three_quarters_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'grocery_three_quarters_mile_walking',
+            'source': 'grocery_three_quarters_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('grocery_1_mile_walking', {
+            type: 'geojson',
+            data: grocery_1_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'grocery_1_mile_walking',
+            'source': 'grocery_1_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('grocery_0_miles_biking', {
+            type: 'geojson',
+            data: grocery_0_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'grocery_0_miles_biking',
+            'type': 'fill',
+            'source': 'grocery_0_miles_biking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.6
+            }
+        });
+
+        map.addSource('grocery_1_miles_biking', {
+            type: 'geojson',
+            data: grocery_1_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'grocery_1_miles_biking',
+            'type': 'fill',
+            'source': 'grocery_1_miles_biking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.6
+            }
+        });
+
+        map.addSource('grocery_2_miles_biking', {
+            type: 'geojson',
+            data: grocery_2_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'grocery_2_miles_biking',
+            'type': 'fill',
+            'source': 'grocery_2_miles_biking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.6
+            }
+        });
+
+        map.addSource('grocery_3_miles_biking', {
+            type: 'geojson',
+            data: grocery_3_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'grocery_3_miles_biking',
+            'type': 'fill',
+            'source': 'grocery_3_miles_biking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.6
+            }
+        });
+
+        map.addSource('grocery_4_miles_biking', {
+            type: 'geojson',
+            data: grocery_4_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'grocery_4_miles_biking',
+            'type': 'fill',
+            'source': 'grocery_4_miles_biking',
+            'layout': {
+                'visibility': 'none',
+            },
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.6
+            }
+        });
+
+        map.addSource('grocery_5_miles_biking', {
+            type: 'geojson',
+            data: grocery_5_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'grocery_5_miles_biking',
+            'type': 'fill',
+            'source': 'grocery_5_miles_biking',
             'layout': {
                 'visibility': 'none',
             },
@@ -272,14 +1033,14 @@ async function createMap(mode) {
             }
         );
 
-        map.addSource('convenience_walking', {
+        map.addSource('convenience_0_mile_walking', {
             type: 'geojson',
-            data: convenience_walking
+            data: convenience_0_mile_walking
         });
 
         map.addLayer({
-            'id': 'convenience_walking',
-            'source': 'convenience_walking',
+            'id': 'convenience_0_mile_walking',
+            'source': 'convenience_0_mile_walking',
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill
@@ -290,14 +1051,176 @@ async function createMap(mode) {
             },
         });
 
-        map.addSource('convenience_biking', {
+        map.addSource('convenience_quarter_mile_walking', {
             type: 'geojson',
-            data: convenience_biking
+            data: convenience_quarter_mile_walking
         });
 
         map.addLayer({
-            'id': 'convenience_biking',
-            'source': 'convenience_biking',
+            'id': 'convenience_quarter_mile_walking',
+            'source': 'convenience_quarter_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_half_mile_walking', {
+            type: 'geojson',
+            data: convenience_half_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'convenience_half_mile_walking',
+            'source': 'convenience_half_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+        
+        map.addSource('convenience_three_quarters_mile_walking', {
+            type: 'geojson',
+            data: convenience_three_quarters_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'convenience_three_quarters_mile_walking',
+            'source': 'convenience_three_quarters_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_1_mile_walking', {
+            type: 'geojson',
+            data: convenience_1_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'convenience_1_mile_walking',
+            'source': 'convenience_1_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_0_miles_biking', {
+            type: 'geojson',
+            data: convenience_0_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'convenience_0_miles_biking',
+            'source': 'convenience_0_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_1_miles_biking', {
+            type: 'geojson',
+            data: convenience_1_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'convenience_1_miles_biking',
+            'source': 'convenience_1_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_2_miles_biking', {
+            type: 'geojson',
+            data: convenience_2_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'convenience_2_miles_biking',
+            'source': 'convenience_2_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_3_miles_biking', {
+            type: 'geojson',
+            data: convenience_3_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'convenience_3_miles_biking',
+            'source': 'convenience_3_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_4_miles_biking', {
+            type: 'geojson',
+            data: convenience_4_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'convenience_4_miles_biking',
+            'source': 'convenience_4_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('convenience_5_miles_biking', {
+            type: 'geojson',
+            data: convenience_5_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'convenience_5_miles_biking',
+            'source': 'convenience_5_miles_biking',
             'type': 'fill',
             'paint': {
                 'fill-color': '#90EE90', // green color fill
@@ -357,14 +1280,14 @@ async function createMap(mode) {
             }
         );
 
-        map.addSource('produce_walking', {
+        map.addSource('produce_0_mile_walking', {
             type: 'geojson',
-            data: produce_walking
+            data: produce_0_mile_walking
         });
 
         map.addLayer({
-            'id': 'produce_walking',
-            'source': 'produce_walking',
+            'id': 'produce_0_mile_walking',
+            'source': 'produce_0_mile_walking',
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill
@@ -375,14 +1298,176 @@ async function createMap(mode) {
             },
         });
 
-        map.addSource('produce_biking', {
+        map.addSource('produce_quarter_mile_walking', {
             type: 'geojson',
-            data: produce_biking
+            data: produce_quarter_mile_walking
         });
 
         map.addLayer({
-            'id': 'produce_biking',
-            'source': 'produce_biking',
+            'id': 'produce_quarter_mile_walking',
+            'source': 'produce_quarter_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_half_mile_walking', {
+            type: 'geojson',
+            data: produce_half_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'produce_half_mile_walking',
+            'source': 'produce_half_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_three_quarters_mile_walking', {
+            type: 'geojson',
+            data: produce_three_quarters_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'produce_three_quarters_mile_walking',
+            'source': 'produce_three_quarters_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_1_mile_walking', {
+            type: 'geojson',
+            data: produce_1_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'produce_1_mile_walking',
+            'source': 'produce_1_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_0_miles_biking', {
+            type: 'geojson',
+            data: produce_0_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'produce_0_miles_biking',
+            'source': 'produce_0_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_1_miles_biking', {
+            type: 'geojson',
+            data: produce_1_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'produce_1_miles_biking',
+            'source': 'produce_1_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_2_miles_biking', {
+            type: 'geojson',
+            data: produce_2_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'produce_2_miles_biking',
+            'source': 'produce_2_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_3_miles_biking', {
+            type: 'geojson',
+            data: produce_3_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'produce_3_miles_biking',
+            'source': 'produce_3_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_4_miles_biking', {
+            type: 'geojson',
+            data: produce_4_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'produce_4_miles_biking',
+            'source': 'produce_4_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('produce_5_miles_biking', {
+            type: 'geojson',
+            data: produce_5_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'produce_5_miles_biking',
+            'source': 'produce_5_miles_biking',
             'type': 'fill',
             'paint': {
                 'fill-color': '#90EE90', // green color fill
@@ -442,14 +1527,14 @@ async function createMap(mode) {
             }
         );
 
-        map.addSource('service_walking', {
+        map.addSource('service_0_mile_walking', {
             type: 'geojson',
-            data: service_walking
+            data: service_0_mile_walking
         });
 
         map.addLayer({
-            'id': 'service_walking',
-            'source': 'service_walking',
+            'id': 'service_0_mile_walking',
+            'source': 'service_0_mile_walking',
             'type': 'fill',
             'paint': {
                 'fill-color': '#0080ff', // blue color fill 
@@ -460,14 +1545,86 @@ async function createMap(mode) {
             },
         });
 
-        map.addSource('service_biking', {
+        map.addSource('service_quarter_mile_walking', {
             type: 'geojson',
-            data: service_biking
+            data: service_quarter_mile_walking
         });
 
         map.addLayer({
-            'id': 'service_biking',
-            'source': 'service_biking',
+            'id': 'service_quarter_mile_walking',
+            'source': 'service_quarter_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill 
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_half_mile_walking', {
+            type: 'geojson',
+            data: service_half_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'service_half_mile_walking',
+            'source': 'service_half_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill 
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_three_quarters_mile_walking', {
+            type: 'geojson',
+            data: service_three_quarters_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'service_three_quarters_mile_walking',
+            'source': 'service_three_quarters_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill 
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_1_mile_walking', {
+            type: 'geojson',
+            data: service_1_mile_walking
+        });
+
+        map.addLayer({
+            'id': 'service_1_mile_walking',
+            'source': 'service_1_mile_walking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#0080ff', // blue color fill 
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_0_miles_biking', {
+            type: 'geojson',
+            data: service_0_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'service_0_miles_biking',
+            'source': 'service_0_miles_biking',
             'type': 'fill',
             'paint': {
                 'fill-color': '#90EE90', // green color fill
@@ -478,131 +1635,150 @@ async function createMap(mode) {
             },
         });
 
-        map.addSource('walking', {
+        map.addSource('service_1_miles_biking', {
             type: 'geojson',
-            data: walking
+            data: service_1_miles_biking
         });
 
         map.addLayer({
-            'id': 'walking',
+            'id': 'service_1_miles_biking',
+            'source': 'service_1_miles_biking',
             'type': 'fill',
-            'source': 'walking',
-            'layout': {
-                'visibility': 'none',
-            },
-            'paint': {
-                'fill-color': '#0080ff', // blue color fill
-                'fill-opacity': 0.6
-            }
-        });
-
-        map.addSource('biking', {
-            type: 'geojson',
-            data: biking
-        });
-
-        map.addLayer({
-            'id': 'biking',
-            'type': 'fill',
-            'source': 'biking',
-            'layout': {
-                'visibility': 'none',
-            },
             'paint': {
                 'fill-color': '#90EE90', // green color fill
-                'fill-opacity': 0.6
-            }
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
         });
 
-        map.addSource('bus_1_miles', {
+        map.addSource('service_2_miles_biking', {
             type: 'geojson',
-            data: bus_1_miles
+            data: service_2_miles_biking
         });
 
         map.addLayer({
-            'id': 'bus_1_miles',
-            'source': 'bus_1_miles',
+            'id': 'service_2_miles_biking',
+            'source': 'service_2_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_3_miles_biking', {
+            type: 'geojson',
+            data: service_3_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'service_3_miles_biking',
+            'source': 'service_3_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_4_miles_biking', {
+            type: 'geojson',
+            data: service_4_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'service_4_miles_biking',
+            'source': 'service_4_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('service_5_miles_biking', {
+            type: 'geojson',
+            data: service_5_miles_biking
+        });
+
+        map.addLayer({
+            'id': 'service_5_miles_biking',
+            'source': 'service_5_miles_biking',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#90EE90', // green color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            },
+        });
+
+        map.addSource('transit', {
+            type: 'geojson',
+            data: transit
+        });
+
+        map.addLayer({
+            'id': 'transit',
+            'source': 'transit',
             'type': 'fill',
             'paint': {
                 'fill-color': '#ffbdbd', // pink color fill
-                'fill-opacity': 0.3
+                'fill-opacity': 0.05
             },
             'layout': {
                 'visibility': 'none',
             }
         });
 
-        // map.addSource('bus_2_miles', {
-        //     type: 'geojson',
-        //     data: bus_2_miles
-        // });
+        map.addSource('transit_routes', {
+            type: 'geojson',
+            data: transit_routes
+        });
 
-        // map.addLayer({
-        //     'id': 'bus_2_miles',
-        //     'source': 'bus_2_miles',
-        //     'type': 'fill',
-        //     'paint': {
-        //         'fill-color': '#ffbdbd', // pink color fill
-        //         'fill-opacity': 0.3
-        //     },
-        //     'layout': {
-        //         'visibility': 'none',
-        //     }
-        // });
+        map.addLayer({
+            'id': 'transit_routes',
+            'source': 'transit_routes',
+            'type': 'line',
+            'paint': {
+                'line-color': '#000000', // black color line
+                'line-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            }
+        });
 
-        // map.addSource('bus_3_miles', {
-        //     type: 'geojson',
-        //     data: bus_3_miles
-        // });
+        map.addSource('borders', {
+            type: 'geojson',
+            data: borders
+        });
 
-        // map.addLayer({
-        //     'id': 'bus_3_miles',
-        //     'source': 'bus_3_miles',
-        //     'type': 'fill',
-        //     'paint': {
-        //         'fill-color': '#ffbdbd', // pink color fill
-        //         'fill-opacity': 0.3
-        //     },
-        //     'layout': {
-        //         'visibility': 'none',
-        //     }
-        // });
-
-        // map.addSource('bus_4_miles', {
-        //     type: 'geojson',
-        //     data: bus_4_miles
-        // });
-
-        // map.addLayer({
-        //     'id': 'bus_4_miles',
-        //     'source': 'bus_4_miles',
-        //     'type': 'fill',
-        //     'paint': {
-        //         'fill-color': '#ffbdbd', // pink color fill
-        //         'fill-opacity': 0.3
-        //     },
-        //     'layout': {
-        //         'visibility': 'none',
-        //     }
-        // });
-
-        // map.addSource('bus_5_miles', {
-        //     type: 'geojson',
-        //     data: bus_5_miles
-        // });
-
-        // map.addLayer({
-        //     'id': 'bus_5_miles',
-        //     'source': 'bus_5_miles',
-        //     'type': 'fill',
-        //     'paint': {
-        //         'fill-color': '#ffbdbd', // pink color fill
-        //         'fill-opacity': 0.3
-        //     },
-        //     'layout': {
-        //         'visibility': 'none',
-        //     }
-        // });
+        map.addLayer({
+            'id': 'borders',
+            'source': 'borders',
+            'type': 'line',
+            'paint': {
+                'line-color': '#000000', // black color line
+                'line-opacity': 1,
+                'line-width': 3
+            },
+            'layout': {
+                'visibility': 'visible',
+            }
+        });
 
         map.on('click', 'service', (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
@@ -628,99 +1804,29 @@ async function createMap(mode) {
         });
 
         let filters = document.getElementsByTagName('input');
-        let storesTransport = [
-            'grocery_walking',
-            'grocery_biking',
-            'convenience_walking',
-            'convenience_biking',
-            'produce_walking',
-            'produce_biking',
-            'service_walking',
-            'service_biking'
-        ];
-        let current = [];
-        let transportation = [];
         for (let i = 0; i < filters.length; i++) {
             filters[i].addEventListener('click', () => {
                 if (filters[i].type === 'checkbox' && filters[i].id !== 'toggle') {
                     let selection = filters[i].value;
 
-                    if (selection === 'transit') {
-                        document.getElementById('miles').disabled = false;
-                        let miles = document.getElementById('miles').value;
-                        document.getElementById('value').textContent = miles;
-
-                        document.getElementById('miles').addEventListener('input', (event) => {
-                            value.textContent = event.target.value;
-                            if (event.target.value !== '0') {
-                                map.setLayoutProperty('bus_1_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_2_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_3_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_4_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_5_miles', 'visibility', 'none');
-                                map.setLayoutProperty(`bus_${event.target.value}_miles`, 'visibility', 'visible');
-                            } else {
-                                map.setLayoutProperty('bus_1_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_2_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_3_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_4_miles', 'visibility', 'none');
-                                map.setLayoutProperty('bus_5_miles', 'visibility', 'none');
-                            }
-                        });
-                    }
-
-                    // Selection is a transportation AND there is a store type
-                    if (
-                        (selection === 'walking' || selection === 'biking' || selection === 'driving')
-                        && (current.includes('grocery') || current.includes('convenience') || current.includes('produce') || current.includes('service'))
-                    ) {
-                        // There is only ONE store selection
-                        if (current.length === 1) {
-                            let visible = map.getLayoutProperty(`${current[0]}_${selection}`, 'visibility');
-                            if (visible === 'visible') {
-                                transportation.splice(transportation.indexOf(selection), 1);
-                                map.setLayoutProperty(`${current[0]}_${selection}`, 'visibility', 'none');
-                            } else {
-                                transportation.push(selection);
-                                map.setLayoutProperty(`${current[0]}_${selection}`, 'visibility', 'visible');
-                            }
-                        } else {
-                            let visible = '';
-                            current.map((store) => {
-                                visible = map.getLayoutProperty(`${store}_${selection}`, 'visibility');
-                                if (visible === 'visible') {
-                                    transportation.splice(transportation.indexOf(selection), 1);
-                                    map.setLayoutProperty(`${store}_${selection}`, 'visibility', 'none');
-                                } else {
-                                    transportation.push(selection);
-                                    map.setLayoutProperty(`${store}_${selection}`, 'visibility', 'visible');
-                                }
-                            });
-
-                            if (visible !== 'visible') {
-                                transportation.pop();
-                            }
-                        }
-                        // Selection is NOT a transportation
-                    } else if (selection !== 'transit') {
+                    if (selection === 'biking') {
+                        getSingleTransportation('biking', map);
+                    } else if (selection === 'walking') {
+                        getSingleTransportation('walking', map);
+                    } else if (selection === 'transit') {
                         let visible = map.getLayoutProperty(selection, 'visibility');
                         if (visible === 'visible') {
-                            map.setLayoutProperty(`${selection}_walking`, 'visibility', 'none');
-                            map.setLayoutProperty(`${selection}_biking`, 'visibility', 'none');
-                            current.splice(current.indexOf(selection), 1);
-                            if (transportation.length > 0) {
-                                transportation.map((mode) => {
-                                    map.setLayoutProperty(`${selection}_${mode}`, 'visibility', 'none');
-                                });
-                            }
+                            map.setLayoutProperty(selection, 'visibility', 'none');
+                            map.setLayoutProperty('transit_routes', 'visibility', 'none');
+                        } else {
+                            map.setLayoutProperty(selection, 'visibility', 'visible');
+                            map.setLayoutProperty('transit_routes', 'visibility', 'visible');
+                        }
+                    } else {
+                        let visible = map.getLayoutProperty(selection, 'visibility');
+                        if (visible === 'visible') {
                             map.setLayoutProperty(selection, 'visibility', 'none');
                         } else {
-                            current.push(selection);
-                            if (transportation.length > 0) {
-                                transportation.map((mode) => {
-                                    map.setLayoutProperty(`${selection}_${mode}`, 'visibility', 'visible');
-                                });
-                            }
                             map.setLayoutProperty(selection, 'visibility', 'visible');
                         }
                     }
@@ -730,8 +1836,6 @@ async function createMap(mode) {
 
         let clearButton = document.getElementById('clear');
         clearButton.addEventListener('click', () => {
-            current = [];
-            transportation = [];
             for (let i = 0; i < filters.length; i++) {
                 if (filters[i].type === 'checkbox' && filters[i].checked && filters[i].id !== 'toggle') {
                     filters[i].checked = false;
@@ -739,38 +1843,26 @@ async function createMap(mode) {
                     map.setLayoutProperty('convenience', 'visibility', 'none');
                     map.setLayoutProperty('produce', 'visibility', 'none');
                     map.setLayoutProperty('service', 'visibility', 'none');
-                    storesTransport.map((place) => {
-                        map.setLayoutProperty(place, 'visibility', 'none');
-                    });
+                    map.setLayoutProperty('transit', 'visibility', 'none');
+                    map.setLayoutProperty('transit_routes', 'visibility', 'none');
                 }
             }
-            document.getElementById('miles').disabled = true;
-            document.getElementById('miles').value = '0';
-            document.getElementById('value').textContent = '';
-            map.setLayoutProperty('walking', 'visibility', 'none');
-            map.setLayoutProperty('biking', 'visibility', 'none');
-            map.setLayoutProperty('bus_1_miles', 'visibility', 'none');
-            map.setLayoutProperty('bus_2_miles', 'visibility', 'none');
-            map.setLayoutProperty('bus_3_miles', 'visibility', 'none');
-            map.setLayoutProperty('bus_4_miles', 'visibility', 'none');
-            map.setLayoutProperty('bus_5_miles', 'visibility', 'none');
+            document.getElementById('biking_miles').disabled = true;
+            document.getElementById('biking_miles').value = '0';
+            document.getElementById('biking_value').textContent = '';
+            document.getElementById('walking_miles').disabled = true;
+            document.getElementById('walking_miles').value = '0';
+            document.getElementById('walking_value').textContent = '';
+            let bikingList = getAllBikingList('biking');
+            let walkingList = getAllWalkingList('walking');
+            bikingList.map((distance) => {
+                map.setLayoutProperty(distance, 'visibility', 'none');
+            });
+            walkingList.map((distance) => {
+                map.setLayoutProperty(distance, 'visibility', 'none');
+            });
         });
     });
-
-    // document.getElementById('toggle').addEventListener('change', (e) => {
-    //     for (let i = 0; i < filters.length; i++) {
-    //         if (filters[i].type === 'checkbox' && filters[i].checked && filters[i].id !== 'toggle') {
-    //             filters[i].checked = false;
-    //         }
-    //     }
-    //     if (e.target.className === 'light') {
-    //         e.target.classList.remove('light');
-    //         createMap('dark');
-    //     } else {
-    //         e.target.classList.add('light');
-    //         createMap('light');
-    //     }
-    // });
 }
 
 async function getData(file) {
