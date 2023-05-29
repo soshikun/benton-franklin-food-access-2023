@@ -2209,6 +2209,10 @@ async function createMap(mode) {
                     map.setLayoutProperty('convenience', 'visibility', 'none');
                     map.setLayoutProperty('produce', 'visibility', 'none');
                     map.setLayoutProperty('service', 'visibility', 'none');
+                    map.setLayoutProperty('grocery_driving', 'visibility', 'none');
+                    map.setLayoutProperty('convenience_driving', 'visibility', 'none');
+                    map.setLayoutProperty('produce_driving', 'visibility', 'none');
+                    map.setLayoutProperty('service_driving', 'visibility', 'none');
                     map.setLayoutProperty('driving', 'visibility', 'none');
                     map.setLayoutProperty('transit', 'visibility', 'none');
                     map.setLayoutProperty('transit_routes', 'visibility', 'none');
