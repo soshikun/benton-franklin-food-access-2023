@@ -121,6 +121,67 @@ function getWalkingList(miles, transport) {
     return list;
 }
 
+function getStoreAndTransportation(store, transport, map) {
+    let transportList = [];
+    if (transport === 'biking') {
+        transportList = getAllBikingList(transport);
+    } else if (transport === 'walking') {
+        transportList = getAllWalkingList(transport);
+    }
+
+    document.getElementById(`${transport}_miles`).addEventListener('input', (event) => {
+        document.getElementById(`${transport}_value`).textContent = event.target.value;
+        if (map.getLayoutProperty(store, 'visibility') === 'visible') {
+            let newList = transportList.filter(element => element.includes(store));
+            if (transport === 'biking') {
+                let radius = newList.filter(element => element.includes(event.target.value));
+                if (event.target.value !== '0') {
+                    newList.map((distance) => {
+                        map.setLayoutProperty(distance, 'visibility', 'none');
+                    });
+                    radius.map((distance) => {
+                        map.setLayoutProperty(distance, 'visibility', 'visible');
+                    })
+                } else {
+                    newList.map((distance) => {
+                        map.setLayoutProperty(distance, 'visibility', 'none');
+                    });
+                }
+            } else if (transport === 'walking') {
+                let number = '';
+                if (event.target.value === '0.25') {
+                    number = 'quarter'
+                } else if (event.target.value === '0.5') {
+                    number = 'half'
+                } else if (event.target.value === '0.75') {
+                    number = 'three_quarters'
+                } else if (event.target.value === '0') {
+                    number = '0';
+                } else if (event.target.value === '1') {
+                    number = '1';
+                }
+                let radius = newList.filter(element => element.includes(number));
+                if (number !== '0') {
+                    newList.map((distance) => {
+                        map.setLayoutProperty(distance, 'visibility', 'none');
+                    });
+                    if (number === 'quarter') {
+                        map.setLayoutProperty(radius[0], 'visibility', 'visible');
+                    } else {
+                        radius.map((distance) => {
+                            map.setLayoutProperty(distance, 'visibility', 'visible');
+                        });
+                    }
+                } else {
+                    newList.map((distance) => {
+                        map.setLayoutProperty(distance, 'visibility', 'none');
+                    });
+                }
+            }
+        }
+    });
+}
+
 function getSingleTransportation(transport, map) {
     document.getElementById(`${transport}_value`).textContent = getDistance(transport);
     if (transport === 'biking') {
@@ -1821,13 +1882,15 @@ async function createMap(mode) {
             map.getCanvas().style.cursor = '';
         });
 
+        let current = [];
+        let transportation = [];
         let filters = document.getElementsByTagName('input');
         for (let i = 0; i < filters.length; i++) {
             filters[i].addEventListener('click', () => {
                 if (filters[i].type === 'checkbox' && filters[i].id !== 'toggle') {
                     let selection = filters[i].value;
 
-                    if (selection === 'biking') {
+                    if (selection === 'biking' && current.length === 0) {
                         let bikingList = getAllBikingList('biking');
                         bikingList.map((distance) => {
                             let visible = map.getLayoutProperty(distance, 'visibility');
@@ -1844,8 +1907,9 @@ async function createMap(mode) {
                             document.getElementById('biking_miles').value = '0';
                             filters[i].classList.add('clicked');
                         }
+                        transportation.push(selection);
                         getSingleTransportation('biking', map);
-                    } else if (selection === 'walking') {
+                    } else if (selection === 'walking' && current.length === 0) {
                         let walkingList = getAllWalkingList('walking');
                         walkingList.map((distance) => {
                             let visible = map.getLayoutProperty(distance, 'visibility');
@@ -1862,6 +1926,7 @@ async function createMap(mode) {
                             document.getElementById('walking_miles').value = '0';
                             filters[i].classList.add('clicked');
                         }
+                        transportation.push(selection);
                         getSingleTransportation('walking', map);
                     } else if (selection === 'transit') {
                         let visible = map.getLayoutProperty(selection, 'visibility');
@@ -1872,11 +1937,114 @@ async function createMap(mode) {
                             map.setLayoutProperty(selection, 'visibility', 'visible');
                             map.setLayoutProperty('transit_routes', 'visibility', 'visible');
                         }
+                    } else if (current.length > 0 && (selection === 'biking' || selection === 'walking')) {
+                        if (transportation.includes(selection)) {
+                            transportation.splice(transportation.indexOf(selection), 1);
+                            let list = [];
+                            if (selection === 'biking') {
+                                list = getAllBikingList('biking');
+                            } else if (selection === 'walking') {
+                                list = getAllWalkingList('walking');
+                            }
+                            list.map((distance) => {
+                                map.setLayoutProperty(distance, 'visibility', 'none');
+                            });
+                        } else {
+                            if (selection === 'biking') {
+                                if (filters[i].classList.contains('clicked')) {
+                                    document.getElementById('biking_miles').disabled = true;
+                                    document.getElementById('biking_miles').value = '0';
+                                    filters[i].classList.remove('clicked');
+                                } else {
+                                    document.getElementById('biking_miles').disabled = false;
+                                    document.getElementById('biking_miles').value = '0';
+                                    filters[i].classList.add('clicked');
+                                }
+                                current.map((store) => {
+                                    getStoreAndTransportation(store, selection, map);
+                                });
+                                transportation.push(selection);
+                            } else if (selection === 'walking') {
+                                if (filters[i].classList.contains('clicked')) {
+                                    document.getElementById('walking_miles').disabled = true;
+                                    document.getElementById('walking_miles').value = '0';
+                                    filters[i].classList.remove('clicked');
+                                } else {
+                                    document.getElementById('walking_miles').disabled = false;
+                                    document.getElementById('walking_miles').value = '0';
+                                    filters[i].classList.add('clicked');
+                                }
+                                current.map((store) => {
+                                    getStoreAndTransportation(store, selection, map);
+                                });
+                                transportation.push(selection);
+                            };
+                        }
                     } else {
                         let visible = map.getLayoutProperty(selection, 'visibility');
                         if (visible === 'visible') {
+                            current.splice(current.indexOf(selection), 1);
+                            if (transportation.length > 0) {
+                                transportation.map((mode) => {
+                                    let list = [];
+                                    if (mode === 'walking') {
+                                        list = getAllWalkingList('walking').filter(element => element.includes(selection));
+                                    } else if (mode === 'biking') {
+                                        list = getAllBikingList('biking').filter(element => element.includes(selection));
+                                    }
+                                    list.map((distance) => {
+                                        map.setLayoutProperty(distance, 'visibility', 'none');
+                                    });
+                                })
+                            }
                             map.setLayoutProperty(selection, 'visibility', 'none');
                         } else {
+                            current.push(selection);
+                            if (transportation.length > 0) {
+                                transportation.map((mode) => {
+                                    let list = [];
+                                    let value = document.getElementById(`${mode}_value`).value;
+                                    if (mode === 'walking') {
+                                        list = getAllWalkingList('walking').filter(element => element.includes(selection));
+                                        let number = '';
+                                        if (value === '0.25') {
+                                            number = 'quarter'
+                                        } else if (value === '0.5') {
+                                            number = 'half'
+                                        } else if (value === '0.75') {
+                                            number = 'three_quarters'
+                                        } else if (value === '0') {
+                                            number = '0';
+                                        } else if (value === '1') {
+                                            number = '1';
+                                        }
+                                        let layer = list.filter(element => element.includes(number));
+                                        layer.map((distance) => {
+                                            if (distance.includes(number)) {
+                                                if (number === 'quarter') {
+                                                    list.map((radius) => {
+                                                        map.setLayoutProperty(radius, 'visibility', 'none');
+                                                    });
+                                                    map.setLayoutProperty(layer[0], 'visibility', 'visible');
+                                                } else {
+                                                    map.setLayoutProperty(distance, 'visibility', 'visible');
+                                                }
+                                            } else {
+                                                list.map((radius) => {
+                                                    map.setLayoutProperty(radius, 'visibility', 'none');
+                                                });
+                                            }
+                                        });
+                                    } else if (mode === 'biking') {
+                                        list = getAllBikingList('biking').filter(element => element.includes(selection));
+                                        const newDistance = list.filter(element => element.includes(value));
+                                        newDistance.map((distance) => {
+                                            map.setLayoutProperty(distance, 'visibility', 'visible');
+                                        });
+                                    }
+                                    getStoreAndTransportation(selection, mode, map);
+                                })
+                            }
                             map.setLayoutProperty(selection, 'visibility', 'visible');
                         }
                     }
@@ -1898,6 +2066,8 @@ async function createMap(mode) {
                     map.setLayoutProperty('transit_routes', 'visibility', 'none');
                 }
             }
+            current = [];
+            transportation = [];
             document.getElementById('biking_miles').disabled = true;
             document.getElementById('biking_miles').value = '0';
             document.getElementById('biking_value').textContent = '';
