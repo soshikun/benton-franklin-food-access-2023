@@ -35,94 +35,108 @@
 
     <div id="map" class="mapboxgl-map"></div>
     <!-- <div id="pop-ups"> -->
-        <div id='intro' class="intro">
-            <div>
-                <div class="intro-title">
-                    <h2>Food Access 2023</h2>
-                    <p class="close" onclick="closeModal('intro')">x</p>
-                </div>
-                <p class="description">
-                    This interactive webmap is intended to highlight the relative accessibility of grocery stores,
-                    convenience stores, and convenience stores that sell produce within the borders of the individual
-                    Benton and Franklin counties for different distances and means of transportation.
-                </p>
-                <p>Source: Benton-Franklin Health District, US Census</p>
+    <div id='intro' class="intro">
+        <div>
+            <div class="intro-title">
+                <h2>Food Access 2023</h2>
+                <p class="close" onclick="closeModal('intro')">x</p>
             </div>
-            <div id="open" onclick="openModal('intro')"></div>
+            <p class="description">
+                This interactive webmap is intended to highlight the relative accessibility of grocery stores,
+                convenience stores, and convenience stores that sell produce within the borders of the individual
+                Benton and Franklin counties for different distances and means of transportation.
+            </p>
+            <p>Source: Benton-Franklin Health District, US Census</p>
         </div>
-        <div id="filters" class="intro">
-            <div id="open-filters" onclick="openModal('filters')"></div>
-            <div id="filter-options">
-                <div id="filter-content">
-                    <h3>Stores</h3>
-                    <form class="stores" id="stores">
-                        <div>
-                            <input type='checkbox' id="grocery" name="grocery" value='grocery'>
-                            <label for="grocery">Grocery Stores</label>
-                            <img src="./imgs/grocery.png" alt="grocery store icon" />
-                        </div>
-                        <div>
-                            <input type='checkbox' id='convenience' name="convenience" value="convenience">
-                            <label for="convenience">Convenience Stores</label>
-                            <img src="./imgs/convenience.png" alt="convenience store icon" />
-                        </div>
-                        <div>
-                            <input type="checkbox" id="produce" name="produce" value="produce">
-                            <label for="covenience-produce">Convenience Stores with Produce</label>
-                            <img src="./imgs/produce.png" alt="convenience stores with produce icon" />
-                        </div>
-                        <div>
-                            <input type="checkbox" id="service" name="service" value="service">
-                            <label for="service">Food Services</label>
-                            <img src="./imgs/service.png" alt="food services icon" />
-                        </div>
-                    </form>
-                    <h3>Transportation</h3>
-                    <form class="stores" id="transportation">
-                        <div>
-                            <input type='checkbox' id="walking" name="walking" value='walking'>
-                            <label for="walking">Walking</label>
-                            <img src="./imgs/blue-circle.png" alt="Walking icon (blue circle)" />
-                        </div>
-                        <div>
-                            <input type="range" id="walking_miles" name="walking_miles" min="0" max="1" step="0.25" value="0" class="miles" disabled>
-                            <label for="walking_miles"><output id="walking_value"></output> Mile(s)</label>
-                        </div>
-                        <div>
-                            <input type='checkbox' id='biking' name="biking" value="biking">
-                            <label for="biking">Biking</label>
-                            <img src="./imgs/green-circle.png" alt="Biking icon (green circle)" />
-                        </div>
-                        <div>
-                            <input type="range" id="biking_miles" name="biking_miles" min="0" max="5" step="1" value="0" class="miles" disabled>
-                            <label for="biking_miles"><output id="biking_value"></output> Mile(s)</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="driving" name="driving" value="driving">
-                            <label for="driving">10 Minutes Driving</label>
-                            <img src="./imgs/yellow-circle.png" alt="Driving icon (yellow circle)" />
-                        </div>
-                        <div>
-                            <input type="checkbox" id="transit" name="transit" value="transit">
-                            <label for="transit">Public Transit</label>
-                            <img src="./imgs/red-circle.png" alt="public transit icon (red circle)" />
-                        </div>
-                    </form>
-                    <div class="search-buttons">
-                        <button class='filter-button' id="clear">Clear Filters</button>
-                        <!-- <div id="toggle-button">
+        <div id="open" onclick="openModal('intro')"></div>
+    </div>
+    <div id="filters" class="intro">
+        <div id="open-filters" onclick="openModal('filters')"></div>
+        <div id="filter-options">
+            <div id="filter-content">
+                <h3>Stores</h3>
+                <form class="stores" id="stores">
+                    <div>
+                        <input type='checkbox' id="grocery" name="grocery" value='grocery'>
+                        <label for="grocery">Grocery Stores</label>
+                        <img src="./imgs/grocery.png" alt="grocery store icon" />
+                    </div>
+                    <div>
+                        <input type='checkbox' id='convenience' name="convenience" value="convenience">
+                        <label for="convenience">Convenience Stores</label>
+                        <img src="./imgs/convenience.png" alt="convenience store icon" />
+                    </div>
+                    <div>
+                        <input type="checkbox" id="produce" name="produce" value="produce">
+                        <label for="covenience-produce">Convenience Stores with Produce</label>
+                        <img src="./imgs/produce.png" alt="convenience stores with produce icon" />
+                    </div>
+                    <div>
+                        <input type="checkbox" id="service" name="service" value="service">
+                        <label for="service">Food Services</label>
+                        <img src="./imgs/service.png" alt="food services icon" />
+                    </div>
+                </form>
+                <h3>Transportation</h3>
+                <form class="stores" id="transportation">
+                    <div>
+                        <input type='checkbox' id="walking" name="walking" value='walking'>
+                        <label for="walking">Walking</label>
+                        <img src="./imgs/blue-circle.png" alt="Walking icon (blue circle)" />
+                    </div>
+                    <div>
+                        <input type="range" id="walking_miles" name="walking_miles" min="0" max="1" step="0.25"
+                            value="0" class="miles" disabled>
+                        <label for="walking_miles"><output id="walking_value"></output> Mile(s)</label>
+                    </div>
+                    <div>
+                        <input type='checkbox' id='biking' name="biking" value="biking">
+                        <label for="biking">Biking</label>
+                        <img src="./imgs/green-circle.png" alt="Biking icon (green circle)" />
+                    </div>
+                    <div>
+                        <input type="range" id="biking_miles" name="biking_miles" min="0" max="5" step="1" value="0"
+                            class="miles" disabled>
+                        <label for="biking_miles"><output id="biking_value"></output> Mile(s)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="driving" name="driving" value="driving">
+                        <label for="driving">10 Minutes Driving</label>
+                        <img src="./imgs/yellow-circle.png" alt="Driving icon (yellow circle)" />
+                    </div>
+                    <div>
+                        <input type="checkbox" id="transit" name="transit" value="transit">
+                        <label for="transit">Public Transit</label>
+                        <img src="./imgs/red-circle.png" alt="public transit icon (red circle)" />
+                    </div>
+                </form>
+                <h3>Other</h3>
+                <form class="stores">
+                    <div>
+                        <input type='checkbox' id="population" name="population" value='population'>
+                        <label for="population">Population</label>
+                        <!-- <img src="./imgs/blue-circle.png" alt="population icon (blue circle)" /> -->
+                    </div>
+                    <div>
+                        <input type='checkbox' id="index" name="index" value='index'>
+                        <label for="index">Social Index</label>
+                    </div>
+                </form>
+                <div class="search-buttons">
+                    <button class='filter-button' id="clear">Clear Filters</button>
+                    <!-- <div id="toggle-button">
                             <label>Light Mode</label>
                             <label class="switch">
                                 <input type="checkbox" id="toggle" class="light" checked>
                                 <span class="slider round"></span>
                             </label>
                         </div> -->
-                    </div>
-                    <p class="icons">Icons from: <a href='https://icons8.com/'>ICONS8</a></p>
                 </div>
-                <p id='filters-close' class="close" onclick="closeModal('filters')">x</p>
+                <p class="icons">Icons from: <a href='https://icons8.com/'>ICONS8</a></p>
             </div>
+            <p id='filters-close' class="close" onclick="closeModal('filters')">x</p>
         </div>
+    </div>
     <!-- </div> -->
 </body>
 
