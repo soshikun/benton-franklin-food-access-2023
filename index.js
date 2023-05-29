@@ -235,597 +235,597 @@ async function createMap(mode) {
         center: [-119, 46.3]
     });
 
-    const grocery = await getData('grocery');
+    map.on('load', async () => {
+        const grocery = await getData('grocery');
 
-    const grocery_0_mile_walking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const grocery_0_mile_walking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const grocery_quarter_mile_walking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
-            }
-        })
-    }
+        const grocery_quarter_mile_walking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+                }
+            })
+        }
 
-    const grocery_half_mile_walking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
-            }
-        })
-    }
+        const grocery_half_mile_walking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+                }
+            })
+        }
 
-    const grocery_three_quarters_mile_walking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
-            }
-        })
-    }
+        const grocery_three_quarters_mile_walking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+                }
+            })
+        }
 
-    const grocery_1_mile_walking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const grocery_1_mile_walking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const grocery_0_miles_biking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const grocery_0_miles_biking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const grocery_1_miles_biking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `1 Mile Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const grocery_1_miles_biking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `1 Mile Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const grocery_2_miles_biking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
-            }
-        })
-    }
+        const grocery_2_miles_biking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+                }
+            })
+        }
 
-    const grocery_3_miles_biking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
-            }
-        })
-    }
+        const grocery_3_miles_biking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+                }
+            })
+        }
 
-    const grocery_4_miles_biking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
-            }
-        })
-    }
+        const grocery_4_miles_biking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+                }
+            })
+        }
 
-    const grocery_5_miles_biking = {
-        type: 'FeatureCollection',
-        features: grocery.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
-            }
-        })
-    }
+        const grocery_5_miles_biking = {
+            type: 'FeatureCollection',
+            features: grocery.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
+                }
+            })
+        }
 
-    const convenience = await getData('convenience');
+        const convenience = await getData('convenience');
 
-    const convenience_0_mile_walking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const convenience_0_mile_walking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const convenience_quarter_mile_walking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
-            }
-        })
-    }
+        const convenience_quarter_mile_walking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+                }
+            })
+        }
 
-    const convenience_half_mile_walking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
-            }
-        })
-    }
+        const convenience_half_mile_walking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+                }
+            })
+        }
 
-    const convenience_three_quarters_mile_walking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
-            }
-        })
-    }
+        const convenience_three_quarters_mile_walking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+                }
+            })
+        }
 
-    const convenience_1_mile_walking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const convenience_1_mile_walking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const convenience_0_miles_biking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const convenience_0_miles_biking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const convenience_1_miles_biking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const convenience_1_miles_biking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const convenience_2_miles_biking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
-            }
-        })
-    }
+        const convenience_2_miles_biking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+                }
+            })
+        }
 
-    const convenience_3_miles_biking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
-            }
-        })
-    }
+        const convenience_3_miles_biking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+                }
+            })
+        }
 
-    const convenience_4_miles_biking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
-            }
-        })
-    }
+        const convenience_4_miles_biking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+                }
+            })
+        }
 
-    const convenience_5_miles_biking = {
-        type: 'FeatureCollection',
-        features: convenience.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
-            }
-        })
-    }
+        const convenience_5_miles_biking = {
+            type: 'FeatureCollection',
+            features: convenience.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
+                }
+            })
+        }
 
-    const produce = await getData('produce');
+        const produce = await getData('produce');
 
-    const produce_0_mile_walking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const produce_0_mile_walking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const produce_quarter_mile_walking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
-            }
-        })
-    }
+        const produce_quarter_mile_walking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+                }
+            })
+        }
 
-    const produce_half_mile_walking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
-            }
-        })
-    }
+        const produce_half_mile_walking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+                }
+            })
+        }
 
-    const produce_three_quarters_mile_walking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
-            }
-        })
-    }
+        const produce_three_quarters_mile_walking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+                }
+            })
+        }
 
-    const produce_1_mile_walking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const produce_1_mile_walking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const produce_0_miles_biking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const produce_0_miles_biking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const produce_1_miles_biking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const produce_1_miles_biking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const produce_2_miles_biking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
-            }
-        })
-    }
+        const produce_2_miles_biking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+                }
+            })
+        }
 
-    const produce_3_miles_biking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
-            }
-        })
-    }
+        const produce_3_miles_biking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+                }
+            })
+        }
 
-    const produce_4_miles_biking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
-            }
-        })
-    }
+        const produce_4_miles_biking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+                }
+            })
+        }
 
-    const produce_5_miles_biking = {
-        type: 'FeatureCollection',
-        features: produce.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
-            }
-        })
-    }
+        const produce_5_miles_biking = {
+            type: 'FeatureCollection',
+            features: produce.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
+                }
+            })
+        }
 
-    const service = await getData('service');
+        const service = await getData('service');
 
-    const service_0_mile_walking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const service_0_mile_walking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const service_quarter_mile_walking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
-            }
-        })
-    }
+        const service_quarter_mile_walking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.402336)
+                }
+            })
+        }
 
-    const service_half_mile_walking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
-            }
-        })
-    }
+        const service_half_mile_walking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0.804672)
+                }
+            })
+        }
 
-    const service_three_quarters_mile_walking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
-            }
-        })
-    }
+        const service_three_quarters_mile_walking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0.5 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.207008)
+                }
+            })
+        }
 
-    const service_1_mile_walking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `1 Mile Walking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const service_1_mile_walking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `1 Mile Walking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const service_0_miles_biking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `0 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
-            }
-        })
-    }
+        const service_0_miles_biking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `0 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 0)
+                }
+            })
+        }
 
-    const service_1_miles_biking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
-            }
-        })
-    }
+        const service_1_miles_biking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 1.60934)
+                }
+            })
+        }
 
-    const service_2_miles_biking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `2 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
-            }
-        })
-    }
+        const service_2_miles_biking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `2 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 3.21869)
+                }
+            })
+        }
 
-    const service_3_miles_biking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `3 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
-            }
-        })
-    }
+        const service_3_miles_biking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `3 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 4.82803)
+                }
+            })
+        }
 
-    const service_4_miles_biking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `4 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
-            }
-        })
-    }
+        const service_4_miles_biking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `4 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 6.43738)
+                }
+            })
+        }
 
-    const service_5_miles_biking = {
-        type: 'FeatureCollection',
-        features: service.features.map((location) => {
-            return {
-                "type": "Feature",
-                "properties": {
-                    "name": `5 Miles Biking Radius of ${location.properties['Name']}`
-                },
-                "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
-            }
-        })
-    }
+        const service_5_miles_biking = {
+            type: 'FeatureCollection',
+            features: service.features.map((location) => {
+                return {
+                    "type": "Feature",
+                    "properties": {
+                        "name": `5 Miles Biking Radius of ${location.properties['Name']}`
+                    },
+                    "geometry": createGeoJSONCircle(location.geometry.coordinates, 8.04672)
+                }
+            })
+        }
 
-    const transit = await getData('transit');
-    const transit_routes = await getData('BFTransit_Routes');
-    const borders = await getData('borders');
-    const driving = await getData('driving');
+        const transit = await getData('transit');
+        const transit_routes = await getData('BFTransit_Routes');
+        const borders = await getData('borders');
+        const driving = await getData('driving');
 
-    const grocery_driving = await getData('grocery_driving');
-    const convenience_driving = await getData('convenience_driving');
-    const produce_driving = await getData('produce_driving');
-    const service_driving = await getData('service_driving');
+        const grocery_driving = await getData('grocery_driving');
+        const convenience_driving = await getData('convenience_driving');
+        const produce_driving = await getData('produce_driving');
+        const service_driving = await getData('service_driving');
 
-    map.on('load', () => {
         map.loadImage(
             './imgs/grocery.png',
             (error, image) => {
@@ -1917,7 +1917,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             }
         });
-        
+
         map.addSource('service_driving', {
             type: 'geojson',
             data: service_driving
@@ -2038,16 +2038,28 @@ async function createMap(mode) {
                         }
                     } else if (current.length > 0 && (selection === 'biking' || selection === 'walking')) {
                         if (transportation.includes(selection)) {
-                            transportation.splice(transportation.indexOf(selection), 1);
                             let list = [];
                             if (selection === 'biking') {
                                 list = getAllBikingList('biking');
                             } else if (selection === 'walking') {
                                 list = getAllWalkingList('walking');
                             }
+                            console.log('transportation includes it');
+                            if (selection === 'biking') {
+                                document.getElementById('biking_miles').disabled = true;
+                                document.getElementById('biking_miles').value = '0';
+                                document.getElementById('biking_value').textContent = '';
+                                filters[i].classList.remove('clicked');
+                            } else if (selection === 'walking') {
+                                document.getElementById('walking_miles').disabled = true;
+                                document.getElementById('walking_miles').value = '0';
+                                document.getElementById('walking_value').textContent = '';
+                                filters[i].classList.remove('clicked');
+                            }
                             list.map((distance) => {
                                 map.setLayoutProperty(distance, 'visibility', 'none');
                             });
+                            transportation.splice(transportation.indexOf(selection), 1);
                         } else {
                             if (selection === 'biking') {
                                 if (filters[i].classList.contains('clicked')) {
@@ -2079,7 +2091,31 @@ async function createMap(mode) {
                                 transportation.push(selection);
                             };
                         }
-                    } else if ((selection === 'grocery' || selection === 'convenience' || selection === 'produce' || selection === 'service') && map.getLayoutProperty('driving', 'visibility') === 'visible' ) {
+                    } else if ((selection === 'grocery' || selection === 'convenience' || selection === 'produce' || selection === 'service') && document.getElementById('driving').checked === true) {
+                        let visible = map.getLayoutProperty(selection, 'visibility');
+                        if (visible === 'visible') {
+                            current.splice(current.indexOf(selection), 1);
+                            if (current.length === 0) {
+                                map.setLayoutProperty('grocery_driving', 'visibility', 'none');
+                                map.setLayoutProperty('convenience_driving', 'visibility', 'none');
+                                map.setLayoutProperty('produce_driving', 'visibility', 'none');
+                                map.setLayoutProperty('service_driving', 'visibility', 'none');
+                                map.setLayoutProperty('grocery', 'visibility', 'none');
+                                map.setLayoutProperty('convenience', 'visibility', 'none');
+                                map.setLayoutProperty('produce', 'visibility', 'none');
+                                map.setLayoutProperty('service', 'visibility', 'none');
+                                map.setLayoutProperty('driving', 'visibility', 'visible');
+                            } else {
+                                map.setLayoutProperty(selection, 'visibility', 'none');
+                                map.setLayoutProperty(`${selection}_driving`, 'visibility', 'none');
+                            }
+                        } else {
+                            current.push(selection);
+                            map.setLayoutProperty('driving', 'visibility', 'none');
+                            map.setLayoutProperty(selection, 'visibility', 'visible');
+                            map.setLayoutProperty(`${selection}_driving`, 'visibility', 'visible');
+                        }
+                    } else if ((selection === 'grocery' || selection === 'convenience' || selection === 'produce' || selection === 'service') && map.getLayoutProperty(`${selection}_driving`, 'visibility') === 'visible') {
                         let visible = map.getLayoutProperty(selection, 'visibility');
                         if (visible === 'visible') {
                             current.splice(current.indexOf(selection), 1);
