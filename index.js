@@ -820,6 +820,11 @@ async function createMap(mode) {
     const borders = await getData('borders');
     const driving = await getData('driving');
 
+    const grocery_driving = await getData('grocery_driving');
+    const convenience_driving = await getData('convenience_driving');
+    const produce_driving = await getData('produce_driving');
+    const service_driving = await getData('service_driving');
+
     map.on('load', () => {
         map.loadImage(
             './imgs/grocery.png',
@@ -857,7 +862,7 @@ async function createMap(mode) {
             'source': 'grocery_0_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -875,7 +880,7 @@ async function createMap(mode) {
             'source': 'grocery_quarter_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -893,7 +898,7 @@ async function createMap(mode) {
             'source': 'grocery_half_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -911,7 +916,7 @@ async function createMap(mode) {
             'source': 'grocery_three_quarters_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -929,7 +934,7 @@ async function createMap(mode) {
             'source': 'grocery_1_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -950,7 +955,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             },
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.6
             }
         });
@@ -968,7 +973,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             },
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.6
             }
         });
@@ -986,7 +991,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             },
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.6
             }
         });
@@ -1004,7 +1009,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             },
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.6
             }
         });
@@ -1022,7 +1027,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             },
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.6
             }
         });
@@ -1040,7 +1045,7 @@ async function createMap(mode) {
                 'visibility': 'none',
             },
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.6
             }
         });
@@ -1104,7 +1109,7 @@ async function createMap(mode) {
             'source': 'convenience_0_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1122,7 +1127,7 @@ async function createMap(mode) {
             'source': 'convenience_quarter_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1140,7 +1145,7 @@ async function createMap(mode) {
             'source': 'convenience_half_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1158,7 +1163,7 @@ async function createMap(mode) {
             'source': 'convenience_three_quarters_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1176,7 +1181,7 @@ async function createMap(mode) {
             'source': 'convenience_1_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1194,7 +1199,7 @@ async function createMap(mode) {
             'source': 'convenience_0_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1212,7 +1217,7 @@ async function createMap(mode) {
             'source': 'convenience_1_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1230,7 +1235,7 @@ async function createMap(mode) {
             'source': 'convenience_2_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1248,7 +1253,7 @@ async function createMap(mode) {
             'source': 'convenience_3_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1266,7 +1271,7 @@ async function createMap(mode) {
             'source': 'convenience_4_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1284,7 +1289,7 @@ async function createMap(mode) {
             'source': 'convenience_5_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1351,7 +1356,7 @@ async function createMap(mode) {
             'source': 'produce_0_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1369,7 +1374,7 @@ async function createMap(mode) {
             'source': 'produce_quarter_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1387,7 +1392,7 @@ async function createMap(mode) {
             'source': 'produce_half_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1405,7 +1410,7 @@ async function createMap(mode) {
             'source': 'produce_three_quarters_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1423,7 +1428,7 @@ async function createMap(mode) {
             'source': 'produce_1_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill
+                'fill-color': '#0004ff', // blue color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1441,7 +1446,7 @@ async function createMap(mode) {
             'source': 'produce_0_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1459,7 +1464,7 @@ async function createMap(mode) {
             'source': 'produce_1_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1477,7 +1482,7 @@ async function createMap(mode) {
             'source': 'produce_2_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1495,7 +1500,7 @@ async function createMap(mode) {
             'source': 'produce_3_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1513,7 +1518,7 @@ async function createMap(mode) {
             'source': 'produce_4_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1531,7 +1536,7 @@ async function createMap(mode) {
             'source': 'produce_5_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1598,7 +1603,7 @@ async function createMap(mode) {
             'source': 'service_0_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill 
+                'fill-color': '#0004ff', // blue color fill 
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1616,7 +1621,7 @@ async function createMap(mode) {
             'source': 'service_quarter_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill 
+                'fill-color': '#0004ff', // blue color fill 
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1634,7 +1639,7 @@ async function createMap(mode) {
             'source': 'service_half_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill 
+                'fill-color': '#0004ff', // blue color fill 
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1652,7 +1657,7 @@ async function createMap(mode) {
             'source': 'service_three_quarters_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill 
+                'fill-color': '#0004ff', // blue color fill 
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1670,7 +1675,7 @@ async function createMap(mode) {
             'source': 'service_1_mile_walking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#0080ff', // blue color fill 
+                'fill-color': '#0004ff', // blue color fill 
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1688,7 +1693,7 @@ async function createMap(mode) {
             'source': 'service_0_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1706,7 +1711,7 @@ async function createMap(mode) {
             'source': 'service_1_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1724,7 +1729,7 @@ async function createMap(mode) {
             'source': 'service_2_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1742,7 +1747,7 @@ async function createMap(mode) {
             'source': 'service_3_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1760,7 +1765,7 @@ async function createMap(mode) {
             'source': 'service_4_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1778,7 +1783,7 @@ async function createMap(mode) {
             'source': 'service_5_miles_biking',
             'type': 'fill',
             'paint': {
-                'fill-color': '#90EE90', // green color fill
+                'fill-color': '#00ff80', // green color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1796,7 +1801,7 @@ async function createMap(mode) {
             'source': 'transit',
             'type': 'fill',
             'paint': {
-                'fill-color': '#ffbdbd', // pink color fill
+                'fill-color': '#ff0000', // red color fill
                 'fill-opacity': 0.05
             },
             'layout': {
@@ -1851,7 +1856,79 @@ async function createMap(mode) {
             'source': 'driving',
             'type': 'fill',
             'paint': {
-                'fill-color': '#fff9a6', // pink color fill
+                'fill-color': '#f2ff00', // yellow color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            }
+        });
+
+        map.addSource('grocery_driving', {
+            type: 'geojson',
+            data: grocery_driving
+        });
+
+        map.addLayer({
+            'id': 'grocery_driving',
+            'source': 'grocery_driving',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#f2ff00', // yellow color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            }
+        });
+
+        map.addSource('convenience_driving', {
+            type: 'geojson',
+            data: convenience_driving
+        });
+
+        map.addLayer({
+            'id': 'convenience_driving',
+            'source': 'convenience_driving',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#f2ff00', // yellow color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            }
+        });
+
+        map.addSource('produce_driving', {
+            type: 'geojson',
+            data: produce_driving
+        });
+
+        map.addLayer({
+            'id': 'produce_driving',
+            'source': 'produce_driving',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#f2ff00', // yellow color fill
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none',
+            }
+        });
+        
+        map.addSource('service_driving', {
+            type: 'geojson',
+            data: service_driving
+        });
+
+        map.addLayer({
+            'id': 'service_driving',
+            'source': 'service_driving',
+            'type': 'fill',
+            'paint': {
+                'fill-color': '#f2ff00', // yellow color fill
                 'fill-opacity': 0.3
             },
             'layout': {
@@ -1928,6 +2005,28 @@ async function createMap(mode) {
                         }
                         transportation.push(selection);
                         getSingleTransportation('walking', map);
+                    } else if (selection === 'driving') {
+                        if (current.length === 0) {
+                            let visible = map.getLayoutProperty(selection, 'visibility');
+                            if (visible === 'visible') {
+                                map.setLayoutProperty('grocery_driving', 'visibility', 'none');
+                                map.setLayoutProperty('convenience_driving', 'visibility', 'none');
+                                map.setLayoutProperty('produce_driving', 'visibility', 'none');
+                                map.setLayoutProperty('service_driving', 'visibility', 'none');
+                                map.setLayoutProperty(selection, 'visibility', 'none');
+                            } else {
+                                map.setLayoutProperty(selection, 'visibility', 'visible');
+                            }
+                        } else {
+                            current.map((store) => {
+                                let visible = map.getLayoutProperty(`${store}_driving`, 'visibility');
+                                if (visible === 'visible') {
+                                    map.setLayoutProperty(`${store}_driving`, 'visibility', 'none');
+                                } else {
+                                    map.setLayoutProperty(`${store}_driving`, 'visibility', 'visible');
+                                }
+                            });
+                        }
                     } else if (selection === 'transit') {
                         let visible = map.getLayoutProperty(selection, 'visibility');
                         if (visible === 'visible') {
@@ -1979,6 +2078,19 @@ async function createMap(mode) {
                                 });
                                 transportation.push(selection);
                             };
+                        }
+                    } else if ((selection === 'grocery' || selection === 'convenience' || selection === 'produce' || selection === 'service') && map.getLayoutProperty('driving', 'visibility') === 'visible' ) {
+                        let visible = map.getLayoutProperty(selection, 'visibility');
+                        if (visible === 'visible') {
+                            current.splice(current.indexOf(selection), 1);
+                            map.setLayoutProperty('driving', 'visibility', 'none');
+                            map.setLayoutProperty(selection, 'visibility', 'none');
+                            map.setLayoutProperty(`${selection}_driving`, 'visibility', 'none');
+                        } else {
+                            current.push(selection);
+                            map.setLayoutProperty('driving', 'visibility', 'none');
+                            map.setLayoutProperty(selection, 'visibility', 'visible');
+                            map.setLayoutProperty(`${selection}_driving`, 'visibility', 'visible');
                         }
                     } else {
                         let visible = map.getLayoutProperty(selection, 'visibility');
