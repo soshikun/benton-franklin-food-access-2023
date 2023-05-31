@@ -2188,7 +2188,6 @@ async function createMap(mode) {
                             map.setLayoutProperty('population', 'visibility', 'none');
                             map.setLayoutProperty('index_no_FIPS', 'visibility', 'none');
                             map.setLayoutProperty('index_deleted_FIPS', 'visibility', 'none');
-                            map.setLayoutProperty(selection, 'visibility', 'none');
                             legend.classList.add('hidden');
                             legend.innerHTML = '';
                         } else {
