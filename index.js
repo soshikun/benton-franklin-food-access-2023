@@ -2355,6 +2355,17 @@ async function createMap(mode) {
                             map.setLayoutProperty(selection, 'visibility', 'none');
                         } else {
                             current.push(selection);
+                            if (current.length === 1) {
+                                let bikingList = getAllBikingList('biking');
+                                let walkingList = getAllWalkingList('walking');
+                                bikingList.map((distance) => {
+                                    map.setLayoutProperty(distance, 'visibility', 'none');
+                                });
+                                walkingList.map((distance) => {
+                                    map.setLayoutProperty(distance, 'visibility', 'none');
+                                });
+                            }
+                            
                             if (transportation.length > 0) {
                                 transportation.map((mode) => {
                                     let list = [];
@@ -2433,9 +2444,12 @@ async function createMap(mode) {
             document.getElementById('biking_miles').disabled = true;
             document.getElementById('biking_miles').value = '0';
             document.getElementById('biking_value').textContent = '';
+            document.getElementById('biking').classList.remove('clicked');
             document.getElementById('walking_miles').disabled = true;
             document.getElementById('walking_miles').value = '0';
             document.getElementById('walking_value').textContent = '';
+            document.getElementById('walking').classList.remove('clicked');
+
             let bikingList = getAllBikingList('biking');
             let walkingList = getAllWalkingList('walking');
             bikingList.map((distance) => {
