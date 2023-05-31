@@ -2178,7 +2178,12 @@ async function createMap(mode) {
                             map.setLayoutProperty('transit_routes', 'visibility', 'visible');
                         }
                     } else if (selection === 'population' || selection === 'index') {
-                        let visible = map.getLayoutProperty(selection, 'visibility');
+                        let visible;
+                        if (selection === 'population') {
+                            visible = map.getLayoutProperty(selection, 'visibility');
+                        } else {
+                            visible = map.getLayoutProperty('index_no_FIPS', 'visibility');
+                        }
                         if (visible === 'visible') {
                             map.setLayoutProperty('population', 'visibility', 'none');
                             map.setLayoutProperty('index_no_FIPS', 'visibility', 'none');
