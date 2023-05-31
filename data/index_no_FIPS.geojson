@@ -1,6 +1,6 @@
 {
     "type": "FeatureCollection",
-    "name": "Estimated_Pct_Pop",
+    "name": "Index_with_Deleted_FIPS",
     "crs": {
         "type": "name",
         "properties": {
@@ -19,12 +19,29 @@
                 "FIPS": "53005010100",
                 "LOCATION": "Census Tract 101, Benton County, Washington",
                 "AREA_SQMI": 2.4364287170500001,
-                "E_TOTPOP": 4894,
+                "E_POV150": 196,
+                "EP_POV150": 4.0,
+                "EP_UNEMP": 3.5,
+                "EP_HBURD": 11.5,
+                "EP_NOHSDP": 2.8,
+                "EP_UNINSUR": 5.5,
+                "EP_DISABL": 10.7,
+                "EP_MOBILE": 0.4,
+                "EP_CROWD": 1.0,
+                "EP_NOVEH": 0.4,
                 "SHAPE_STAr": 0.00122904285,
                 "SHAPE_STLe": 0.17948491836,
-                "total_pop": 294396.0,
-                "Percent_to": 1.66239,
-                "Pct_total_": 1.66239
+                "STAND2": -0.63045338258000005,
+                "STAND3": -1.10675075482,
+                "STAND4": -0.87968870524999998,
+                "STAND5": -0.6170376725,
+                "STAND6": -0.58334672632999995,
+                "STAND7": -0.74679991416000002,
+                "STAND8": -0.59924339822999995,
+                "STAND9": -0.68483517967999996,
+                "STAND1": -1.2751237439900001,
+                "Index": -0.79147549751000001,
+                "SVI_Values": "-0.791475497506"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -191,12 +208,29 @@
                 "FIPS": "53005010201",
                 "LOCATION": "Census Tract 102.01, Benton County, Washington",
                 "AREA_SQMI": 16.8137455707,
-                "E_TOTPOP": 5440,
+                "E_POV150": 587,
+                "EP_POV150": 10.8,
+                "EP_UNEMP": 4.8,
+                "EP_HBURD": 15.9,
+                "EP_NOHSDP": 1.4,
+                "EP_UNINSUR": 4.4,
+                "EP_DISABL": 10.8,
+                "EP_MOBILE": 3.1,
+                "EP_CROWD": 0.6,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.00519225544,
                 "SHAPE_STLe": 0.37363588634,
-                "total_pop": 294396.0,
-                "Percent_to": 1.84785,
-                "Pct_total_": 1.84785
+                "STAND2": -0.25895191236999998,
+                "STAND3": -0.70884916352000005,
+                "STAND4": -0.97501101076999996,
+                "STAND5": -0.75555633367999997,
+                "STAND6": -0.5678131183,
+                "STAND7": -0.55445564511000001,
+                "STAND8": -0.65877847027000003,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -0.770101616,
+                "Index": -0.66662474052999998,
+                "SVI_Values": "-0.666624740529"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -487,12 +521,29 @@
                 "FIPS": "53005010203",
                 "LOCATION": "Census Tract 102.03, Benton County, Washington",
                 "AREA_SQMI": 1.67215911315,
-                "E_TOTPOP": 4055,
+                "E_POV150": 944,
+                "EP_POV150": 23.3,
+                "EP_UNEMP": 1.1,
+                "EP_HBURD": 21.1,
+                "EP_NOHSDP": 4.5,
+                "EP_UNINSUR": 8.5,
+                "EP_DISABL": 13.0,
+                "EP_MOBILE": 15.3,
+                "EP_CROWD": 1.8,
+                "EP_NOVEH": 6.6,
                 "SHAPE_STAr": 0.00050832351,
                 "SHAPE_STLe": 0.11614663431,
-                "total_pop": 294396.0,
-                "Percent_to": 1.3774,
-                "Pct_total_": 1.3774
+                "STAND2": -1.31630225066,
+                "STAND3": -0.23860182835,
+                "STAND4": -0.7639401914,
+                "STAND5": -0.23925950566000001,
+                "STAND6": -0.22607374155000001,
+                "STAND7": 0.31465549656000003,
+                "STAND8": -0.48017325414000001,
+                "STAND9": 0.32685315393999997,
+                "STAND1": 0.158247884,
+                "Index": -0.27384380413999998,
+                "SVI_Values": "-0.273843804139"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -623,12 +674,29 @@
                 "FIPS": "53005010204",
                 "LOCATION": "Census Tract 102.04, Benton County, Washington",
                 "AREA_SQMI": 0.34489371963999998,
-                "E_TOTPOP": 2379,
+                "E_POV150": 1106,
+                "EP_POV150": 47.8,
+                "EP_UNEMP": 5.2,
+                "EP_HBURD": 41.1,
+                "EP_NOHSDP": 5.5,
+                "EP_UNINSUR": 5.5,
+                "EP_DISABL": 22.0,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 1.2,
+                "EP_NOVEH": 15.0,
                 "SHAPE_STAr": 0.00010429003,
                 "SHAPE_STLe": 0.04175288851,
-                "total_pop": 294396.0,
-                "Percent_to": 0.808095,
-                "Pct_total_": 0.808095
+                "STAND2": -0.14464376769000001,
+                "STAND3": 1.5700417684600001,
+                "STAND4": -0.69585283031,
+                "STAND5": -0.6170376725,
+                "STAND6": 1.17195098154,
+                "STAND7": -0.77529536143,
+                "STAND8": -0.56947586221000002,
+                "STAND9": 1.69752767046,
+                "STAND1": 1.9778129039900001,
+                "Index": 0.40166975892000001,
+                "SVI_Values": "0.401669758923"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -719,12 +787,29 @@
                 "FIPS": "53005010300",
                 "LOCATION": "Census Tract 103, Benton County, Washington",
                 "AREA_SQMI": 2.28602461346,
-                "E_TOTPOP": 6314,
+                "E_POV150": 1309,
+                "EP_POV150": 21.0,
+                "EP_UNEMP": 8.3,
+                "EP_HBURD": 19.2,
+                "EP_NOHSDP": 2.8,
+                "EP_UNINSUR": 2.9,
+                "EP_DISABL": 10.5,
+                "EP_MOBILE": 2.4,
+                "EP_CROWD": 0.4,
+                "EP_NOVEH": 0.2,
                 "SHAPE_STAr": 0.00072407252,
                 "SHAPE_STLe": 0.15198666398,
-                "total_pop": 294396.0,
-                "Percent_to": 2.14473,
-                "Pct_total_": 2.14473
+                "STAND2": 0.74124435357999996,
+                "STAND3": -0.41042297005,
+                "STAND4": -0.87968870524999998,
+                "STAND5": -0.94444541708999996,
+                "STAND6": -0.6144139424,
+                "STAND7": -0.60432267783000004,
+                "STAND8": -0.6885460063,
+                "STAND9": -0.71747028721999995,
+                "STAND1": -0.012568424,
+                "Index": -0.45895934183999998,
+                "SVI_Values": "-0.458959341838"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -935,12 +1020,29 @@
                 "FIPS": "53005010400",
                 "LOCATION": "Census Tract 104, Benton County, Washington",
                 "AREA_SQMI": 0.58001671017,
-                "E_TOTPOP": 3469,
+                "E_POV150": 897,
+                "EP_POV150": 26.5,
+                "EP_UNEMP": 9.5,
+                "EP_HBURD": 29.7,
+                "EP_NOHSDP": 7.2,
+                "EP_UNINSUR": 12.7,
+                "EP_DISABL": 21.9,
+                "EP_MOBILE": 0.5,
+                "EP_CROWD": 4.1,
+                "EP_NOVEH": 6.4,
                 "SHAPE_STAr": 0.00017530073,
                 "SHAPE_STLe": 0.06084496512,
-                "total_pop": 294396.0,
-                "Percent_to": 1.17834,
-                "Pct_total_": 1.17834
+                "STAND2": 1.0841687876199999,
+                "STAND3": 0.53911491828000002,
+                "STAND4": -0.58010431646000005,
+                "STAND5": 0.28962992790999997,
+                "STAND6": 1.1564173735100001,
+                "STAND7": -0.73967605235,
+                "STAND8": -0.13784658989000001,
+                "STAND9": 0.2942180464,
+                "STAND1": 0.395905356,
+                "Index": 0.25575860567000003,
+                "SVI_Values": "0.255758605669"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -1055,12 +1157,29 @@
                 "FIPS": "53005010500",
                 "LOCATION": "Census Tract 105, Benton County, Washington",
                 "AREA_SQMI": 1.0050292975299999,
-                "E_TOTPOP": 3050,
+                "E_POV150": 767,
+                "EP_POV150": 25.3,
+                "EP_UNEMP": 3.5,
+                "EP_HBURD": 27.8,
+                "EP_NOHSDP": 4.9,
+                "EP_UNINSUR": 7.7,
+                "EP_DISABL": 13.0,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 2.8,
+                "EP_NOVEH": 1.9,
                 "SHAPE_STAr": 0.00030376429,
                 "SHAPE_STLe": 0.07015710841,
-                "total_pop": 294396.0,
-                "Percent_to": 1.03602,
-                "Pct_total_": 1.03602
+                "STAND2": -0.63045338258000005,
+                "STAND3": 0.36729377658000001,
+                "STAND4": -0.73670524695999995,
+                "STAND5": -0.34000035015000002,
+                "STAND6": -0.22607374155000001,
+                "STAND7": -0.77529536143,
+                "STAND8": -0.33133557403000002,
+                "STAND9": -0.44007187316000002,
+                "STAND1": 0.306783804,
+                "Index": -0.31176199437000002,
+                "SVI_Values": "-0.311761994365"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -1167,12 +1286,29 @@
                 "FIPS": "53005010600",
                 "LOCATION": "Census Tract 106, Benton County, Washington",
                 "AREA_SQMI": 2.9987708359699998,
-                "E_TOTPOP": 4982,
+                "E_POV150": 1006,
+                "EP_POV150": 20.6,
+                "EP_UNEMP": 8.1,
+                "EP_HBURD": 29.4,
+                "EP_NOHSDP": 2.7,
+                "EP_UNINSUR": 7.5,
+                "EP_DISABL": 11.3,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 3.7,
+                "EP_NOVEH": 1.6,
                 "SHAPE_STAr": 0.00111289586,
                 "SHAPE_STLe": 0.15608653949000001,
-                "total_pop": 294396.0,
-                "Percent_to": 1.69228,
-                "Pct_total_": 1.69228
+                "STAND2": 0.68409028124000004,
+                "STAND3": 0.51198526433000002,
+                "STAND4": -0.88649744135999997,
+                "STAND5": -0.36518556128000002,
+                "STAND6": -0.49014507813000002,
+                "STAND7": -0.77529536143,
+                "STAND8": -0.19738166193000001,
+                "STAND9": -0.48902453447,
+                "STAND1": -0.042275608,
+                "Index": -0.22774774456,
+                "SVI_Values": "-0.227747744558"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -1363,12 +1499,29 @@
                 "FIPS": "53005010701",
                 "LOCATION": "Census Tract 107.01, Benton County, Washington",
                 "AREA_SQMI": 15.0054051934,
-                "E_TOTPOP": 2035,
+                "E_POV150": 211,
+                "EP_POV150": 10.4,
+                "EP_UNEMP": 2.7,
+                "EP_HBURD": 15.8,
+                "EP_NOHSDP": 12.2,
+                "EP_UNINSUR": 6.2,
+                "EP_DISABL": 23.9,
+                "EP_MOBILE": 46.3,
+                "EP_CROWD": 0.9,
+                "EP_NOVEH": 1.1,
                 "SHAPE_STAr": 0.0045897148,
                 "SHAPE_STLe": 0.33200797793999998,
-                "total_pop": 294396.0,
-                "Percent_to": 0.691246,
-                "Pct_total_": 0.691246
+                "STAND2": -0.85906967193999995,
+                "STAND3": -0.7178923815,
+                "STAND4": -0.23966751103,
+                "STAND5": -0.52888943356999996,
+                "STAND6": 1.4670895341900001,
+                "STAND7": 2.5230526598099998,
+                "STAND8": -0.61412716623999997,
+                "STAND9": -0.57061230331000001,
+                "STAND1": -0.7998088,
+                "Index": -0.03776945262,
+                "SVI_Values": "-0.037769452621"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -1651,12 +1804,29 @@
                 "FIPS": "53005010703",
                 "LOCATION": "Census Tract 107.03, Benton County, Washington",
                 "AREA_SQMI": 19.3148178012,
-                "E_TOTPOP": 3316,
+                "E_POV150": 814,
+                "EP_POV150": 24.7,
+                "EP_UNEMP": 9.2,
+                "EP_HBURD": 12.9,
+                "EP_NOHSDP": 8.6,
+                "EP_UNINSUR": 5.6,
+                "EP_DISABL": 17.5,
+                "EP_MOBILE": 39.0,
+                "EP_CROWD": 5.2,
+                "EP_NOVEH": 4.8,
                 "SHAPE_STAr": 0.00600202855,
                 "SHAPE_STLe": 0.44214047381,
-                "total_pop": 294396.0,
-                "Percent_to": 1.12637,
-                "Pct_total_": 1.12637
+                "STAND2": 0.99843767911000003,
+                "STAND3": -0.98014570304000004,
+                "STAND4": -0.48478201094000001,
+                "STAND5": -0.60444506694,
+                "STAND6": 0.47293862,
+                "STAND7": 2.0030107471799998,
+                "STAND8": 0.02587485823,
+                "STAND9": 0.03313718611,
+                "STAND1": 0.262223028,
+                "Index": 0.19180548197,
+                "SVI_Values": "0.191805481969"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2103,12 +2273,29 @@
                 "FIPS": "53005010705",
                 "LOCATION": "Census Tract 107.05, Benton County, Washington",
                 "AREA_SQMI": 2.89159895942,
-                "E_TOTPOP": 5256,
+                "E_POV150": 227,
+                "EP_POV150": 4.3,
+                "EP_UNEMP": 3.4,
+                "EP_HBURD": 11.2,
+                "EP_NOHSDP": 1.3,
+                "EP_UNINSUR": 3.2,
+                "EP_DISABL": 11.7,
+                "EP_MOBILE": 1.0,
+                "EP_CROWD": 0.3,
+                "EP_NOVEH": 0.6,
                 "SHAPE_STAr": 0.00088216727,
                 "SHAPE_STLe": 0.13906899738,
-                "total_pop": 294396.0,
-                "Percent_to": 1.78535,
-                "Pct_total_": 1.78535
+                "STAND2": -0.65903041875000001,
+                "STAND3": -1.1338804087700001,
+                "STAND4": -0.98181974687999995,
+                "STAND5": -0.90666760041000005,
+                "STAND6": -0.42801064599,
+                "STAND7": -0.70405674326000001,
+                "STAND8": -0.70342977430999998,
+                "STAND9": -0.65220007214999998,
+                "STAND1": -1.2528433559900001,
+                "Index": -0.82465986295000004,
+                "SVI_Values": "-0.824659862945"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2287,12 +2474,29 @@
                 "FIPS": "53005010707",
                 "LOCATION": "Census Tract 107.07, Benton County, Washington",
                 "AREA_SQMI": 1.72077244376,
-                "E_TOTPOP": 3500,
+                "E_POV150": 92,
+                "EP_POV150": 2.7,
+                "EP_UNEMP": 3.9,
+                "EP_HBURD": 8.6,
+                "EP_NOHSDP": 3.5,
+                "EP_UNINSUR": 2.9,
+                "EP_DISABL": 8.7,
+                "EP_MOBILE": 1.4,
+                "EP_CROWD": 3.3,
+                "EP_NOVEH": 0.9,
                 "SHAPE_STAr": 0.00052084214,
                 "SHAPE_STLe": 0.13490798724,
-                "total_pop": 294396.0,
-                "Percent_to": 1.18887,
-                "Pct_total_": 1.18887
+                "STAND2": -0.5161452379,
+                "STAND3": -1.36900407635,
+                "STAND4": -0.83202755249000004,
+                "STAND5": -0.94444541708999996,
+                "STAND6": -0.89401888702,
+                "STAND7": -0.67556129599000003,
+                "STAND8": -0.25691673396999998,
+                "STAND9": -0.60324741084,
+                "STAND1": -1.3716720919900001,
+                "Index": -0.82922652262999996,
+                "SVI_Values": "-0.829226522628"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2447,12 +2651,29 @@
                 "FIPS": "53005010708",
                 "LOCATION": "Census Tract 107.08, Benton County, Washington",
                 "AREA_SQMI": 2.6609601575199999,
-                "E_TOTPOP": 3792,
+                "E_POV150": 489,
+                "EP_POV150": 13.1,
+                "EP_UNEMP": 4.1,
+                "EP_HBURD": 10.4,
+                "EP_NOHSDP": 2.6,
+                "EP_UNINSUR": 0.8,
+                "EP_DISABL": 11.8,
+                "EP_MOBILE": 12.2,
+                "EP_CROWD": 1.6,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.00081707364,
                 "SHAPE_STLe": 0.14538758522,
-                "total_pop": 294396.0,
-                "Percent_to": 1.28806,
-                "Pct_total_": 1.28806
+                "STAND2": -0.45899116556000003,
+                "STAND3": -1.20622615264,
+                "STAND4": -0.89330617745999996,
+                "STAND5": -1.20889013388,
+                "STAND6": -0.41247703796000001,
+                "STAND7": 0.09381578024,
+                "STAND8": -0.50994079016000005,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -0.599285308,
+                "Index": -0.66060070891,
+                "SVI_Values": "-0.660600708909"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -2635,12 +2856,29 @@
                 "FIPS": "53005010807",
                 "LOCATION": "Census Tract 108.07, Benton County, Washington",
                 "AREA_SQMI": 37.634046498799997,
-                "E_TOTPOP": 1813,
+                "E_POV150": 269,
+                "EP_POV150": 15.2,
+                "EP_UNEMP": 6.9,
+                "EP_HBURD": 7.1,
+                "EP_NOHSDP": 5.4,
+                "EP_UNINSUR": 9.0,
+                "EP_DISABL": 9.5,
+                "EP_MOBILE": 27.7,
+                "EP_CROWD": 7.7,
+                "EP_NOVEH": 1.3,
                 "SHAPE_STAr": 0.01135603538,
                 "SHAPE_STLe": 0.5376002529,
-                "total_pop": 294396.0,
-                "Percent_to": 0.615837,
-                "Pct_total_": 0.615837
+                "STAND2": 0.3411658472,
+                "STAND3": -1.5046523461200001,
+                "STAND4": -0.70266156642,
+                "STAND5": -0.17629647786,
+                "STAND6": -0.76975002275000004,
+                "STAND7": 1.1980143618600001,
+                "STAND8": 0.39796905850999997,
+                "STAND9": -0.53797719577000003,
+                "STAND1": -0.443322592,
+                "Index": -0.24416788148,
+                "SVI_Values": "-0.244167881482"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3043,12 +3281,29 @@
                 "FIPS": "53005010809",
                 "LOCATION": "Census Tract 108.09, Benton County, Washington",
                 "AREA_SQMI": 1.4875332448900001,
-                "E_TOTPOP": 6935,
+                "E_POV150": 665,
+                "EP_POV150": 9.6,
+                "EP_UNEMP": 2.9,
+                "EP_HBURD": 21.9,
+                "EP_NOHSDP": 6.1,
+                "EP_UNINSUR": 3.9,
+                "EP_DISABL": 15.9,
+                "EP_MOBILE": 8.3,
+                "EP_CROWD": 1.7,
+                "EP_NOVEH": 1.0,
                 "SHAPE_STAr": 0.00045106983,
                 "SHAPE_STLe": 0.09609310878000001,
-                "total_pop": 294396.0,
-                "Percent_to": 2.35567,
-                "Pct_total_": 2.35567
+                "STAND2": -0.8019155996,
+                "STAND3": -0.16625608448000001,
+                "STAND4": -0.65500041365999995,
+                "STAND5": -0.81851936148000004,
+                "STAND6": 0.22440089145,
+                "STAND7": -0.18401483063,
+                "STAND8": -0.49505702215000003,
+                "STAND9": -0.58692985708000001,
+                "STAND1": -0.859223168,
+                "Index": -0.48250171617999998,
+                "SVI_Values": "-0.482501716179"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3163,12 +3418,29 @@
                 "FIPS": "53005010810",
                 "LOCATION": "Census Tract 108.10, Benton County, Washington",
                 "AREA_SQMI": 2.2721593045400001,
-                "E_TOTPOP": 4794,
+                "E_POV150": 415,
+                "EP_POV150": 8.7,
+                "EP_UNEMP": 3.6,
+                "EP_HBURD": 13.4,
+                "EP_NOHSDP": 1.4,
+                "EP_UNINSUR": 2.6,
+                "EP_DISABL": 14.1,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 0.7,
+                "EP_NOVEH": 3.2,
                 "SHAPE_STAr": 0.000692951,
                 "SHAPE_STLe": 0.13618576501,
-                "total_pop": 294396.0,
-                "Percent_to": 1.62842,
-                "Pct_total_": 1.62842
+                "STAND2": -0.60187634640999998,
+                "STAND3": -0.93492961312,
+                "STAND4": -0.97501101076999996,
+                "STAND5": -0.98222323377999998,
+                "STAND6": -0.05520405317,
+                "STAND7": -0.77529536143,
+                "STAND8": -0.64389470226000001,
+                "STAND9": -0.22794367418,
+                "STAND1": -0.926064332,
+                "Index": -0.68027136968000002,
+                "SVI_Values": "-0.680271369679"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3351,12 +3623,29 @@
                 "FIPS": "53005010811",
                 "LOCATION": "Census Tract 108.11, Benton County, Washington",
                 "AREA_SQMI": 8.9553378192600004,
-                "E_TOTPOP": 5113,
+                "E_POV150": 296,
+                "EP_POV150": 5.8,
+                "EP_UNEMP": 3.1,
+                "EP_HBURD": 7.8,
+                "EP_NOHSDP": 2.9,
+                "EP_UNINSUR": 2.9,
+                "EP_DISABL": 8.7,
+                "EP_MOBILE": 3.4,
+                "EP_CROWD": 0.3,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.00269541387,
                 "SHAPE_STLe": 0.22381490866000001,
-                "total_pop": 294396.0,
-                "Percent_to": 1.73678,
-                "Pct_total_": 1.73678
+                "STAND2": -0.74476152726,
+                "STAND3": -1.4413498202299999,
+                "STAND4": -0.87287996914,
+                "STAND5": -0.94444541708999996,
+                "STAND6": -0.89401888702,
+                "STAND7": -0.53308405966000005,
+                "STAND8": -0.70342977430999998,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -1.1414414159899999,
+                "Index": -0.89172402948999996,
+                "SVI_Values": "-0.891724029494"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -3671,12 +3960,29 @@
                 "FIPS": "53005010814",
                 "LOCATION": "Census Tract 108.14, Benton County, Washington",
                 "AREA_SQMI": 36.073112174899997,
-                "E_TOTPOP": 5250,
+                "E_POV150": 82,
+                "EP_POV150": 1.6,
+                "EP_UNEMP": 4.7,
+                "EP_HBURD": 7.9,
+                "EP_NOHSDP": 2.4,
+                "EP_UNINSUR": 7.7,
+                "EP_DISABL": 3.6,
+                "EP_MOBILE": 9.3,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 1.9,
                 "SHAPE_STAr": 0.01088776447,
                 "SHAPE_STLe": 0.54042977464999997,
-                "total_pop": 294396.0,
-                "Percent_to": 1.78331,
-                "Pct_total_": 1.78331
+                "STAND2": -0.28752894854,
+                "STAND3": -1.4323066022399999,
+                "STAND4": -0.90692364968000005,
+                "STAND5": -0.34000035015000002,
+                "STAND6": -1.68623289677,
+                "STAND7": -0.11277621246,
+                "STAND8": -0.74808107834000004,
+                "STAND9": -0.44007187316000002,
+                "STAND1": -1.4533668479899999,
+                "Index": -0.82303205104,
+                "SVI_Values": "-0.823032051037"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4027,12 +4333,29 @@
                 "FIPS": "53005010815",
                 "LOCATION": "Census Tract 108.15, Benton County, Washington",
                 "AREA_SQMI": 6.3684717938500004,
-                "E_TOTPOP": 8060,
+                "E_POV150": 968,
+                "EP_POV150": 12.1,
+                "EP_UNEMP": 7.6,
+                "EP_HBURD": 24.0,
+                "EP_NOHSDP": 5.1,
+                "EP_UNINSUR": 1.1,
+                "EP_DISABL": 12.5,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 2.8,
+                "EP_NOVEH": 1.6,
                 "SHAPE_STAr": 0.00192152582,
                 "SHAPE_STLe": 0.22875603725,
-                "total_pop": 294396.0,
-                "Percent_to": 2.73781,
-                "Pct_total_": 2.73781
+                "STAND2": 0.54120510039000003,
+                "STAND3": 0.02365149319,
+                "STAND4": -0.72308777474999997,
+                "STAND5": -1.1711123172,
+                "STAND6": -0.30374178172,
+                "STAND7": -0.77529536143,
+                "STAND8": -0.33133557403000002,
+                "STAND9": -0.48902453447,
+                "STAND1": -0.673553268,
+                "Index": -0.43358822421999998,
+                "SVI_Values": "-0.433588224223"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4275,12 +4598,29 @@
                 "FIPS": "53005010816",
                 "LOCATION": "Census Tract 108.16, Benton County, Washington",
                 "AREA_SQMI": 1.5519281086500001,
-                "E_TOTPOP": 5373,
+                "E_POV150": 365,
+                "EP_POV150": 6.8,
+                "EP_UNEMP": 0.0,
+                "EP_HBURD": 33.8,
+                "EP_NOHSDP": 6.6,
+                "EP_UNINSUR": 1.9,
+                "EP_DISABL": 15.2,
+                "EP_MOBILE": 7.8,
+                "EP_CROWD": 1.6,
+                "EP_NOVEH": 12.3,
                 "SHAPE_STAr": 0.0004682891,
                 "SHAPE_STLe": 0.12307630487,
-                "total_pop": 294396.0,
-                "Percent_to": 1.82509,
-                "Pct_total_": 1.82509
+                "STAND2": -1.6306496485399999,
+                "STAND3": 0.90988685563000005,
+                "STAND4": -0.62095673312,
+                "STAND5": -1.07037147271,
+                "STAND6": 0.11566563521000001,
+                "STAND7": -0.21963413971000001,
+                "STAND8": -0.50994079016000005,
+                "STAND9": 1.2569537187199999,
+                "STAND1": -1.0671734559899999,
+                "Index": -0.31513555896000001,
+                "SVI_Values": "-0.315135558964"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4435,12 +4775,29 @@
                 "FIPS": "53005010817",
                 "LOCATION": "Census Tract 108.17, Benton County, Washington",
                 "AREA_SQMI": 1.98363493249,
-                "E_TOTPOP": 6106,
+                "E_POV150": 718,
+                "EP_POV150": 11.8,
+                "EP_UNEMP": 1.4,
+                "EP_HBURD": 18.9,
+                "EP_NOHSDP": 3.7,
+                "EP_UNINSUR": 5.3,
+                "EP_DISABL": 8.0,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 0.7,
+                "EP_NOVEH": 5.3,
                 "SHAPE_STAr": 0.00060288727,
                 "SHAPE_STLe": 0.17212717675,
-                "total_pop": 294396.0,
-                "Percent_to": 2.07408,
-                "Pct_total_": 2.07408
+                "STAND2": -1.2305711421500001,
+                "STAND3": -0.437552624,
+                "STAND4": -0.81841008026999995,
+                "STAND5": -0.64222288362000002,
+                "STAND6": -1.00275414326,
+                "STAND7": -0.77529536143,
+                "STAND8": -0.64389470226000001,
+                "STAND9": 0.11472495495,
+                "STAND1": -0.695833656,
+                "Index": -0.681312182,
+                "SVI_Values": "-0.681312182004"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4699,12 +5056,29 @@
                 "FIPS": "53005010818",
                 "LOCATION": "Census Tract 108.18, Benton County, Washington",
                 "AREA_SQMI": 2.4929521193399999,
-                "E_TOTPOP": 2912,
+                "E_POV150": 208,
+                "EP_POV150": 7.1,
+                "EP_UNEMP": 3.7,
+                "EP_HBURD": 19.8,
+                "EP_NOHSDP": 0.9,
+                "EP_UNINSUR": 4.0,
+                "EP_DISABL": 8.9,
+                "EP_MOBILE": 19.2,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 2.9,
                 "SHAPE_STAr": 0.0007716459,
                 "SHAPE_STLe": 0.15472286263000001,
-                "total_pop": 294396.0,
-                "Percent_to": 0.989144,
-                "Pct_total_": 0.989144
+                "STAND2": -0.57329931024000003,
+                "STAND3": -0.35616366214,
+                "STAND4": -1.00905469131,
+                "STAND5": -0.80592675591999996,
+                "STAND6": -0.86295167095000003,
+                "STAND7": 0.59248610741999996,
+                "STAND8": -0.74808107834000004,
+                "STAND9": -0.27689633547999998,
+                "STAND1": -1.0448930679899999,
+                "Index": -0.56497560721999995,
+                "SVI_Values": "-0.564975607217"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4931,12 +5305,29 @@
                 "FIPS": "53005010819",
                 "LOCATION": "Census Tract 108.19, Benton County, Washington",
                 "AREA_SQMI": 2.10561922616,
-                "E_TOTPOP": 2972,
+                "E_POV150": 122,
+                "EP_POV150": 4.1,
+                "EP_UNEMP": 2.7,
+                "EP_HBURD": 19.1,
+                "EP_NOHSDP": 1.3,
+                "EP_UNINSUR": 3.4,
+                "EP_DISABL": 11.9,
+                "EP_MOBILE": 1.4,
+                "EP_CROWD": 1.5,
+                "EP_NOVEH": 3.6,
                 "SHAPE_STAr": 0.00065276537,
                 "SHAPE_STLe": 0.14539044362,
-                "total_pop": 294396.0,
-                "Percent_to": 1.00952,
-                "Pct_total_": 1.00952
+                "STAND2": -0.85906967193999995,
+                "STAND3": -0.41946618803000002,
+                "STAND4": -0.98181974687999995,
+                "STAND5": -0.88148238929,
+                "STAND6": -0.39694342991999998,
+                "STAND7": -0.67556129599000003,
+                "STAND8": -0.52482455816999996,
+                "STAND9": -0.1626734591,
+                "STAND1": -1.26769694799,
+                "Index": -0.68550418747999997,
+                "SVI_Values": "-0.68550418748"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5119,12 +5510,29 @@
                 "FIPS": "53005010820",
                 "LOCATION": "Census Tract 108.20, Benton County, Washington",
                 "AREA_SQMI": 2.1387402140299998,
-                "E_TOTPOP": 3810,
+                "E_POV150": 415,
+                "EP_POV150": 10.9,
+                "EP_UNEMP": 8.6,
+                "EP_HBURD": 17.5,
+                "EP_NOHSDP": 4.4,
+                "EP_UNINSUR": 8.3,
+                "EP_DISABL": 23.9,
+                "EP_MOBILE": 2.4,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 10.5,
                 "SHAPE_STAr": 0.00087974865,
                 "SHAPE_STLe": 0.19093908477,
-                "total_pop": 294396.0,
-                "Percent_to": 1.29418,
-                "Pct_total_": 1.29418
+                "STAND2": 0.82697546208999995,
+                "STAND3": -0.56415767576999998,
+                "STAND4": -0.77074892751000001,
+                "STAND5": -0.26444471678999998,
+                "STAND6": 1.4670895341900001,
+                "STAND7": -0.60432267783000004,
+                "STAND8": -0.74808107834000004,
+                "STAND9": 0.9632377509,
+                "STAND1": -0.76267482,
+                "Index": -0.05079190545,
+                "SVI_Values": "-0.0507919054498"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5311,12 +5719,29 @@
                 "FIPS": "53005010901",
                 "LOCATION": "Census Tract 109.01, Benton County, Washington",
                 "AREA_SQMI": 2.5876911253800001,
-                "E_TOTPOP": 6262,
+                "E_POV150": 1177,
+                "EP_POV150": 21.6,
+                "EP_UNEMP": 6.1,
+                "EP_HBURD": 31.0,
+                "EP_NOHSDP": 11.7,
+                "EP_UNINSUR": 6.9,
+                "EP_DISABL": 23.1,
+                "EP_MOBILE": 1.3,
+                "EP_CROWD": 0.8,
+                "EP_NOVEH": 10.2,
                 "SHAPE_STAr": 0.00082016273,
                 "SHAPE_STLe": 0.14876210135000001,
-                "total_pop": 294396.0,
-                "Percent_to": 2.12707,
-                "Pct_total_": 2.12707
+                "STAND2": 0.11254955784,
+                "STAND3": 0.65667675206999998,
+                "STAND4": -0.27371119157000001,
+                "STAND5": -0.44074119464,
+                "STAND6": 1.34282066992,
+                "STAND7": -0.68268515781000005,
+                "STAND8": -0.62901093425,
+                "STAND9": 0.91428508959,
+                "STAND1": 0.031992352,
+                "Index": 0.11468621591,
+                "SVI_Values": "0.114686215905"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5507,12 +5932,29 @@
                 "FIPS": "53005010902",
                 "LOCATION": "Census Tract 109.02, Benton County, Washington",
                 "AREA_SQMI": 1.20845601658,
-                "E_TOTPOP": 5583,
+                "E_POV150": 1924,
+                "EP_POV150": 34.5,
+                "EP_UNEMP": 10.0,
+                "EP_HBURD": 29.7,
+                "EP_NOHSDP": 14.5,
+                "EP_UNINSUR": 11.7,
+                "EP_DISABL": 13.8,
+                "EP_MOBILE": 7.2,
+                "EP_CROWD": 3.1,
+                "EP_NOVEH": 4.0,
                 "SHAPE_STAr": 0.00036465304,
                 "SHAPE_STLe": 0.10776664065,
-                "total_pop": 294396.0,
-                "Percent_to": 1.89643,
-                "Pct_total_": 1.89643
+                "STAND2": 1.2270539684699999,
+                "STAND3": 0.53911491828000002,
+                "STAND4": -0.08306658053,
+                "STAND5": 0.1637038723,
+                "STAND6": -0.10180487727,
+                "STAND7": -0.26237731061000003,
+                "STAND8": -0.28668427,
+                "STAND9": -0.09740324403,
+                "STAND1": 0.990049036,
+                "Index": 0.23206505696,
+                "SVI_Values": "0.232065056956"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5647,12 +6089,29 @@
                 "FIPS": "53005011001",
                 "LOCATION": "Census Tract 110.01, Benton County, Washington",
                 "AREA_SQMI": 1.6769309477700001,
-                "E_TOTPOP": 5762,
+                "E_POV150": 1728,
+                "EP_POV150": 30.3,
+                "EP_UNEMP": 5.7,
+                "EP_HBURD": 37.0,
+                "EP_NOHSDP": 12.8,
+                "EP_UNINSUR": 10.6,
+                "EP_DISABL": 15.2,
+                "EP_MOBILE": 2.6,
+                "EP_CROWD": 3.3,
+                "EP_NOVEH": 5.0,
                 "SHAPE_STAr": 0.0006669706,
                 "SHAPE_STLe": 0.14196601104000001,
-                "total_pop": 294396.0,
-                "Percent_to": 1.95723,
-                "Pct_total_": 1.95723
+                "STAND2": -0.00175858684,
+                "STAND3": 1.1992698311200001,
+                "STAND4": -0.19881509437,
+                "STAND5": 0.02518521112,
+                "STAND6": 0.11566563521000001,
+                "STAND7": -0.59007495419,
+                "STAND8": -0.25691673396999998,
+                "STAND9": 0.06577229365,
+                "STAND1": 0.678123604,
+                "Index": 0.11516124508,
+                "SVI_Values": "0.11516124508"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5855,12 +6314,29 @@
                 "FIPS": "53005011002",
                 "LOCATION": "Census Tract 110.02, Benton County, Washington",
                 "AREA_SQMI": 1.1440387589000001,
-                "E_TOTPOP": 4901,
+                "E_POV150": 1554,
+                "EP_POV150": 31.7,
+                "EP_UNEMP": 7.3,
+                "EP_HBURD": 29.0,
+                "EP_NOHSDP": 11.7,
+                "EP_UNINSUR": 13.3,
+                "EP_DISABL": 17.4,
+                "EP_MOBILE": 6.9,
+                "EP_CROWD": 6.2,
+                "EP_NOVEH": 6.0,
                 "SHAPE_STAr": 0.00034567474,
                 "SHAPE_STLe": 0.07382020017,
-                "total_pop": 294396.0,
-                "Percent_to": 1.66476,
-                "Pct_total_": 1.66476
+                "STAND2": 0.45547399187999998,
+                "STAND3": 0.47581239239000001,
+                "STAND4": -0.27371119157000001,
+                "STAND5": 0.36518556128000002,
+                "STAND6": 0.45740501196,
+                "STAND7": -0.28374889605999998,
+                "STAND8": 0.17471253835,
+                "STAND9": 0.22894783133,
+                "STAND1": 0.782098748,
+                "Index": 0.26468622084,
+                "SVI_Values": "0.264686220839"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -5987,12 +6463,29 @@
                 "FIPS": "53005011100",
                 "LOCATION": "Census Tract 111, Benton County, Washington",
                 "AREA_SQMI": 1.99428130903,
-                "E_TOTPOP": 7997,
+                "E_POV150": 1330,
+                "EP_POV150": 16.7,
+                "EP_UNEMP": 8.0,
+                "EP_HBURD": 25.2,
+                "EP_NOHSDP": 5.0,
+                "EP_UNINSUR": 6.0,
+                "EP_DISABL": 10.3,
+                "EP_MOBILE": 3.9,
+                "EP_CROWD": 0.5,
+                "EP_NOVEH": 1.7,
                 "SHAPE_STAr": 0.00060240512,
                 "SHAPE_STLe": 0.13408348038000001,
-                "total_pop": 294396.0,
-                "Percent_to": 2.71641,
-                "Pct_total_": 2.71641
+                "STAND2": 0.65551324506999997,
+                "STAND3": 0.132170109,
+                "STAND4": -0.72989651084999996,
+                "STAND5": -0.5540746447,
+                "STAND6": -0.64548115846999998,
+                "STAND7": -0.49746475057,
+                "STAND8": -0.67366223828000005,
+                "STAND9": -0.4727069807,
+                "STAND1": -0.331920652,
+                "Index": -0.34639150906,
+                "SVI_Values": "-0.346391509056"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -6175,12 +6668,29 @@
                 "FIPS": "53005011201",
                 "LOCATION": "Census Tract 112.01, Benton County, Washington",
                 "AREA_SQMI": 0.55977724333000001,
-                "E_TOTPOP": 4277,
+                "E_POV150": 1889,
+                "EP_POV150": 44.9,
+                "EP_UNEMP": 11.8,
+                "EP_HBURD": 39.6,
+                "EP_NOHSDP": 29.5,
+                "EP_UNINSUR": 22.8,
+                "EP_DISABL": 13.4,
+                "EP_MOBILE": 1.9,
+                "EP_CROWD": 12.7,
+                "EP_NOVEH": 6.3,
                 "SHAPE_STAr": 0.00016868645,
                 "SHAPE_STLe": 0.06247122166,
-                "total_pop": 294396.0,
-                "Percent_to": 1.45281,
-                "Pct_total_": 1.45281
+                "STAND2": 1.7414406195300001,
+                "STAND3": 1.4343934987,
+                "STAND4": 0.93824383578000004,
+                "STAND5": 1.56148308959,
+                "STAND6": -0.16393930941000001,
+                "STAND7": -0.63994198691000004,
+                "STAND8": 1.1421574590600001,
+                "STAND9": 0.27790049264,
+                "STAND1": 1.7624358199900001,
+                "Index": 0.89490816877000001,
+                "SVI_Values": "0.894908168774"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -6279,12 +6789,29 @@
                 "FIPS": "53005011202",
                 "LOCATION": "Census Tract 112.02, Benton County, Washington",
                 "AREA_SQMI": 0.40604648491000001,
-                "E_TOTPOP": 3311,
+                "E_POV150": 1241,
+                "EP_POV150": 37.5,
+                "EP_UNEMP": 0.0,
+                "EP_HBURD": 43.2,
+                "EP_NOHSDP": 14.4,
+                "EP_UNINSUR": 10.3,
+                "EP_DISABL": 23.3,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 10.6,
+                "EP_NOVEH": 24.9,
                 "SHAPE_STAr": 0.00012327877,
                 "SHAPE_STLe": 0.05701573292,
-                "total_pop": 294396.0,
-                "Percent_to": 1.12468,
-                "Pct_total_": 1.12468
+                "STAND2": -1.6306496485399999,
+                "STAND3": 1.75994934613,
+                "STAND4": -0.08987531664,
+                "STAND5": -0.01259260556,
+                "STAND6": 1.3738878859899999,
+                "STAND7": -0.77529536143,
+                "STAND8": 0.82959833083000001,
+                "STAND9": 3.3129654935100001,
+                "STAND1": 1.2128529159899999,
+                "Index": 0.66453789337000002,
+                "SVI_Values": "0.664537893365"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -6367,12 +6894,29 @@
                 "FIPS": "53005011300",
                 "LOCATION": "Census Tract 113, Benton County, Washington",
                 "AREA_SQMI": 2.0847527296699999,
-                "E_TOTPOP": 5161,
+                "E_POV150": 1915,
+                "EP_POV150": 37.5,
+                "EP_UNEMP": 7.9,
+                "EP_HBURD": 38.0,
+                "EP_NOHSDP": 19.9,
+                "EP_UNINSUR": 16.5,
+                "EP_DISABL": 25.9,
+                "EP_MOBILE": 3.3,
+                "EP_CROWD": 2.8,
+                "EP_NOVEH": 6.6,
                 "SHAPE_STAr": 0.0008361461,
                 "SHAPE_STLe": 0.17532496657,
-                "total_pop": 294396.0,
-                "Percent_to": 1.75308,
-                "Pct_total_": 1.75308
+                "STAND2": 0.6269362089,
+                "STAND3": 1.2897020109599999,
+                "STAND4": 0.28460516934000002,
+                "STAND5": 0.76814893924000005,
+                "STAND6": 1.7777616948799999,
+                "STAND7": -0.54020792146999996,
+                "STAND8": -0.33133557403000002,
+                "STAND9": 0.32685315393999997,
+                "STAND1": 1.2128529159899999,
+                "Index": 0.60170184418999995,
+                "SVI_Values": "0.601701844194"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -6603,12 +7147,29 @@
                 "FIPS": "53005011401",
                 "LOCATION": "Census Tract 114.01, Benton County, Washington",
                 "AREA_SQMI": 0.88580177213,
-                "E_TOTPOP": 3767,
+                "E_POV150": 1444,
+                "EP_POV150": 39.2,
+                "EP_UNEMP": 4.2,
+                "EP_HBURD": 39.1,
+                "EP_NOHSDP": 23.5,
+                "EP_UNINSUR": 13.0,
+                "EP_DISABL": 16.7,
+                "EP_MOBILE": 11.6,
+                "EP_CROWD": 2.8,
+                "EP_NOVEH": 3.3,
                 "SHAPE_STAr": 0.00026786914,
                 "SHAPE_STLe": 0.09551202605,
-                "total_pop": 294396.0,
-                "Percent_to": 1.27957,
-                "Pct_total_": 1.27957
+                "STAND2": -0.43041412939000001,
+                "STAND3": 1.38917740878,
+                "STAND4": 0.52971966926000003,
+                "STAND5": 0.32740774459,
+                "STAND6": 0.34866975571999997,
+                "STAND7": 0.05107260933,
+                "STAND8": -0.33133557403000002,
+                "STAND9": -0.21162612041000001,
+                "STAND1": 1.33910844799,
+                "Index": 0.33464220132,
+                "SVI_Values": "0.334642201316"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -6687,12 +7248,29 @@
                 "FIPS": "53005011402",
                 "LOCATION": "Census Tract 114.02, Benton County, Washington",
                 "AREA_SQMI": 2.823563926,
-                "E_TOTPOP": 5705,
+                "E_POV150": 623,
+                "EP_POV150": 10.9,
+                "EP_UNEMP": 2.5,
+                "EP_HBURD": 13.8,
+                "EP_NOHSDP": 10.8,
+                "EP_UNINSUR": 4.7,
+                "EP_DISABL": 14.1,
+                "EP_MOBILE": 3.2,
+                "EP_CROWD": 0.4,
+                "EP_NOVEH": 2.0,
                 "SHAPE_STAr": 0.00085531167,
                 "SHAPE_STLe": 0.12416224599,
-                "total_pop": 294396.0,
-                "Percent_to": 1.93787,
-                "Pct_total_": 1.93787
+                "STAND2": -0.91622374427999997,
+                "STAND3": -0.89875674118000004,
+                "STAND4": -0.33498981655,
+                "STAND5": -0.71777851698999995,
+                "STAND6": -0.05520405317,
+                "STAND7": -0.54733178328999998,
+                "STAND8": -0.6885460063,
+                "STAND9": -0.42375431939000002,
+                "STAND1": -0.76267482,
+                "Index": -0.59391775568000005,
+                "SVI_Values": "-0.593917755683"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -6819,12 +7397,29 @@
                 "FIPS": "53005011501",
                 "LOCATION": "Census Tract 115.01, Benton County, Washington",
                 "AREA_SQMI": 20.314293021499999,
-                "E_TOTPOP": 6584,
+                "E_POV150": 1878,
+                "EP_POV150": 28.6,
+                "EP_UNEMP": 4.6,
+                "EP_HBURD": 29.3,
+                "EP_NOHSDP": 14.2,
+                "EP_UNINSUR": 8.2,
+                "EP_DISABL": 25.5,
+                "EP_MOBILE": 42.6,
+                "EP_CROWD": 2.8,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.00810548633,
                 "SHAPE_STLe": 0.5357720827,
-                "total_pop": 294396.0,
-                "Percent_to": 2.23644,
-                "Pct_total_": 2.23644
+                "STAND2": -0.31610598471000001,
+                "STAND3": 0.50294204633999995,
+                "STAND4": -0.10349278885,
+                "STAND5": -0.27703732235,
+                "STAND6": 1.71562726274,
+                "STAND7": 2.2594697725900001,
+                "STAND8": -0.33133557403000002,
+                "STAND9": -0.75010539476000004,
+                "STAND1": 0.551868072,
+                "Index": 0.36131445432999998,
+                "SVI_Values": "0.36131445433"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -7291,12 +7886,29 @@
                 "FIPS": "53005011504",
                 "LOCATION": "Census Tract 115.04, Benton County, Washington",
                 "AREA_SQMI": 5.1117290889499998,
-                "E_TOTPOP": 2655,
+                "E_POV150": 385,
+                "EP_POV150": 14.5,
+                "EP_UNEMP": 3.0,
+                "EP_HBURD": 26.7,
+                "EP_NOHSDP": 11.0,
+                "EP_UNINSUR": 4.6,
+                "EP_DISABL": 13.1,
+                "EP_MOBILE": 11.5,
+                "EP_CROWD": 6.3,
+                "EP_NOVEH": 1.7,
                 "SHAPE_STAr": 0.00154805069,
                 "SHAPE_STLe": 0.21819485093,
-                "total_pop": 294396.0,
-                "Percent_to": 0.901846,
-                "Pct_total_": 0.901846
+                "STAND2": -0.77333856342999996,
+                "STAND3": 0.26781837875999998,
+                "STAND4": -0.32137234433,
+                "STAND5": -0.73037112255000003,
+                "STAND6": -0.21054013351,
+                "STAND7": 0.04394874752,
+                "STAND8": 0.18959630636,
+                "STAND9": -0.4727069807,
+                "STAND1": -0.495310164,
+                "Index": -0.27803065288000001,
+                "SVI_Values": "-0.278030652877"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -7595,12 +8207,29 @@
                 "FIPS": "53005011505",
                 "LOCATION": "Census Tract 115.05, Benton County, Washington",
                 "AREA_SQMI": 1.5078445267,
-                "E_TOTPOP": 4057,
+                "E_POV150": 616,
+                "EP_POV150": 15.4,
+                "EP_UNEMP": 2.8,
+                "EP_HBURD": 20.1,
+                "EP_NOHSDP": 5.8,
+                "EP_UNINSUR": 5.5,
+                "EP_DISABL": 18.0,
+                "EP_MOBILE": 15.9,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 4.5,
                 "SHAPE_STAr": 0.00045302188,
                 "SHAPE_STLe": 0.09877767035,
-                "total_pop": 294396.0,
-                "Percent_to": 1.37808,
-                "Pct_total_": 1.37808
+                "STAND2": -0.83049263577,
+                "STAND3": -0.32903400819,
+                "STAND4": -0.67542662198000003,
+                "STAND5": -0.6170376725,
+                "STAND6": 0.55060666017000004,
+                "STAND7": 0.35739866746,
+                "STAND8": -0.74808107834000004,
+                "STAND9": -0.01581547519,
+                "STAND1": -0.428469,
+                "Index": -0.30403901826000002,
+                "SVI_Values": "-0.304039018261"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -7767,12 +8396,29 @@
                 "FIPS": "53005011506",
                 "LOCATION": "Census Tract 115.06, Benton County, Washington",
                 "AREA_SQMI": 31.207344731900001,
-                "E_TOTPOP": 7176,
+                "E_POV150": 138,
+                "EP_POV150": 1.9,
+                "EP_UNEMP": 1.0,
+                "EP_HBURD": 8.2,
+                "EP_NOHSDP": 6.1,
+                "EP_UNINSUR": 3.3,
+                "EP_DISABL": 9.0,
+                "EP_MOBILE": 2.7,
+                "EP_CROWD": 2.0,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.0093995059,
                 "SHAPE_STLe": 0.536652067,
-                "total_pop": 294396.0,
-                "Percent_to": 2.43753,
-                "Pct_total_": 2.43753
+                "STAND2": -1.3448792868299999,
+                "STAND3": -1.4051769482900001,
+                "STAND4": -0.65500041365999995,
+                "STAND5": -0.89407499484999997,
+                "STAND6": -0.84741806292,
+                "STAND7": -0.58295109236999998,
+                "STAND8": -0.45040571812000002,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -1.4310864599899999,
+                "Index": -0.9290109302,
+                "SVI_Values": "-0.929010930198"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -8335,12 +8981,29 @@
                 "FIPS": "53005011600",
                 "LOCATION": "Census Tract 116, Benton County, Washington",
                 "AREA_SQMI": 597.60466168400001,
-                "E_TOTPOP": 977,
+                "E_POV150": 174,
+                "EP_POV150": 17.8,
+                "EP_UNEMP": 10.2,
+                "EP_HBURD": 22.5,
+                "EP_NOHSDP": 31.1,
+                "EP_UNINSUR": 8.9,
+                "EP_DISABL": 12.1,
+                "EP_MOBILE": 36.8,
+                "EP_CROWD": 4.4,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.19049740719,
                 "SHAPE_STLe": 2.4537712308400002,
-                "total_pop": 294396.0,
-                "Percent_to": 0.331866,
-                "Pct_total_": 0.331866
+                "STAND2": 1.2842080408100001,
+                "STAND3": -0.11199677657,
+                "STAND4": 1.0471836135199999,
+                "STAND5": -0.18888908342,
+                "STAND6": -0.36587621385000002,
+                "STAND7": 1.8462857872,
+                "STAND8": -0.09319528585,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -0.250225896,
+                "Index": 0.26859875456,
+                "SVI_Values": "0.268598754564"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -9123,12 +9786,29 @@
                 "FIPS": "53005011701",
                 "LOCATION": "Census Tract 117.01, Benton County, Washington",
                 "AREA_SQMI": 5.76672024379,
-                "E_TOTPOP": 2845,
+                "E_POV150": 880,
+                "EP_POV150": 30.9,
+                "EP_UNEMP": 3.3,
+                "EP_HBURD": 26.9,
+                "EP_NOHSDP": 28.2,
+                "EP_UNINSUR": 12.9,
+                "EP_DISABL": 9.0,
+                "EP_MOBILE": 20.4,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 7.7,
                 "SHAPE_STAr": 0.00181246419,
                 "SHAPE_STLe": 0.21687842556,
-                "total_pop": 294396.0,
-                "Percent_to": 0.966385,
-                "Pct_total_": 0.966385
+                "STAND2": -0.68760745491999997,
+                "STAND3": 0.28590481473000001,
+                "STAND4": 0.84973026637000004,
+                "STAND5": 0.31481513903000002,
+                "STAND6": -0.84741806292,
+                "STAND7": 0.67797244923,
+                "STAND8": -0.74808107834000004,
+                "STAND9": 0.50634624538999995,
+                "STAND1": 0.72268438,
+                "Index": 0.1193718554,
+                "SVI_Values": "0.119371855395"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -9255,12 +9935,29 @@
                 "FIPS": "53005011702",
                 "LOCATION": "Census Tract 117.02, Benton County, Washington",
                 "AREA_SQMI": 8.2585827832799996,
-                "E_TOTPOP": 5507,
+                "E_POV150": 1497,
+                "EP_POV150": 27.2,
+                "EP_UNEMP": 11.7,
+                "EP_HBURD": 36.7,
+                "EP_NOHSDP": 17.9,
+                "EP_UNINSUR": 9.5,
+                "EP_DISABL": 16.2,
+                "EP_MOBILE": 6.3,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 11.8,
                 "SHAPE_STAr": 0.0024941628,
                 "SHAPE_STLe": 0.28269339450999997,
-                "total_pop": 294396.0,
-                "Percent_to": 1.87061,
-                "Pct_total_": 1.87061
+                "STAND2": 1.7128635833600001,
+                "STAND3": 1.17214017716,
+                "STAND4": 0.14843044717000001,
+                "STAND5": -0.11333345005000001,
+                "STAND6": 0.27100171555000002,
+                "STAND7": -0.32649206696,
+                "STAND8": -0.74808107834000004,
+                "STAND9": 1.17536594988,
+                "STAND1": 0.447892928,
+                "Index": 0.41553202286000002,
+                "SVI_Values": "0.415532022863"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -9543,12 +10240,29 @@
                 "FIPS": "53005011801",
                 "LOCATION": "Census Tract 118.01, Benton County, Washington",
                 "AREA_SQMI": 158.492535855,
-                "E_TOTPOP": 3600,
+                "E_POV150": 388,
+                "EP_POV150": 10.8,
+                "EP_UNEMP": 2.4,
+                "EP_HBURD": 18.8,
+                "EP_NOHSDP": 13.8,
+                "EP_UNINSUR": 7.8,
+                "EP_DISABL": 13.2,
+                "EP_MOBILE": 35.8,
+                "EP_CROWD": 3.6,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.0480086917,
                 "SHAPE_STLe": 1.3629927286100001,
-                "total_pop": 294396.0,
-                "Percent_to": 1.22284,
-                "Pct_total_": 1.22284
+                "STAND2": -0.94480078045000004,
+                "STAND3": -0.44659584198000002,
+                "STAND4": -0.13072773329000001,
+                "STAND5": -0.32740774459,
+                "STAND6": -0.19500652548,
+                "STAND7": 1.77504716903,
+                "STAND8": -0.21226542994,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -0.770101616,
+                "Index": -0.22244043305,
+                "SVI_Values": "-0.222440433051"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -10223,12 +10937,29 @@
                 "FIPS": "53005011802",
                 "LOCATION": "Census Tract 118.02, Benton County, Washington",
                 "AREA_SQMI": 179.50483179400001,
-                "E_TOTPOP": 2987,
+                "E_POV150": 467,
+                "EP_POV150": 15.6,
+                "EP_UNEMP": 9.4,
+                "EP_HBURD": 26.2,
+                "EP_NOHSDP": 32.0,
+                "EP_UNINSUR": 14.3,
+                "EP_DISABL": 5.3,
+                "EP_MOBILE": 11.0,
+                "EP_CROWD": 6.9,
+                "EP_NOVEH": 1.1,
                 "SHAPE_STAr": 0.05462757742,
                 "SHAPE_STLe": 1.32619878653,
-                "total_pop": 294396.0,
-                "Percent_to": 1.01462,
-                "Pct_total_": 1.01462
+                "STAND2": 1.0555917514499999,
+                "STAND3": 0.22260228884,
+                "STAND4": 1.1084622385,
+                "STAND5": 0.49111161689,
+                "STAND6": -1.42216156019,
+                "STAND7": 0.00832943843,
+                "STAND8": 0.27889891441999998,
+                "STAND9": -0.57061230331000001,
+                "STAND1": -0.413615408,
+                "Index": 0.08428966412,
+                "SVI_Values": "0.084289664115"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -10687,12 +11418,29 @@
                 "FIPS": "53005011900",
                 "LOCATION": "Census Tract 119, Benton County, Washington",
                 "AREA_SQMI": 63.743794633299999,
-                "E_TOTPOP": 5981,
+                "E_POV150": 1205,
+                "EP_POV150": 20.3,
+                "EP_UNEMP": 7.8,
+                "EP_HBURD": 19.9,
+                "EP_NOHSDP": 18.2,
+                "EP_UNINSUR": 12.2,
+                "EP_DISABL": 14.2,
+                "EP_MOBILE": 36.1,
+                "EP_CROWD": 4.3,
+                "EP_NOVEH": 2.9,
                 "SHAPE_STAr": 0.01942089011,
                 "SHAPE_STLe": 0.78483068941,
-                "total_pop": 294396.0,
-                "Percent_to": 2.03162,
-                "Pct_total_": 2.03162
+                "STAND2": 0.59835917273000006,
+                "STAND3": -0.34712044416,
+                "STAND4": 0.1688566555,
+                "STAND5": 0.2266669001,
+                "STAND6": -0.03967044513,
+                "STAND7": 1.7964187544800001,
+                "STAND8": -0.10807905387,
+                "STAND9": -0.27689633547999998,
+                "STAND1": -0.064555996,
+                "Index": 0.21710880091000001,
+                "SVI_Values": "0.217108800908"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -11174,993 +11922,34 @@
                 "ST": "53",
                 "STATE": "Washington",
                 "ST_ABBR": "WA",
-                "STCNTY": "53005",
-                "COUNTY": "Benton",
-                "FIPS": "53005012000",
-                "LOCATION": "Census Tract 120, Benton County, Washington",
-                "AREA_SQMI": 440.44890284500002,
-                "E_TOTPOP": 0,
-                "SHAPE_STAr": 0.13682012798000001,
-                "SHAPE_STLe": 1.7236144905,
-                "total_pop": 294396.0,
-                "Percent_to": 0.0,
-                "Pct_total_": 0.0
-            },
-            "geometry": {
-                "type": "MultiPolygon",
-                "coordinates": [
-                    [
-                        [
-                            [
-                                -119.801688,
-                                46.606949
-                            ],
-                            [
-                                -119.801535,
-                                46.617978
-                            ],
-                            [
-                                -119.801495,
-                                46.624855
-                            ],
-                            [
-                                -119.800639,
-                                46.624855
-                            ],
-                            [
-                                -119.800516,
-                                46.630554
-                            ],
-                            [
-                                -119.792893,
-                                46.631787
-                            ],
-                            [
-                                -119.788116,
-                                46.632326
-                            ],
-                            [
-                                -119.782696,
-                                46.633425
-                            ],
-                            [
-                                -119.776649,
-                                46.63374
-                            ],
-                            [
-                                -119.765458,
-                                46.635167
-                            ],
-                            [
-                                -119.761458,
-                                46.635417
-                            ],
-                            [
-                                -119.750972,
-                                46.635662
-                            ],
-                            [
-                                -119.74297,
-                                46.637939
-                            ],
-                            [
-                                -119.733482,
-                                46.642308
-                            ],
-                            [
-                                -119.727081,
-                                46.644763
-                            ],
-                            [
-                                -119.719053,
-                                46.647449
-                            ],
-                            [
-                                -119.711057,
-                                46.648818
-                            ],
-                            [
-                                -119.704461,
-                                46.648926
-                            ],
-                            [
-                                -119.696366,
-                                46.648573
-                            ],
-                            [
-                                -119.692194,
-                                46.648217
-                            ],
-                            [
-                                -119.681122,
-                                46.646502
-                            ],
-                            [
-                                -119.677125,
-                                46.645367
-                            ],
-                            [
-                                -119.671058,
-                                46.642953
-                            ],
-                            [
-                                -119.66554,
-                                46.641417
-                            ],
-                            [
-                                -119.661772,
-                                46.64067
-                            ],
-                            [
-                                -119.659189,
-                                46.640333
-                            ],
-                            [
-                                -119.651966,
-                                46.640062
-                            ],
-                            [
-                                -119.647805,
-                                46.640355
-                            ],
-                            [
-                                -119.644568,
-                                46.641101
-                            ],
-                            [
-                                -119.641236,
-                                46.641327
-                            ],
-                            [
-                                -119.637154,
-                                46.642355
-                            ],
-                            [
-                                -119.632327,
-                                46.642965
-                            ],
-                            [
-                                -119.625522,
-                                46.644669
-                            ],
-                            [
-                                -119.618479,
-                                46.647583
-                            ],
-                            [
-                                -119.607584,
-                                46.65391
-                            ],
-                            [
-                                -119.601135,
-                                46.657309
-                            ],
-                            [
-                                -119.595396,
-                                46.661109
-                            ],
-                            [
-                                -119.589001,
-                                46.664871
-                            ],
-                            [
-                                -119.581684,
-                                46.669906
-                            ],
-                            [
-                                -119.571219,
-                                46.679432
-                            ],
-                            [
-                                -119.562434,
-                                46.688121
-                            ],
-                            [
-                                -119.558437,
-                                46.691382
-                            ],
-                            [
-                                -119.554284,
-                                46.694233
-                            ],
-                            [
-                                -119.549933,
-                                46.697732
-                            ],
-                            [
-                                -119.545764,
-                                46.701508
-                            ],
-                            [
-                                -119.539469,
-                                46.706714
-                            ],
-                            [
-                                -119.534681,
-                                46.709644
-                            ],
-                            [
-                                -119.529302,
-                                46.717916
-                            ],
-                            [
-                                -119.52613,
-                                46.721163
-                            ],
-                            [
-                                -119.518456,
-                                46.726781
-                            ],
-                            [
-                                -119.516582,
-                                46.727638
-                            ],
-                            [
-                                -119.511388,
-                                46.727687
-                            ],
-                            [
-                                -119.505016,
-                                46.726158
-                            ],
-                            [
-                                -119.501118,
-                                46.724705
-                            ],
-                            [
-                                -119.495072,
-                                46.720981
-                            ],
-                            [
-                                -119.491527,
-                                46.719587
-                            ],
-                            [
-                                -119.485763,
-                                46.715668
-                            ],
-                            [
-                                -119.481479,
-                                46.710656
-                            ],
-                            [
-                                -119.464873,
-                                46.696913
-                            ],
-                            [
-                                -119.458598,
-                                46.692838
-                            ],
-                            [
-                                -119.452288,
-                                46.689196
-                            ],
-                            [
-                                -119.449926,
-                                46.686241
-                            ],
-                            [
-                                -119.449734,
-                                46.684737
-                            ],
-                            [
-                                -119.450505,
-                                46.682264
-                            ],
-                            [
-                                -119.45319,
-                                46.679243
-                            ],
-                            [
-                                -119.456993,
-                                46.67623
-                            ],
-                            [
-                                -119.457459,
-                                46.673096
-                            ],
-                            [
-                                -119.455993,
-                                46.671033
-                            ],
-                            [
-                                -119.447935,
-                                46.666626
-                            ],
-                            [
-                                -119.44293,
-                                46.664252
-                            ],
-                            [
-                                -119.433264,
-                                46.660516
-                            ],
-                            [
-                                -119.424936,
-                                46.658452
-                            ],
-                            [
-                                -119.419843,
-                                46.657002
-                            ],
-                            [
-                                -119.416925,
-                                46.655619
-                            ],
-                            [
-                                -119.413046,
-                                46.652631
-                            ],
-                            [
-                                -119.408777,
-                                46.646881
-                            ],
-                            [
-                                -119.407412,
-                                46.642473
-                            ],
-                            [
-                                -119.407135,
-                                46.640428
-                            ],
-                            [
-                                -119.407311,
-                                46.635435
-                            ],
-                            [
-                                -119.408082,
-                                46.630942
-                            ],
-                            [
-                                -119.408007,
-                                46.626773
-                            ],
-                            [
-                                -119.406816,
-                                46.619676
-                            ],
-                            [
-                                -119.405294,
-                                46.616039
-                            ],
-                            [
-                                -119.404012,
-                                46.614079
-                            ],
-                            [
-                                -119.397952,
-                                46.608343
-                            ],
-                            [
-                                -119.379043,
-                                46.59384
-                            ],
-                            [
-                                -119.373157,
-                                46.588369
-                            ],
-                            [
-                                -119.371621,
-                                46.586451
-                            ],
-                            [
-                                -119.368666,
-                                46.584274
-                            ],
-                            [
-                                -119.367361,
-                                46.582656
-                            ],
-                            [
-                                -119.364956,
-                                46.580936
-                            ],
-                            [
-                                -119.362078,
-                                46.579078
-                            ],
-                            [
-                                -119.354106,
-                                46.574806
-                            ],
-                            [
-                                -119.346851,
-                                46.571499
-                            ],
-                            [
-                                -119.332372,
-                                46.566481
-                            ],
-                            [
-                                -119.32975,
-                                46.565277
-                            ],
-                            [
-                                -119.326732,
-                                46.563247
-                            ],
-                            [
-                                -119.322341,
-                                46.559644
-                            ],
-                            [
-                                -119.315918,
-                                46.553172
-                            ],
-                            [
-                                -119.310804,
-                                46.546857
-                            ],
-                            [
-                                -119.309,
-                                46.544097
-                            ],
-                            [
-                                -119.305233,
-                                46.539361
-                            ],
-                            [
-                                -119.303956,
-                                46.53849
-                            ],
-                            [
-                                -119.300431,
-                                46.536684
-                            ],
-                            [
-                                -119.291654,
-                                46.53283
-                            ],
-                            [
-                                -119.286991,
-                                46.530979
-                            ],
-                            [
-                                -119.276993,
-                                46.526343
-                            ],
-                            [
-                                -119.273561,
-                                46.524125
-                            ],
-                            [
-                                -119.269766,
-                                46.520518
-                            ],
-                            [
-                                -119.259852,
-                                46.496554
-                            ],
-                            [
-                                -119.258551,
-                                46.490902
-                            ],
-                            [
-                                -119.258473,
-                                46.488231
-                            ],
-                            [
-                                -119.258805,
-                                46.486356
-                            ],
-                            [
-                                -119.26004,
-                                46.48445
-                            ],
-                            [
-                                -119.263886,
-                                46.480666
-                            ],
-                            [
-                                -119.264058,
-                                46.478702
-                            ],
-                            [
-                                -119.263402,
-                                46.476291
-                            ],
-                            [
-                                -119.261427,
-                                46.470345
-                            ],
-                            [
-                                -119.261113,
-                                46.468273
-                            ],
-                            [
-                                -119.261328,
-                                46.464506
-                            ],
-                            [
-                                -119.263341,
-                                46.453723
-                            ],
-                            [
-                                -119.263331,
-                                46.452134
-                            ],
-                            [
-                                -119.261483,
-                                46.441598
-                            ],
-                            [
-                                -119.259161,
-                                46.435726
-                            ],
-                            [
-                                -119.259141,
-                                46.433647
-                            ],
-                            [
-                                -119.260564,
-                                46.426308
-                            ],
-                            [
-                                -119.261846,
-                                46.421873
-                            ],
-                            [
-                                -119.262902,
-                                46.417141
-                            ],
-                            [
-                                -119.263309,
-                                46.41455
-                            ],
-                            [
-                                -119.26548,
-                                46.410194
-                            ],
-                            [
-                                -119.266856,
-                                46.403284
-                            ],
-                            [
-                                -119.26664,
-                                46.400551
-                            ],
-                            [
-                                -119.265524,
-                                46.397151
-                            ],
-                            [
-                                -119.264992,
-                                46.392247
-                            ],
-                            [
-                                -119.265602,
-                                46.381224
-                            ],
-                            [
-                                -119.266438,
-                                46.378564
-                            ],
-                            [
-                                -119.269452,
-                                46.374225
-                            ],
-                            [
-                                -119.269368,
-                                46.370295
-                            ],
-                            [
-                                -119.267206,
-                                46.364191
-                            ],
-                            [
-                                -119.265568,
-                                46.358086
-                            ],
-                            [
-                                -119.263807,
-                                46.352752
-                            ],
-                            [
-                                -119.26267,
-                                46.351333
-                            ],
-                            [
-                                -119.266625,
-                                46.351257
-                            ],
-                            [
-                                -119.272172,
-                                46.351344
-                            ],
-                            [
-                                -119.273122,
-                                46.351084
-                            ],
-                            [
-                                -119.273961,
-                                46.35093
-                            ],
-                            [
-                                -119.278077,
-                                46.350936
-                            ],
-                            [
-                                -119.283698,
-                                46.350961
-                            ],
-                            [
-                                -119.315348,
-                                46.35122
-                            ],
-                            [
-                                -119.321205,
-                                46.351364
-                            ],
-                            [
-                                -119.391879,
-                                46.367132
-                            ],
-                            [
-                                -119.392679,
-                                46.366862
-                            ],
-                            [
-                                -119.399034,
-                                46.370324
-                            ],
-                            [
-                                -119.400281,
-                                46.369223
-                            ],
-                            [
-                                -119.406404,
-                                46.37105
-                            ],
-                            [
-                                -119.412007,
-                                46.375132
-                            ],
-                            [
-                                -119.415141,
-                                46.377008
-                            ],
-                            [
-                                -119.418749,
-                                46.379745
-                            ],
-                            [
-                                -119.419501,
-                                46.379921
-                            ],
-                            [
-                                -119.421613,
-                                46.380129
-                            ],
-                            [
-                                -119.425197,
-                                46.379329
-                            ],
-                            [
-                                -119.428124,
-                                46.379345
-                            ],
-                            [
-                                -119.43019,
-                                46.379473
-                            ],
-                            [
-                                -119.43176,
-                                46.379829
-                            ],
-                            [
-                                -119.43352,
-                                46.378498
-                            ],
-                            [
-                                -119.435582,
-                                46.373451
-                            ],
-                            [
-                                -119.437154,
-                                46.368065
-                            ],
-                            [
-                                -119.439751,
-                                46.361491
-                            ],
-                            [
-                                -119.442048,
-                                46.359603
-                            ],
-                            [
-                                -119.442154,
-                                46.359083
-                            ],
-                            [
-                                -119.446151,
-                                46.356496
-                            ],
-                            [
-                                -119.449677,
-                                46.353275
-                            ],
-                            [
-                                -119.451757,
-                                46.352593
-                            ],
-                            [
-                                -119.457201,
-                                46.352206
-                            ],
-                            [
-                                -119.461047,
-                                46.351074
-                            ],
-                            [
-                                -119.465438,
-                                46.349157
-                            ],
-                            [
-                                -119.466669,
-                                46.348013
-                            ],
-                            [
-                                -119.468372,
-                                46.344809
-                            ],
-                            [
-                                -119.475593,
-                                46.338442
-                            ],
-                            [
-                                -119.482254,
-                                46.336326
-                            ],
-                            [
-                                -119.487392,
-                                46.333564
-                            ],
-                            [
-                                -119.490286,
-                                46.330497
-                            ],
-                            [
-                                -119.492142,
-                                46.328277
-                            ],
-                            [
-                                -119.492552,
-                                46.327657
-                            ],
-                            [
-                                -119.492392,
-                                46.330146
-                            ],
-                            [
-                                -119.49237,
-                                46.344841
-                            ],
-                            [
-                                -119.501085,
-                                46.344844
-                            ],
-                            [
-                                -119.534782,
-                                46.345009
-                            ],
-                            [
-                                -119.534289,
-                                46.359622
-                            ],
-                            [
-                                -119.55411,
-                                46.360086
-                            ],
-                            [
-                                -119.554552,
-                                46.374012
-                            ],
-                            [
-                                -119.575247,
-                                46.374025
-                            ],
-                            [
-                                -119.580823,
-                                46.374031
-                            ],
-                            [
-                                -119.596644,
-                                46.374847
-                            ],
-                            [
-                                -119.596923,
-                                46.385626
-                            ],
-                            [
-                                -119.597014,
-                                46.389093
-                            ],
-                            [
-                                -119.602306,
-                                46.389141
-                            ],
-                            [
-                                -119.618195,
-                                46.389532
-                            ],
-                            [
-                                -119.618424,
-                                46.400209
-                            ],
-                            [
-                                -119.618478,
-                                46.403867
-                            ],
-                            [
-                                -119.621402,
-                                46.40391
-                            ],
-                            [
-                                -119.623408,
-                                46.403864
-                            ],
-                            [
-                                -119.626141,
-                                46.403802
-                            ],
-                            [
-                                -119.639268,
-                                46.403918
-                            ],
-                            [
-                                -119.639508,
-                                46.411444
-                            ],
-                            [
-                                -119.639532,
-                                46.418716
-                            ],
-                            [
-                                -119.639559,
-                                46.422024
-                            ],
-                            [
-                                -119.679834,
-                                46.421879
-                            ],
-                            [
-                                -119.702621,
-                                46.42168
-                            ],
-                            [
-                                -119.70276,
-                                46.418246
-                            ],
-                            [
-                                -119.702767,
-                                46.418099
-                            ],
-                            [
-                                -119.743331,
-                                46.418081
-                            ],
-                            [
-                                -119.745184,
-                                46.417967
-                            ],
-                            [
-                                -119.74525,
-                                46.421691
-                            ],
-                            [
-                                -119.75049,
-                                46.42165
-                            ],
-                            [
-                                -119.759944,
-                                46.421814
-                            ],
-                            [
-                                -119.76626,
-                                46.421709
-                            ],
-                            [
-                                -119.766583,
-                                46.425203
-                            ],
-                            [
-                                -119.766247,
-                                46.428658
-                            ],
-                            [
-                                -119.766244,
-                                46.432206
-                            ],
-                            [
-                                -119.776773,
-                                46.432297
-                            ],
-                            [
-                                -119.776938,
-                                46.441111
-                            ],
-                            [
-                                -119.780235,
-                                46.443178
-                            ],
-                            [
-                                -119.781001,
-                                46.443392
-                            ],
-                            [
-                                -119.784396,
-                                46.442585
-                            ],
-                            [
-                                -119.787068,
-                                46.442653
-                            ],
-                            [
-                                -119.787226,
-                                46.446519
-                            ],
-                            [
-                                -119.788503,
-                                46.47637
-                            ],
-                            [
-                                -119.788648,
-                                46.479773
-                            ],
-                            [
-                                -119.788429,
-                                46.485536
-                            ],
-                            [
-                                -119.789727,
-                                46.52293
-                            ],
-                            [
-                                -119.789194,
-                                46.524652
-                            ],
-                            [
-                                -119.790559,
-                                46.534448
-                            ],
-                            [
-                                -119.791841,
-                                46.584544
-                            ],
-                            [
-                                -119.791512,
-                                46.591841
-                            ],
-                            [
-                                -119.802359,
-                                46.591764
-                            ],
-                            [
-                                -119.801688,
-                                46.606949
-                            ]
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "ST": "53",
-                "STATE": "Washington",
-                "ST_ABBR": "WA",
                 "STCNTY": "53021",
                 "COUNTY": "Franklin",
                 "FIPS": "53021020101",
                 "LOCATION": "Census Tract 201.01, Franklin County, Washington",
                 "AREA_SQMI": 4.1813927677200002,
-                "E_TOTPOP": 2319,
+                "E_POV150": 1219,
+                "EP_POV150": 52.6,
+                "EP_UNEMP": 5.3,
+                "EP_HBURD": 37.1,
+                "EP_NOHSDP": 46.7,
+                "EP_UNINSUR": 26.1,
+                "EP_DISABL": 19.2,
+                "EP_MOBILE": 18.1,
+                "EP_CROWD": 24.3,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.00173795459,
                 "SHAPE_STLe": 0.19896492514,
-                "total_pop": 294396.0,
-                "Percent_to": 0.787714,
-                "Pct_total_": 0.787714
+                "STAND2": -0.11606673152,
+                "STAND3": 1.2083130491,
+                "STAND4": 2.10934644648,
+                "STAND5": 1.97703907312,
+                "STAND6": 0.73700995658000001,
+                "STAND7": 0.51412362742999995,
+                "STAND8": 2.86867454834,
+                "STAND9": -0.75010539476000004,
+                "STAND1": 2.3342991119900001,
+                "Index": 1.2091815207500001,
+                "SVI_Values": "1.20918152075"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -12327,12 +12116,29 @@
                 "FIPS": "53021020102",
                 "LOCATION": "Census Tract 201.02, Franklin County, Washington",
                 "AREA_SQMI": 9.7587612547700004,
-                "E_TOTPOP": 6276,
+                "E_POV150": 2141,
+                "EP_POV150": 34.2,
+                "EP_UNEMP": 13.4,
+                "EP_HBURD": 30.5,
+                "EP_NOHSDP": 43.8,
+                "EP_UNINSUR": 13.2,
+                "EP_DISABL": 14.4,
+                "EP_MOBILE": 30.9,
+                "EP_CROWD": 17.3,
+                "EP_NOVEH": 5.0,
                 "SHAPE_STAr": 0.00294795307,
                 "SHAPE_STLe": 0.2292549028,
-                "total_pop": 294396.0,
-                "Percent_to": 2.13182,
-                "Pct_total_": 2.13182
+                "STAND2": 2.1986731982499998,
+                "STAND3": 0.61146066214999995,
+                "STAND4": 1.9118930993300001,
+                "STAND5": 0.35259295572,
+                "STAND6": -0.00860322907,
+                "STAND7": 1.42597794,
+                "STAND8": 1.8268107875699999,
+                "STAND9": 0.06577229365,
+                "STAND1": 0.967768648,
+                "Index": 1.03914959507,
+                "SVI_Values": "1.03914959507"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -12467,12 +12273,29 @@
                 "FIPS": "53021020103",
                 "LOCATION": "Census Tract 201.03, Franklin County, Washington",
                 "AREA_SQMI": 0.9499263645,
-                "E_TOTPOP": 3900,
+                "E_POV150": 566,
+                "EP_POV150": 15.8,
+                "EP_UNEMP": 2.6,
+                "EP_HBURD": 9.0,
+                "EP_NOHSDP": 33.1,
+                "EP_UNINSUR": 10.9,
+                "EP_DISABL": 10.2,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 13.5,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.0002861781,
                 "SHAPE_STLe": 0.08871042436,
-                "total_pop": 294396.0,
-                "Percent_to": 1.32475,
-                "Pct_total_": 1.32475
+                "STAND2": -0.88764670811000002,
+                "STAND3": -1.3328312044199999,
+                "STAND4": 1.1833583356899999,
+                "STAND5": 0.06296302781,
+                "STAND6": -0.66101476651000002,
+                "STAND7": -0.77529536143,
+                "STAND8": 1.26122760315,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -0.398761816,
+                "Index": -0.25534514272999997,
+                "SVI_Values": "-0.255345142731"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -12551,12 +12374,29 @@
                 "FIPS": "53021020201",
                 "LOCATION": "Census Tract 202.01, Franklin County, Washington",
                 "AREA_SQMI": 0.25293233138,
-                "E_TOTPOP": 2277,
+                "E_POV150": 1140,
+                "EP_POV150": 50.6,
+                "EP_UNEMP": 17.0,
+                "EP_HBURD": 41.1,
+                "EP_NOHSDP": 64.1,
+                "EP_UNINSUR": 25.6,
+                "EP_DISABL": 9.6,
+                "EP_MOBILE": 3.4,
+                "EP_CROWD": 31.4,
+                "EP_NOVEH": 19.5,
                 "SHAPE_STAr": 7.6586e-05,
                 "SHAPE_STLe": 0.03950327568,
-                "total_pop": 294396.0,
-                "Percent_to": 0.773448,
-                "Pct_total_": 0.773448
+                "STAND2": 3.2274465003800001,
+                "STAND3": 1.5700417684600001,
+                "STAND4": 3.2940665294000002,
+                "STAND5": 1.9140760453100001,
+                "STAND6": -0.75421641471,
+                "STAND7": -0.53308405966000005,
+                "STAND8": 3.9254220771199999,
+                "STAND9": 2.4318175900300001,
+                "STAND1": 2.18576319199,
+                "Index": 1.91792591426,
+                "SVI_Values": "1.91792591426"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -12643,12 +12483,29 @@
                 "FIPS": "53021020202",
                 "LOCATION": "Census Tract 202.02, Franklin County, Washington",
                 "AREA_SQMI": 0.70205698864,
-                "E_TOTPOP": 4604,
+                "E_POV150": 1438,
+                "EP_POV150": 33.5,
+                "EP_UNEMP": 9.0,
+                "EP_HBURD": 23.9,
+                "EP_NOHSDP": 44.4,
+                "EP_UNINSUR": 23.8,
+                "EP_DISABL": 17.2,
+                "EP_MOBILE": 8.3,
+                "EP_CROWD": 19.8,
+                "EP_NOVEH": 19.2,
                 "SHAPE_STAr": 0.000212799,
                 "SHAPE_STLe": 0.07609217007000001,
-                "total_pop": 294396.0,
-                "Percent_to": 1.56388,
-                "Pct_total_": 1.56388
+                "STAND2": 0.94128360677,
+                "STAND3": 0.01460827521,
+                "STAND4": 1.95274551598,
+                "STAND5": 1.68740914521,
+                "STAND6": 0.4263377959,
+                "STAND7": -0.18401483063,
+                "STAND8": 2.1989049878400002,
+                "STAND9": 2.3828649287200001,
+                "STAND1": 0.915781076,
+                "Index": 1.14843561122,
+                "SVI_Values": "1.14843561122"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -12751,12 +12608,29 @@
                 "FIPS": "53021020300",
                 "LOCATION": "Census Tract 203, Franklin County, Washington",
                 "AREA_SQMI": 1.4032294176,
-                "E_TOTPOP": 5501,
+                "E_POV150": 2162,
+                "EP_POV150": 39.4,
+                "EP_UNEMP": 7.8,
+                "EP_HBURD": 36.5,
+                "EP_NOHSDP": 34.3,
+                "EP_UNINSUR": 16.9,
+                "EP_DISABL": 19.9,
+                "EP_MOBILE": 5.9,
+                "EP_CROWD": 8.6,
+                "EP_NOVEH": 7.4,
                 "SHAPE_STAr": 0.00042292567,
                 "SHAPE_STLe": 0.11104470459,
-                "total_pop": 294396.0,
-                "Percent_to": 1.86857,
-                "Pct_total_": 1.86857
+                "STAND2": 0.59835917273000006,
+                "STAND3": 1.1540537412,
+                "STAND4": 1.265063169,
+                "STAND5": 0.81851936148000004,
+                "STAND6": 0.84574521282000004,
+                "STAND7": -0.35498751423000002,
+                "STAND8": 0.53192297061000005,
+                "STAND9": 0.45739358409000003,
+                "STAND1": 1.3539620399900001,
+                "Index": 0.74111463751999995,
+                "SVI_Values": "0.741114637521"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -12891,12 +12765,29 @@
                 "FIPS": "53021020401",
                 "LOCATION": "Census Tract 204.01, Franklin County, Washington",
                 "AREA_SQMI": 0.58255301421000005,
-                "E_TOTPOP": 1162,
+                "E_POV150": 630,
+                "EP_POV150": 54.2,
+                "EP_UNEMP": 14.1,
+                "EP_HBURD": 31.8,
+                "EP_NOHSDP": 50.0,
+                "EP_UNINSUR": 44.3,
+                "EP_DISABL": 30.9,
+                "EP_MOBILE": 57.6,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.00023410547,
                 "SHAPE_STLe": 0.08107802247,
-                "total_pop": 294396.0,
-                "Percent_to": 0.394706,
-                "Pct_total_": 0.394706
+                "STAND2": 2.3987124514499998,
+                "STAND3": 0.72902249595000002,
+                "STAND4": 2.3340347380700002,
+                "STAND5": 4.2688932852599999,
+                "STAND6": 2.5544420965899999,
+                "STAND7": 3.3280490451300002,
+                "STAND8": -0.74808107834000004,
+                "STAND9": -0.75010539476000004,
+                "STAND1": 2.4531278479899998,
+                "Index": 1.84089949859,
+                "SVI_Values": "1.84089949859"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13003,12 +12894,29 @@
                 "FIPS": "53021020402",
                 "LOCATION": "Census Tract 204.02, Franklin County, Washington",
                 "AREA_SQMI": 0.24075699092,
-                "E_TOTPOP": 1249,
+                "E_POV150": 235,
+                "EP_POV150": 19.4,
+                "EP_UNEMP": 9.1,
+                "EP_HBURD": 40.8,
+                "EP_NOHSDP": 33.5,
+                "EP_UNINSUR": 13.5,
+                "EP_DISABL": 39.1,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 15.7,
+                "EP_NOVEH": 28.8,
                 "SHAPE_STAr": 7.304637e-05,
                 "SHAPE_STLe": 0.0359010525,
-                "total_pop": 294396.0,
-                "Percent_to": 0.424258,
-                "Pct_total_": 0.424258
+                "STAND2": 0.96986064293999996,
+                "STAND3": 1.54291211451,
+                "STAND4": 1.2105932801299999,
+                "STAND5": 0.3903707724,
+                "STAND6": 3.8281979554,
+                "STAND7": -0.77529536143,
+                "STAND8": 1.58867049939,
+                "STAND9": 3.9493500904599999,
+                "STAND1": -0.13139716,
+                "Index": 1.3970292037600001,
+                "SVI_Values": "1.39702920376"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13087,12 +12995,29 @@
                 "FIPS": "53021020403",
                 "LOCATION": "Census Tract 204.03, Franklin County, Washington",
                 "AREA_SQMI": 0.44375088961999998,
-                "E_TOTPOP": 3198,
+                "E_POV150": 696,
+                "EP_POV150": 21.8,
+                "EP_UNEMP": 4.7,
+                "EP_HBURD": 32.0,
+                "EP_NOHSDP": 24.3,
+                "EP_UNINSUR": 11.1,
+                "EP_DISABL": 7.4,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 8.7,
+                "EP_NOVEH": 0.9,
                 "SHAPE_STAr": 0.00013374359,
                 "SHAPE_STLe": 0.04633771009,
-                "total_pop": 294396.0,
-                "Percent_to": 1.08629,
-                "Pct_total_": 1.08629
+                "STAND2": -0.28752894854,
+                "STAND3": 0.74710893191000005,
+                "STAND4": 0.58418955812999995,
+                "STAND5": 0.08814823893,
+                "STAND6": -1.09595579147,
+                "STAND7": -0.77529536143,
+                "STAND8": 0.54680673861999995,
+                "STAND9": -0.60324741084,
+                "STAND1": 0.046845944,
+                "Index": -0.08321423341,
+                "SVI_Values": "-0.0832142334106"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13175,12 +13100,29 @@
                 "FIPS": "53021020404",
                 "LOCATION": "Census Tract 204.04, Franklin County, Washington",
                 "AREA_SQMI": 0.45656098178,
-                "E_TOTPOP": 2734,
+                "E_POV150": 1353,
+                "EP_POV150": 50.6,
+                "EP_UNEMP": 3.7,
+                "EP_HBURD": 59.6,
+                "EP_NOHSDP": 48.7,
+                "EP_UNINSUR": 14.6,
+                "EP_DISABL": 24.0,
+                "EP_MOBILE": 1.0,
+                "EP_CROWD": 11.3,
+                "EP_NOVEH": 17.6,
                 "SHAPE_STAr": 0.00013870667,
                 "SHAPE_STLe": 0.05343011307,
-                "total_pop": 294396.0,
-                "Percent_to": 0.928681,
-                "Pct_total_": 0.928681
+                "STAND2": -0.57329931024000003,
+                "STAND3": 3.2430370955100001,
+                "STAND4": 2.2455211686499998,
+                "STAND5": 0.52888943356999996,
+                "STAND6": 1.48262314223,
+                "STAND7": -0.70405674326000001,
+                "STAND8": 0.93378470691000004,
+                "STAND9": 2.1217840684299998,
+                "STAND1": 2.18576319199,
+                "Index": 1.2737829726400001,
+                "SVI_Values": "1.27378297264"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13271,12 +13213,29 @@
                 "FIPS": "53021020501",
                 "LOCATION": "Census Tract 205.01, Franklin County, Washington",
                 "AREA_SQMI": 3.5761578054199998,
-                "E_TOTPOP": 4945,
+                "E_POV150": 791,
+                "EP_POV150": 16.0,
+                "EP_UNEMP": 5.1,
+                "EP_HBURD": 18.0,
+                "EP_NOHSDP": 4.8,
+                "EP_UNINSUR": 5.4,
+                "EP_DISABL": 14.9,
+                "EP_MOBILE": 5.9,
+                "EP_CROWD": 0.3,
+                "EP_NOVEH": 2.8,
                 "SHAPE_STAr": 0.00134102086,
                 "SHAPE_STLe": 0.17346070699,
-                "total_pop": 294396.0,
-                "Percent_to": 1.67971,
-                "Pct_total_": 1.67971
+                "STAND2": -0.17322080386,
+                "STAND3": -0.51894158585000005,
+                "STAND4": -0.74351398307000005,
+                "STAND5": -0.62963027806000005,
+                "STAND6": 0.06906481111,
+                "STAND7": -0.35498751423000002,
+                "STAND8": -0.70342977430999998,
+                "STAND9": -0.29321388925000003,
+                "STAND1": -0.383908224,
+                "Index": -0.41464236017,
+                "SVI_Values": "-0.41464236017"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13479,12 +13438,29 @@
                 "FIPS": "53021020503",
                 "LOCATION": "Census Tract 205.03, Franklin County, Washington",
                 "AREA_SQMI": 1.6880630406299999,
-                "E_TOTPOP": 3047,
+                "E_POV150": 111,
+                "EP_POV150": 3.6,
+                "EP_UNEMP": 3.6,
+                "EP_HBURD": 14.2,
+                "EP_NOHSDP": 11.5,
+                "EP_UNINSUR": 8.5,
+                "EP_DISABL": 9.6,
+                "EP_MOBILE": 5.9,
+                "EP_CROWD": 0.0,
+                "EP_NOVEH": 3.1,
                 "SHAPE_STAr": 0.00072627558,
                 "SHAPE_STLe": 0.15476471793,
-                "total_pop": 294396.0,
-                "Percent_to": 1.035,
-                "Pct_total_": 1.035
+                "STAND2": -0.60187634640999998,
+                "STAND3": -0.86258386924999997,
+                "STAND4": -0.28732866379,
+                "STAND5": -0.23925950566000001,
+                "STAND6": -0.75421641471,
+                "STAND7": -0.35498751423000002,
+                "STAND8": -0.74808107834000004,
+                "STAND9": -0.24426122794,
+                "STAND1": -1.3048309279899999,
+                "Index": -0.59971394981000004,
+                "SVI_Values": "-0.599713949814"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13667,12 +13643,29 @@
                 "FIPS": "53021020504",
                 "LOCATION": "Census Tract 205.04, Franklin County, Washington",
                 "AREA_SQMI": 2.5582751723100001,
-                "E_TOTPOP": 6338,
+                "E_POV150": 1057,
+                "EP_POV150": 16.7,
+                "EP_UNEMP": 3.2,
+                "EP_HBURD": 21.2,
+                "EP_NOHSDP": 19.7,
+                "EP_UNINSUR": 15.3,
+                "EP_DISABL": 10.4,
+                "EP_MOBILE": 2.6,
+                "EP_CROWD": 1.3,
+                "EP_NOVEH": 1.9,
                 "SHAPE_STAr": 0.00077180629,
                 "SHAPE_STLe": 0.15327555407,
-                "total_pop": 294396.0,
-                "Percent_to": 2.15288,
-                "Pct_total_": 2.15288
+                "STAND2": -0.71618449109000004,
+                "STAND3": -0.22955861036,
+                "STAND4": 0.27098769712999998,
+                "STAND5": 0.6170376725,
+                "STAND6": -0.62994755043999995,
+                "STAND7": -0.59007495419,
+                "STAND8": -0.5545920942,
+                "STAND9": -0.44007187316000002,
+                "STAND1": -0.331920652,
+                "Index": -0.28936942842000002,
+                "SVI_Values": "-0.289369428424"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13855,12 +13848,29 @@
                 "FIPS": "53021020603",
                 "LOCATION": "Census Tract 206.03, Franklin County, Washington",
                 "AREA_SQMI": 1.16581877272,
-                "E_TOTPOP": 4163,
+                "E_POV150": 1018,
+                "EP_POV150": 24.5,
+                "EP_UNEMP": 2.4,
+                "EP_HBURD": 32.4,
+                "EP_NOHSDP": 10.5,
+                "EP_UNINSUR": 3.7,
+                "EP_DISABL": 12.2,
+                "EP_MOBILE": 0.4,
+                "EP_CROWD": 1.2,
+                "EP_NOVEH": 1.5,
                 "SHAPE_STAr": 0.00035152536,
                 "SHAPE_STLe": 0.09858469363,
-                "total_pop": 294396.0,
-                "Percent_to": 1.41408,
-                "Pct_total_": 1.41408
+                "STAND2": -0.94480078045000004,
+                "STAND3": 0.78328180385000001,
+                "STAND4": -0.35541602488000001,
+                "STAND5": -0.8437045726,
+                "STAND6": -0.35034260582,
+                "STAND7": -0.74679991416000002,
+                "STAND8": -0.56947586221000002,
+                "STAND9": -0.50534208823000004,
+                "STAND1": 0.247369436,
+                "Index": -0.36502562316999998,
+                "SVI_Values": "-0.365025623168"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13991,12 +14001,29 @@
                 "FIPS": "53021020605",
                 "LOCATION": "Census Tract 206.05, Franklin County, Washington",
                 "AREA_SQMI": 2.76424398692,
-                "E_TOTPOP": 9382,
+                "E_POV150": 770,
+                "EP_POV150": 8.4,
+                "EP_UNEMP": 2.6,
+                "EP_HBURD": 15.5,
+                "EP_NOHSDP": 13.3,
+                "EP_UNINSUR": 8.5,
+                "EP_DISABL": 7.4,
+                "EP_MOBILE": 0.7,
+                "EP_CROWD": 1.0,
+                "EP_NOVEH": 2.0,
                 "SHAPE_STAr": 0.00083600573,
                 "SHAPE_STLe": 0.15646279867,
-                "total_pop": 294396.0,
-                "Percent_to": 3.18686,
-                "Pct_total_": 3.18686
+                "STAND2": -0.88764670811000002,
+                "STAND3": -0.74502203546000001,
+                "STAND4": -0.16477141383,
+                "STAND5": -0.23925950566000001,
+                "STAND6": -1.09595579147,
+                "STAND7": -0.72542832870999996,
+                "STAND8": -0.59924339822999995,
+                "STAND9": -0.42375431939000002,
+                "STAND1": -0.94834472,
+                "Index": -0.64771402454000004,
+                "SVI_Values": "-0.647714024541"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -14127,12 +14154,29 @@
                 "FIPS": "53021020606",
                 "LOCATION": "Census Tract 206.06, Franklin County, Washington",
                 "AREA_SQMI": 3.70803441844,
-                "E_TOTPOP": 8315,
+                "E_POV150": 1528,
+                "EP_POV150": 18.4,
+                "EP_UNEMP": 3.5,
+                "EP_HBURD": 23.9,
+                "EP_NOHSDP": 8.0,
+                "EP_UNINSUR": 7.5,
+                "EP_DISABL": 9.3,
+                "EP_MOBILE": 0.0,
+                "EP_CROWD": 3.4,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.0012344598,
                 "SHAPE_STLe": 0.20088899869,
-                "total_pop": 294396.0,
-                "Percent_to": 2.82443,
-                "Pct_total_": 2.82443
+                "STAND2": -0.63045338258000005,
+                "STAND3": 0.01460827521,
+                "STAND4": -0.52563442759000001,
+                "STAND5": -0.36518556128000002,
+                "STAND6": -0.80081723881,
+                "STAND7": -0.77529536143,
+                "STAND8": -0.24203296596000001,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -0.20566512,
+                "Index": -0.4756201308,
+                "SVI_Values": "-0.475620130801"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -14311,12 +14355,29 @@
                 "FIPS": "53021020607",
                 "LOCATION": "Census Tract 206.07, Franklin County, Washington",
                 "AREA_SQMI": 1.45211417792,
-                "E_TOTPOP": 6400,
+                "E_POV150": 851,
+                "EP_POV150": 13.4,
+                "EP_UNEMP": 2.8,
+                "EP_HBURD": 18.9,
+                "EP_NOHSDP": 6.2,
+                "EP_UNINSUR": 5.7,
+                "EP_DISABL": 4.5,
+                "EP_MOBILE": 0.5,
+                "EP_CROWD": 7.3,
+                "EP_NOVEH": 2.3,
                 "SHAPE_STAr": 0.00043931957,
                 "SHAPE_STLe": 0.11665462522,
-                "total_pop": 294396.0,
-                "Percent_to": 2.17394,
-                "Pct_total_": 2.17394
+                "STAND2": -0.83049263577,
+                "STAND3": -0.437552624,
+                "STAND4": -0.64819167754999996,
+                "STAND5": -0.59185246138000003,
+                "STAND6": -1.54643042446,
+                "STAND7": -0.73967605235,
+                "STAND8": 0.33843398647,
+                "STAND9": -0.37480165809,
+                "STAND1": -0.57700492,
+                "Index": -0.60084094079000006,
+                "SVI_Values": "-0.600840940792"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -14403,12 +14464,29 @@
                 "FIPS": "53021020608",
                 "LOCATION": "Census Tract 206.08, Franklin County, Washington",
                 "AREA_SQMI": 204.73853341,
-                "E_TOTPOP": 6270,
+                "E_POV150": 1104,
+                "EP_POV150": 17.6,
+                "EP_UNEMP": 5.4,
+                "EP_HBURD": 10.2,
+                "EP_NOHSDP": 17.3,
+                "EP_UNINSUR": 18.6,
+                "EP_DISABL": 11.2,
+                "EP_MOBILE": 25.3,
+                "EP_CROWD": 6.5,
+                "EP_NOVEH": 1.4,
                 "SHAPE_STAr": 0.06306968394,
                 "SHAPE_STLe": 1.2625624228300001,
-                "total_pop": 294396.0,
-                "Percent_to": 2.12978,
-                "Pct_total_": 2.12978
+                "STAND2": -0.08748969535,
+                "STAND3": -1.2243125886099999,
+                "STAND4": 0.10757803052000001,
+                "STAND5": 1.03259365602,
+                "STAND6": -0.50567868616,
+                "STAND7": 1.02704167825,
+                "STAND8": 0.21936384238000001,
+                "STAND9": -0.521659642,
+                "STAND1": -0.265079488,
+                "Index": -0.02418254366,
+                "SVI_Values": "-0.0241825436622"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -15199,12 +15277,29 @@
                 "FIPS": "53021020700",
                 "LOCATION": "Census Tract 207, Franklin County, Washington",
                 "AREA_SQMI": 543.651316855,
-                "E_TOTPOP": 1318,
+                "E_POV150": 220,
+                "EP_POV150": 16.9,
+                "EP_UNEMP": 9.8,
+                "EP_HBURD": 14.4,
+                "EP_NOHSDP": 9.2,
+                "EP_UNINSUR": 24.6,
+                "EP_DISABL": 18.5,
+                "EP_MOBILE": 29.1,
+                "EP_CROWD": 0.5,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.16858537332000001,
                 "SHAPE_STLe": 2.86144601731,
-                "total_pop": 294396.0,
-                "Percent_to": 0.447696,
-                "Pct_total_": 0.447696
+                "STAND2": 1.16989989613,
+                "STAND3": -0.84449743328000004,
+                "STAND4": -0.44392959429000001,
+                "STAND5": 1.7881499897,
+                "STAND6": 0.62827470034,
+                "STAND7": 1.2977484273,
+                "STAND8": -0.67366223828000005,
+                "STAND9": -0.75010539476000004,
+                "STAND1": -0.31706706,
+                "Index": 0.20609014365,
+                "SVI_Values": "0.206090143652"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -16903,12 +16998,29 @@
                 "FIPS": "53021020801",
                 "LOCATION": "Census Tract 208.01, Franklin County, Washington",
                 "AREA_SQMI": 231.28148567100001,
-                "E_TOTPOP": 3725,
+                "E_POV150": 1034,
+                "EP_POV150": 27.9,
+                "EP_UNEMP": 6.3,
+                "EP_HBURD": 6.5,
+                "EP_NOHSDP": 41.0,
+                "EP_UNINSUR": 31.5,
+                "EP_DISABL": 7.2,
+                "EP_MOBILE": 41.4,
+                "EP_CROWD": 26.9,
+                "EP_NOVEH": 0.0,
                 "SHAPE_STAr": 0.07167899197,
                 "SHAPE_STLe": 1.2295379255400001,
-                "total_pop": 294396.0,
-                "Percent_to": 1.2653,
-                "Pct_total_": 1.2653
+                "STAND2": 0.16970363018000001,
+                "STAND3": -1.5589116540200001,
+                "STAND4": 1.7212484882800001,
+                "STAND5": 2.6570397734200002,
+                "STAND6": -1.1270230075300001,
+                "STAND7": 2.1739834307799999,
+                "STAND8": 3.2556525166300001,
+                "STAND9": -0.75010539476000004,
+                "STAND1": 0.4998805,
+                "Index": 0.78238536477999998,
+                "SVI_Values": "0.782385364776"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -17367,12 +17479,29 @@
                 "FIPS": "53021020802",
                 "LOCATION": "Census Tract 208.02, Franklin County, Washington",
                 "AREA_SQMI": 223.25557915,
-                "E_TOTPOP": 6558,
+                "E_POV150": 1181,
+                "EP_POV150": 24.5,
+                "EP_UNEMP": 7.3,
+                "EP_HBURD": 18.8,
+                "EP_NOHSDP": 25.1,
+                "EP_UNINSUR": 20.2,
+                "EP_DISABL": 14.7,
+                "EP_MOBILE": 8.3,
+                "EP_CROWD": 10.3,
+                "EP_NOVEH": 2.6,
                 "SHAPE_STAr": 0.06799448086,
                 "SHAPE_STLe": 1.54835019682,
-                "total_pop": 294396.0,
-                "Percent_to": 2.22761,
-                "Pct_total_": 2.22761
+                "STAND2": 0.45547399187999998,
+                "STAND3": -0.44659584198000002,
+                "STAND4": 0.638659447,
+                "STAND5": 1.234075345,
+                "STAND6": 0.03799759504,
+                "STAND7": -0.18401483063,
+                "STAND8": 0.7849470268,
+                "STAND9": -0.32584899679000001,
+                "STAND1": 0.247369436,
+                "Index": 0.27134035248,
+                "SVI_Values": "0.27134035248"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -18166,94 +18295,6 @@
                             [
                                 -119.080797,
                                 46.737761
-                            ]
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "ST": "53",
-                "STATE": "Washington",
-                "ST_ABBR": "WA",
-                "STCNTY": "53021",
-                "COUNTY": "Franklin",
-                "FIPS": "53021980100",
-                "LOCATION": "Census Tract 9801, Franklin County, Washington",
-                "AREA_SQMI": 2.78379542,
-                "E_TOTPOP": 0,
-                "SHAPE_STAr": 0.00084085765,
-                "SHAPE_STLe": 0.12352031293,
-                "total_pop": 294396.0,
-                "Percent_to": 0.0,
-                "Pct_total_": 0.0
-            },
-            "geometry": {
-                "type": "MultiPolygon",
-                "coordinates": [
-                    [
-                        [
-                            [
-                                -119.137549,
-                                46.256006
-                            ],
-                            [
-                                -119.137426,
-                                46.262669
-                            ],
-                            [
-                                -119.137329,
-                                46.270793
-                            ],
-                            [
-                                -119.136836,
-                                46.278065
-                            ],
-                            [
-                                -119.110476,
-                                46.27796
-                            ],
-                            [
-                                -119.106366,
-                                46.277884
-                            ],
-                            [
-                                -119.095498,
-                                46.25573
-                            ],
-                            [
-                                -119.096315,
-                                46.255739
-                            ],
-                            [
-                                -119.09658,
-                                46.255742
-                            ],
-                            [
-                                -119.12118,
-                                46.255927
-                            ],
-                            [
-                                -119.123536,
-                                46.255424
-                            ],
-                            [
-                                -119.132502,
-                                46.252442
-                            ],
-                            [
-                                -119.134623,
-                                46.252174
-                            ],
-                            [
-                                -119.137732,
-                                46.252522
-                            ],
-                            [
-                                -119.137549,
-                                46.256006
                             ]
                         ]
                     ]

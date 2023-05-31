@@ -15,7 +15,9 @@
 
 <body>
     <nav>
-        <a class="nav-item" href="../index.html"><h1>Benton-Franklin Health District Food Access</h1></a>
+        <a class="nav-item" href="../index.html">
+            <h1>Benton-Franklin Health District Food Access</h1>
+        </a>
         <div>
             <a class="nav-item" href="../index.html">
                 <h3>Home</h3>
@@ -31,34 +33,219 @@
 
     <div class="section-title">Data Sources & Methods</div>
     <div class="content data-content">
-        <div class="data-text">
-            <p>The following webmap was calculated using ____.</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
+        <div class="buttons">
+            <div>
+                <button type="button" class="collapsible">Background<span>+</span></button>
+                <div class="collapsible-content">
+                    <p>
+                        Food insecurity is a prevalent issue that affects communities worldwide. It refers to the lack
+                        of consistent access to quality food, leading to a lack of important nutrients that every human
+                        needs. Food insecurity has large implications for physical health, mental health, and overall
+                        quality of life. It disproportionately affects marginalized populations, including low-income
+                        households, and minority communities. Food insecurity is often intertwined with other social and
+                        economic challenges, such as poverty, unemployment, and limited access to affordable and
+                        nutritious food options. Addressing food insecurity requires comprehensive strategies that focus
+                        on improving food access, promoting sustainable agriculture, supporting local food systems, and
+                        advocating for social justice. By understanding the complex factors contributing to food
+                        insecurity, we can work towards creating equitable and resilient food systems that ensure
+                        everyone has access to safe and nutritious food.
+                    </p>
+                    <p>
+                        The accessibility of fresh and healthy produce or food is a very critical factor when promoting
+                        community health and well-being. Communities should push to increase food accessibility rates as
+                        it improves the quality of life and keeps the community healthy. The Benton-Franklin Food Access
+                        & Security Coalition has recognized the need to improve its food accessibility and has tasked us
+                        to aid in its improvement.
+                    </p>
+                    <p>
+                        This project was initiated to address the issue of food access in Benton and Franklin counties.
+                        The project aimed to identify the locations of grocery stores, convenience stores, and
+                        convenience stores that sell produce, and evaluate their accessibility based on different modes
+                        of transportation. The lack of access to fresh and healthy food disproportionately affects
+                        certain communities, contributing to health disparities and food insecurity.
+                    </p>
+                    <p>
+                        The goal of this project is to create an interactive web map that accurately shows the locations
+                        of grocery stores, convenience stores, food services, and stores that sell produce located in
+                        the Benton-Franklin counties. By analyzing and mapping the distribution of food resources, we
+                        should be able to aid the Food Access & Security Coalition with their decision-making and
+                        identify the areas they need to improve.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="collapsible">Citations<span>+</span></button>
+                <div class="collapsible-content">
+                    <p>
+                        With our map, users will be able to see every type of store or food service, listed in four
+                        different categories, along with the distance between each store and the desired type of
+                        transportation (walk, bike, bus, or car).
+                    </p>
+                    <p>
+                        In the following sections, we will be discussing the system requirements involved in creating
+                        the web map, the methods and sources of data we used for the map, the strategy we used to
+                        analyze the data, a description of the results that we got from all of the data, and a summary
+                        of the entire
+                        project.
+                    </p>
+                    <div class="citation">
+                        <p class="citation-name">1. Simple Border Shapefile of the two counties:</p>
+                        <ul>
+                            <li>
+                                American Community Survey (edited in the program to delete information due to the fact
+                                that
+                                there was irrelevant information, and we were only interested in the visual
+                                representation
+                                of the two county borders, and not congressional tracks)
+                            </li>
+                        </ul>
+                        <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-data.html">
+                            TIGER/Line with Selected Demographic and Economic Data (census.gov)
+                        </a>
+                    </div>
+                    <div class="citation">
+                        <p class="citation-name">2. TIGER/Shapefiles of the County Road Networks for the year 2022:</p>
+                        <a
+                            href="https://catalog.data.gov/dataset/tiger-line-shapefile-current-county-franklin-county-wa-all-roads">
+                            TIGER/Line Shapefile, Current, County, Franklin County, WA, All Roads - Catalog (data.gov)
+                        </a>
+                        <a
+                            href="https://catalog.data.gov/dataset/tiger-line-shapefile-current-county-benton-county-wa-all-roads">
+                            TIGER/Line Shapefile, Current, County, Benton County, WA, All Roads - Catalog (data.gov)
+                        </a>
+                    </div>
+                    <div class="citation">
+                        <p class="citation-name">3. Inspection data provided by the Benton-Franklin Health District</p>
+                        <ul>
+                            <li>
+                                Edited to sort the types of stores according to billing, listing many as “food service”
+                                since they do not appear to belong to either convenience stores, grocery stores, or a
+                                location that otherwise sells produce
+                            </li>
+                            <li>
+                                Edited to delete a few irrelevant stores (that do not sell food for humans)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="citation">
+                        <p class="citation-name">4. Social vulnerability data provided by the Benton-Franklin Health District</p>
+                        <ul>
+                            <li>
+                                The social vulnerability index sources:
+                            </li>
+                        </ul>
+                        <a href="https://www.atsdr.cdc.gov/placeandhealth/svi/documentation/pdf/SVI2020Documentation_08.05.22.pdf">
+                            SVI2020Documentation_08.05.22.pdf (cdc.gov)
+                        </a>
+                        <a href="https://www.atsdr.cdc.gov/placeandhealth/svi/documentation/SVI_documentation_2020.html">
+                            CDC SVI Documentation 2020 | Place and Health | ATSDR
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="collapsible">System Requirements<span>+</span></button>
+                <div class="collapsible-content">
+                    <p>
+                        This section outlines the technical specifications and resources that we used in order to
+                        develop and deploy our interactive web map. It includes information regarding software,
+                        hardware, and data requirements, covering all the technical aspects of this project.
+                    </p>
+                    <p>
+                        As the intended audience of the interactive web map was broader than simply the sponsors of the
+                        Benton-Franklin Health District, and included the general public, we had to use opensource
+                        applications including QGIS and GitHub in order to avoid issues with licensing that might appear
+                        if the web map was hosted on a proprietary website instead. Ideally, there should be no
+                        registration requirements for the average person to visit the website, nor should there be any
+                        issues for our sponsors to access the files associated with the web map if needed.
+                    </p>
+                    <p>
+                        As the data had duplicate addresses, and did not contain geocoordinates, the data was first
+                        processed with Python code in a Jupyter notebook, and with additional minor adjustments made to
+                        the .csv file in Microsoft Excel.
+                    </p>
+                    <p>
+                        QGIS was later used to calculate the distances of the individual locations as a means of
+                        estimating which areas are most accessible for people who do not regularly have access to a
+                        vehicle (therefore, public transit, walking, and biking as the main modes of transportation).
+                        Buffers containing a walkable distance, or one that would be possible through the use of a bike
+                        were calculated and then exported as .geoJSON files to be later uploaded on the GitHub page.
+                        Almost all of the distances were calculated using Euclidean geometry, with the exception of
+                        driving distances, which instead were calculated with a 10-minute approximate driving time via
+                        road networks. This specific timed element was requested from us by our sponsors. A file with a
+                        polygon estimate was produced for all four categories of stores.
+                    </p>
+                    <p>
+                        After creating the map layers on QGIS, the individual layers had to be compiled together for the
+                        interactive web map, using HTML, CSS, and JavaScript in order to make the map interactive. The
+                        interactivity in our map comes from the ability to choose different layers or categories to be
+                        portrayed on the map at the user’s preference. For example, users are able to click on a
+                        specific category of a store like ‘convenience store’ and the map would show all of the
+                        convenience stores in the area. Additionally, users are also able to click on each store
+                        location in order to see its address and other related details.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="collapsible">Data Acquisition<span>+</span></button>
+                <div class="collapsible-content">
+                    <p>
+                        This section introduces and describes the sources of data we used in this project, and describes
+                        the steps taken in order to acquire the data. It also includes any data quality issues that were
+                        encountered during the process.
+                    </p>
+                    <p>
+                        As stated above, the first step within the process of data acquisition was to edit the .csv file
+                        that was sent to us which was a complete list of all the food service locations that the Benton
+                        Franklin Health Department had inspected in the two counties. Duplicate rows were deleted, and
+                        additional columns were added to the .csv file for longitude and latitude coordinates with the
+                        use of Python.
+                    </p>
+                    <p>
+                        As the .csv file did not specify which category a location belonged to (a grocery store, a
+                        convenience store, or a store location that sold fresh produce) we also had to manually create a
+                        column indicating that for each location, and research on the internet in order to determine how
+                        to categorize the stores. We added a fourth category as well that was not specified in the
+                        project request which was “food service,” or a location that otherwise did not fit any of the
+                        other categories (for example, coffee shops, restaurants, dessert kiosks, etc).
+                    </p>
+                    <p>
+                        This, however, was only for the base distance layers. The rest of the data used for this project
+                        was acquired from reputable sources to ensure the accuracy and reliability of our map. For
+                        stylistic purposes, a simple base map of the two counties and their borders had to be created,
+                        which was edited from a shapefile provided by the U.S. Census government website. This base map
+                        layer would allow the user to see where distances are relative within the boundaries of the
+                        Benton and Franklin counties.
+                    </p>
+                    <p>
+                        To address the driving distance factor of our map, we also needed to get the road network data
+                        for both Benton and Franklin counties which were acquired from data.gov. Shapefiles were used
+                        and then merged to be able to compute the distance calculations for driving. Similarly, our
+                        sponsor provided us with shapefiles that contained the transit bus routes and their stops, which
+                        were also incorporated into the map.
+                    </p>
+                    <p>
+                        As additional layers that at the present moment are still being developed, estimates from the
+                        American Community Survey from the U.S. Census will be incorporated into the map as a means of
+                        viewing population density, as well as which areas contain populations with high levels of
+                        economic vulnerability, and would therefore best be served by additional locations that sell
+                        fresh produce.
+                    </p>
+                    <p>
+                        Finally, inputting all of the acquired data into one map, we have created an interactive web map
+                        showing the location of each store or food service.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
+        <div class="logo">
             <img src="../imgs/benton-franklin-logo.png" alt="Benton-Franklin Health District Logo" />
         </div>
     </div>
 </body>
+
+<script type="text/javascript">
+    openDataContent();
+</script>
 
 </html>

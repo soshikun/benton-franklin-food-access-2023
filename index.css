@@ -265,6 +265,43 @@ nav div a {
     gap: 10px;
 }
 
+.hidden {
+    display: none;
+}
+
+#legend {
+    padding: 10px;
+    line-height: 18px;
+    position: absolute;
+    bottom: 67px;
+    left: 0;
+    background: #FFFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 42px;
+    padding: 16px;
+}
+
+#legend h3 {
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+
 .miles {
     width: 80%;
 }
@@ -294,11 +331,15 @@ nav div a {
 
 .content {
     background-color: #EAF2FF;
-    height: 80vh;
-    overflow: hidden;
+    height: 82vh;
 }
 
 /* About Page */
+.about-content {
+    height: 120vh;
+    padding-top: 24px;
+}
+
 .preface {
     display: flex;
     flex-direction: column;
@@ -337,8 +378,13 @@ nav div a {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 270px;
+    width: 300px;
     height: 429px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
 }
 
 .card p {
@@ -346,23 +392,112 @@ nav div a {
     ;
 }
 
-/* Data Page */
-.data-content {
+.about-buttons {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-buttons button {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    gap: 48px;
+    align-items: center;
+}
+
+/* Data Page */
+.data-content {
+    height: 305vh;
 }
 
 .data-text {
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
     margin-left: 24px;
     font-size: 20px;
 }
 
+.logo {
+    position: absolute;
+    right: 0;
+}
+
+.data-text h2 {
+    margin-bottom: 0;
+}
+
 .data-content img {
     margin: 24px;
+}
+
+.buttons {
+    position: absolute;
+    width: 70%;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.buttons div {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.buttons button {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible {
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #8898B0;
+}
+
+.collapsible-content {
+    padding-top: 20px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.collapsible-content p {
+    margin-bottom: 20px;
+}
+
+.citation {
+    display: flex;
+    flex-direction: column;
+}
+
+.citation .citation-name {
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.citation ul {
+    margin-top: 20px;
+}
+
+.citation a {
+    margin-top: 20px;
+    padding-left: 40px;
 }

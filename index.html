@@ -114,7 +114,7 @@
                 <form class="stores">
                     <div>
                         <input type='checkbox' id="population" name="population" value='population'>
-                        <label for="population">Population</label>
+                        <label for="population">Population <output id="population_value"></output></label>
                         <!-- <img src="./imgs/blue-circle.png" alt="population icon (blue circle)" /> -->
                     </div>
                     <div>
@@ -137,7 +137,8 @@
             <p id='filters-close' class="close" onclick="closeModal('filters')">x</p>
         </div>
     </div>
-    <!-- </div> -->
+
+    <div id="legend" class="hidden"></div>
 </body>
 
 <script type="text/javascript">

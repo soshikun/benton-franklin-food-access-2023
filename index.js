@@ -1,3 +1,18 @@
+function openDataContent() {
+    let buttons = document.getElementsByClassName('collapsible');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', (event) => {
+            event.target.classList.toggle('active');
+            let content = event.target.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        })
+    }
+}
+
 function closeModal(popup) {
     if (popup === 'filters') {
         document.getElementById(popup).classList.add('hidden-filters');
@@ -826,6 +841,132 @@ async function createMap(mode) {
         const produce_driving = await getData('produce_driving');
         const service_driving = await getData('service_driving');
 
+        const population = await getData('estimated_pct_population');
+        const index_no_FIPS = await getData('index_no_FIPS');
+        const index_deleted_FIPS = await getData('index_deleted_FIPS');
+
+        const legend = document.getElementById('legend');
+        const populationLayers = [
+            '< 0.5%',
+            '0.5% - 1%',
+            '1% - 1.5%',
+            '1.5% - 2%',
+            '2 - 2.5%',
+            '2.5% - 3%',
+            '> 3%',
+            'No Data',
+        ];
+
+        const populationColors = [
+            '#fcfdbf',
+            '#feaf78',
+            '#f15687',
+            '#b6367a',
+            '#721f81',
+            '#2d115f',
+            '#000004',
+            '#a8a8a8',
+        ];
+
+        const indexLayers = [
+            'Very Low Vulnerability - Rank 1',
+            'Low Vulnerability - Rank 2',
+            'Medium-Low Vulnerability - Rank 3',
+            'Medium Vulnerability - Rank 4',
+            'High Vulnerability - Rank 5',
+            'No Data',
+        ];
+
+        const indexColors = [
+            '#825264',
+            '#9cf06f',
+            '#eeff7f',
+            '#ffc340',
+            '#ff4d00',
+            '#a8a8a8',
+        ];
+
+        map.addSource('population', {
+            type: 'geojson',
+            data: population
+        });
+
+        map.addLayer({
+            'id': 'population',
+            'source': 'population',
+            'type': 'fill',
+            'paint': {
+                'fill-color': {
+                    property: 'pct_total',
+                    stops: [
+                        [0, '#fcfdbf'],
+                        [0.51, '#feaf78'],
+                        [1.01, '#f15687'],
+                        [1.51, '#b6367a'],
+                        [2.01, '#721f81'],
+                        [2.5, '#2d115f'],
+                        [3, '#000004'],
+                        [3.19, '#000004']
+                    ]
+                },
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none'
+            }
+        });
+
+        map.addSource('index_no_FIPS', {
+            type: 'geojson',
+            data: index_no_FIPS
+        });
+
+        map.addLayer({
+            'id': 'index_no_FIPS',
+            'source': 'index_no_FIPS',
+            'type': 'fill',
+            'paint': {
+                'fill-color': {
+                    property: 'Index',
+                    stops: [
+                        [-0.92, '#825264'],
+                        [-0.49, '#9cf06f'],
+                        [0, '#eeff7f'],
+                        [0.49, '#ffc340'],
+                        [0.98, '#ff4d00'],
+                        [1.9179, '#ff4d00']
+                    ]
+                },
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none'
+            }
+        });
+
+        map.addSource('index_deleted_FIPS', {
+            type: 'geojson',
+            data: index_deleted_FIPS
+        });
+
+        map.addLayer({
+            'id': 'index_deleted_FIPS',
+            'source': 'index_deleted_FIPS',
+            'type': 'fill',
+            'paint': {
+                'fill-color': {
+                    property: 'IndexFinal',
+                    stops: [
+                        [0, '#a8a8a8'],
+                    ]
+                },
+                'fill-opacity': 0.3
+            },
+            'layout': {
+                'visibility': 'none'
+            }
+        });
+
         map.loadImage(
             './imgs/grocery.png',
             (error, image) => {
@@ -1340,7 +1481,7 @@ async function createMap(mode) {
                         'visibility': 'none',
                         'icon-image': 'produce',
                         'icon-allow-overlap': true,
-                        'icon-size': 0.3
+                        'icon-size': 0.5
                     },
                 });
             }
@@ -2036,6 +2177,69 @@ async function createMap(mode) {
                             map.setLayoutProperty(selection, 'visibility', 'visible');
                             map.setLayoutProperty('transit_routes', 'visibility', 'visible');
                         }
+                    } else if (selection === 'population' || selection === 'index') {
+                        let visible = map.getLayoutProperty(selection, 'visibility');
+                        if (visible === 'visible') {
+                            map.setLayoutProperty('population', 'visibility', 'none');
+                            map.setLayoutProperty('index_no_FIPS', 'visibility', 'none');
+                            map.setLayoutProperty('index_deleted_FIPS', 'visibility', 'none');
+                            map.setLayoutProperty(selection, 'visibility', 'none');
+                            legend.classList.add('hidden');
+                            legend.innerHTML = '';
+                        } else {
+                            map.setLayoutProperty('population', 'visibility', 'none');
+                            map.setLayoutProperty('index_no_FIPS', 'visibility', 'none');
+                            map.setLayoutProperty('index_deleted_FIPS', 'visibility', 'none');
+                            legend.innerHTML = '';
+                            legend.classList.remove('hidden');
+                            if (selection === 'population') {
+                                map.setLayoutProperty('index_deleted_FIPS', 'visibility', 'visible');
+                                map.setLayoutProperty(selection, 'visibility', 'visible');
+                                document.getElementById('index').checked = false;
+                                const title = document.createElement('h3');
+                                title.textContent = 'Estimated Percentage of the Total Population';
+                                legend.appendChild(title);
+                                legend.style.height = '330px';
+                                legend.style.width = '250px';
+                                populationLayers.forEach((layer, i) => {
+                                    const color = populationColors[i];
+                                    const item = document.createElement('div');
+                                    item.className = 'legend-item';
+                                    const key = document.createElement('span');
+                                    key.className = 'legend-key';
+                                    key.style.backgroundColor = color;
+
+                                    const value = document.createElement('span');
+                                    value.innerHTML = `${layer}`;
+                                    item.appendChild(key);
+                                    item.appendChild(value);
+                                    legend.appendChild(item);
+                                });
+                            } else if (selection === 'index') {
+                                map.setLayoutProperty('index_no_FIPS', 'visibility', 'visible');
+                                map.setLayoutProperty('index_deleted_FIPS', 'visibility', 'visible');
+                                document.getElementById('population').checked = false;
+                                const title = document.createElement('h3');
+                                title.textContent = 'Social Vulnerability Index (SVI)';
+                                legend.appendChild(title);
+                                legend.style.height = '250px';
+                                legend.style.width = '350px';
+                                indexLayers.forEach((layer, i) => {
+                                    const color = indexColors[i];
+                                    const item = document.createElement('div');
+                                    item.className = 'legend-item';
+                                    const key = document.createElement('span');
+                                    key.className = 'legend-key';
+                                    key.style.backgroundColor = color;
+
+                                    const value = document.createElement('span');
+                                    value.innerHTML = `${layer}`;
+                                    item.appendChild(key);
+                                    item.appendChild(value);
+                                    legend.appendChild(item);
+                                });
+                            }
+                        }
                     } else if (current.length > 0 && (selection === 'biking' || selection === 'walking')) {
                         if (transportation.includes(selection)) {
                             let list = [];
@@ -2044,7 +2248,6 @@ async function createMap(mode) {
                             } else if (selection === 'walking') {
                                 list = getAllWalkingList('walking');
                             }
-                            console.log('transportation includes it');
                             if (selection === 'biking') {
                                 document.getElementById('biking_miles').disabled = true;
                                 document.getElementById('biking_miles').value = '0';
@@ -2216,6 +2419,9 @@ async function createMap(mode) {
                     map.setLayoutProperty('driving', 'visibility', 'none');
                     map.setLayoutProperty('transit', 'visibility', 'none');
                     map.setLayoutProperty('transit_routes', 'visibility', 'none');
+                    map.setLayoutProperty('population', 'visibility', 'none');
+                    map.setLayoutProperty('index_no_FIPS', 'visibility', 'none');
+                    map.setLayoutProperty('index_deleted_FIPS', 'visibility', 'none');
                 }
             }
             current = [];
@@ -2234,6 +2440,8 @@ async function createMap(mode) {
             walkingList.map((distance) => {
                 map.setLayoutProperty(distance, 'visibility', 'none');
             });
+            legend.innerHTML = '';
+            legend.classList.add('hidden');
         });
     });
 }
